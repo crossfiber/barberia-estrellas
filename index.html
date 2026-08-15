@@ -268,6 +268,8 @@ body.dopen .m-only{visibility:hidden}
 .hours{border-top:1px solid var(--ink)}
 .hr{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line-l);font-size:.92rem}
 .hr.today{color:var(--gold-d);font-weight:700}
+.hr.closed{color:var(--concrete-d)}
+.hr.closed.today{color:var(--concrete-d);font-weight:700}
 .map{border:1px solid var(--line-l)}
 .map iframe{display:block;width:100%;height:420px;border:0;filter:grayscale(.4) contrast(1.05)}
 
@@ -523,7 +525,7 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
       <a href="tel:+17868517794" class="dr-tel"><svg class="i"><use href="#i-tel"/></svg> (786) 851-7794</a>
       <a href="https://www.barberiadelasestrellas.com/s/appointments" class="btn" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a>
       <a href="https://www.google.com/maps/dir/?api=1&amp;destination=164+NW+20th+St+Suite+209+Miami+FL+33127" class="dr-map" target="_blank" rel="noopener" aria-label="Como llegar a 164 NW 20th St, Suite 209"><svg class="i"><use href="#i-pin"/></svg> 164 NW 20th St, Suite 209</a>
-      <span class="dr-note" data-es="Lun a Sab 10 AM a 8 PM. Dom 11 AM a 3 PM." data-en="Mon to Sat 10 AM to 8 PM. Sun 11 AM to 3 PM.">Lun a Sab 10 AM a 8 PM. Dom 11 AM a 3 PM.</span>
+      <span class="dr-note" data-es="Lunes a sábado, 10 AM a 8 PM" data-en="Monday to Saturday, 10 AM to 8 PM">Lunes a sábado, 10 AM a 8 PM</span>
     </div>
   </nav>
 </aside>
@@ -552,7 +554,7 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
 
 <section class="promise">
   <div class="w">
-    <p data-es="Abierto 7 días. Estacionamiento gratis.<br>Se habla español e inglés." data-en="Open 7 days. Free parking on site.<br>Spanish and English spoken.">Abierto 7 días. Estacionamiento gratis.<br>Se habla español e inglés.</p>
+    <p data-es="Lunes a sábado, hasta las 8 PM. Estacionamiento gratis.<br>Se habla español e inglés." data-en="Monday to Saturday, until 8 PM. Free parking on site.<br>Spanish and English spoken.">Lunes a sábado, hasta las 8 PM. Estacionamiento gratis.<br>Se habla español e inglés.</p>
     <small data-es="Los diez precios, más abajo." data-en="All ten prices, below.">Los diez precios, más abajo.</small>
   </div>
 </section>
@@ -734,7 +736,7 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
         <div class="hr" data-day="4"><b data-es="Jueves" data-en="Thursday">Jueves</b><span>10 AM - 8 PM</span></div>
         <div class="hr" data-day="5"><b data-es="Viernes" data-en="Friday">Viernes</b><span>10 AM - 8 PM</span></div>
         <div class="hr" data-day="6"><b data-es="Sábado" data-en="Saturday">Sábado</b><span>10 AM - 8 PM</span></div>
-        <div class="hr" data-day="0"><b data-es="Domingo" data-en="Sunday">Domingo</b><span>11 AM - 3 PM</span></div>
+        <div class="hr closed" data-day="0"><b data-es="Domingo" data-en="Sunday">Domingo</b><span data-es="Cerrado" data-en="Closed">Cerrado</span></div>
       </div>
       <div style="margin-top:24px"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=164+NW+20th+St+Suite+209+Miami+FL+33127" class="btn" target="_blank" rel="noopener" data-es="Cómo llegar" data-en="Get directions">Cómo llegar</a></div>
     </div>
@@ -762,7 +764,7 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
       <div class="ai"><button class="ah" aria-expanded="false" data-es="¿Hablan inglés?" data-en="Do the barbers speak English?">¿Hablan inglés?</button><div class="ab"><div class="ab-in" data-es="Los dos idiomas. El equipo es argentino, uruguayo y colombiano, así que el español es el idioma del local, pero todos trabajan en inglés todo el día." data-en="Both. The team is Argentine, Uruguayan and Colombian, so Spanish is the room's first language, but every barber works in English all day.">Los dos idiomas. El equipo es argentino, uruguayo y colombiano, así que el español es el idioma del local, pero todos trabajan en inglés todo el día.</div></div></div>
       <div class="ai"><button class="ah" aria-expanded="false" data-es="¿Hacen color y platinado en hombres?" data-en="Do you do color and platinum on men's hair?">¿Hacen color y platinado en hombres?</button><div class="ab"><div class="ab-in" data-es="Sí, y es una parte real del negocio, no un servicio de costado. Baño de color, $75. Mechas con corte, $160. Color global con corte, $250. Conviene reservar y no venir sin cita." data-en="Yes, and it is a real part of the business, not a side service. Color refresh is $75, highlights with a cut are $160, and a full global color with a cut is $250. Book this one rather than walking in.">Sí, y es una parte real del negocio, no un servicio de costado. Baño de color, $75. Mechas con corte, $160. Color global con corte, $250. Conviene reservar y no venir sin cita.</div></div></div>
       <div class="ai"><button class="ah" aria-expanded="false" data-es="¿Vienen niños?" data-en="Are kids welcome?">¿Vienen niños?</button><div class="ab"><div class="ab-in" data-es="Sí. Corte de niño $40 con los mismos barberos. Hay sala de espera con bebidas y mesa de pool para quien lo acompañe." data-en="Yes. Kids cuts are $40 with the same barbers. There is a lounge with drinks and a pool table for whoever brings them.">Sí. Corte de niño $40 con los mismos barberos. Hay sala de espera con bebidas y mesa de pool para quien lo acompañe.</div></div></div>
-      <div class="ai"><button class="ah" aria-expanded="false" data-es="¿Cuál es el horario?" data-en="What are the hours?">¿Cuál es el horario?</button><div class="ab"><div class="ab-in" data-es="De lunes a sábado, de 10 AM a 8 PM. Los domingos, de 11 AM a 3 PM. Se atiende sin cita cuando hay silla libre." data-en="Monday to Saturday, 10 AM to 8 PM. Sundays, 11 AM to 3 PM. Walk-ins are taken whenever a chair is free.">De lunes a sábado, de 10 AM a 8 PM. Los domingos, de 11 AM a 3 PM. Se atiende sin cita cuando hay silla libre.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="¿Cuál es el horario?" data-en="What are the hours?">¿Cuál es el horario?</button><div class="ab"><div class="ab-in" data-es="De lunes a sábado, de 10 AM a 8 PM. Los domingos está cerrado. Se atiende sin cita cuando hay silla libre." data-en="Monday to Saturday, 10 AM to 8 PM. Closed Sundays. Walk-ins are taken whenever a chair is free.">De lunes a sábado, de 10 AM a 8 PM. Los domingos está cerrado. Se atiende sin cita cuando hay silla libre.</div></div></div>
     </div>
   </div>
 </section>
@@ -854,7 +856,7 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
         164 NW 20th St, Suite 209<br>
         Miami, FL 33127<br>
         <span data-es="Lunes a sábado: 10 AM a 8 PM" data-en="Monday to Saturday: 10 AM to 8 PM">Lunes a sábado: 10 AM a 8 PM</span><br>
-        <span data-es="Domingo: 11 AM a 3 PM" data-en="Sunday: 11 AM to 3 PM">Domingo: 11 AM a 3 PM</span>
+        <span data-es="Domingo: cerrado" data-en="Sunday: closed">Domingo: cerrado</span>
       </address>
     </div>
   </div>
@@ -870,7 +872,7 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
 </footer>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"HairSalon","@id":"https://crossfiber.github.io/barberia-estrellas/#barbershop","name":"Barberia de las Estrellas","alternateName":"Barberia de las Estrellas by Nico Jaffe","image":"https://crossfiber.github.io/barberia-estrellas/assets/og-share.png?v=4","logo":"https://crossfiber.github.io/barberia-estrellas/assets/logo.png?v=2","url":"https://crossfiber.github.io/barberia-estrellas/","telephone":"+1-786-851-7794","email":"barberiadelasestrellas@gmail.com","priceRange":"$15-$250","currenciesAccepted":"USD","paymentAccepted":"Cash, Credit Card, Apple Pay, Google Pay, Cash App","description":"Barbería de precisión en 164 NW 20th Street, Suite 209, Wynwood, Miami. Barberos argentinos, uruguayos y colombianos. Fades desde $50, barba, cejas, color masculino y el paquete Estrella VIP filmado. Estacionamiento gratis en el lugar. Se habla español e inglés.","slogan":"La mejor barbería de Miami","founder":{"@type":"Person","name":"Nico Jaffe","jobTitle":"Owner and Barber"},"address":{"@type":"PostalAddress","streetAddress":"164 NW 20th St, Suite 209","addressLocality":"Miami","addressRegion":"FL","postalCode":"33127","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":25.7997,"longitude":-80.1993},"hasMap":"https://www.google.com/maps?q=164+NW+20th+St+Suite+209+Miami+FL+33127","areaServed":[{"@type":"City","name":"Miami"},{"@type":"Place","name":"Wynwood"},{"@type":"Place","name":"Midtown Miami"},{"@type":"Place","name":"Edgewater"},{"@type":"Place","name":"Design District"},{"@type":"City","name":"Miami Beach"},{"@type":"AdministrativeArea","name":"Miami-Dade County"}],"knowsAbout":["Skin fade","Taper fade","Beard shaping","Eyebrow detailing","Men's hair color","Platinum blonde men's hair","Kids haircuts","Barber content reels"],"knowsLanguage":["es","en"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"11:00","closes":"15:00"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Carta de servicios","itemListElement":[
+{"@context":"https://schema.org","@type":"HairSalon","@id":"https://crossfiber.github.io/barberia-estrellas/#barbershop","name":"Barberia de las Estrellas","alternateName":"Barberia de las Estrellas by Nico Jaffe","image":"https://crossfiber.github.io/barberia-estrellas/assets/og-share.png?v=4","logo":"https://crossfiber.github.io/barberia-estrellas/assets/logo.png?v=2","url":"https://crossfiber.github.io/barberia-estrellas/","telephone":"+1-786-851-7794","email":"barberiadelasestrellas@gmail.com","priceRange":"$15-$250","currenciesAccepted":"USD","paymentAccepted":"Cash, Credit Card, Apple Pay, Google Pay, Cash App","description":"Barbería de precisión en 164 NW 20th Street, Suite 209, Wynwood, Miami. Barberos argentinos, uruguayos y colombianos. Fades desde $50, barba, cejas, color masculino y el paquete Estrella VIP filmado. Estacionamiento gratis en el lugar. Se habla español e inglés.","slogan":"La mejor barbería de Miami","founder":{"@type":"Person","name":"Nico Jaffe","jobTitle":"Owner and Barber"},"address":{"@type":"PostalAddress","streetAddress":"164 NW 20th St, Suite 209","addressLocality":"Miami","addressRegion":"FL","postalCode":"33127","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":25.7997,"longitude":-80.1993},"hasMap":"https://www.google.com/maps?q=164+NW+20th+St+Suite+209+Miami+FL+33127","areaServed":[{"@type":"City","name":"Miami"},{"@type":"Place","name":"Wynwood"},{"@type":"Place","name":"Midtown Miami"},{"@type":"Place","name":"Edgewater"},{"@type":"Place","name":"Design District"},{"@type":"City","name":"Miami Beach"},{"@type":"AdministrativeArea","name":"Miami-Dade County"}],"knowsAbout":["Skin fade","Taper fade","Beard shaping","Eyebrow detailing","Men's hair color","Platinum blonde men's hair","Kids haircuts","Barber content reels"],"knowsLanguage":["es","en"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"20:00"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Carta de servicios","itemListElement":[
 {"@type":"Offer","price":"50","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Corte o Fade","description":"Skin fade, taper o corte a tijera."}},
 {"@type":"Offer","price":"65","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Corte + Barba","description":"Corte con perfilado completo de barba y toalla caliente."}},
 {"@type":"Offer","price":"40","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Corte de Niño","description":"Corte para niños con los mismos barberos."}},
@@ -899,7 +901,7 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
 {"@type":"Question","name":"¿Hablan inglés?","acceptedAnswer":{"@type":"Answer","text":"Español e inglés. El equipo es argentino, uruguayo y colombiano y trabaja en los dos idiomas."}},
 {"@type":"Question","name":"¿Hacen color y platinado en hombres?","acceptedAnswer":{"@type":"Answer","text":"Sí. Baño de color $75, mechas con corte $160, color global con corte $250. Conviene reservar."}},
 {"@type":"Question","name":"¿Vienen niños?","acceptedAnswer":{"@type":"Answer","text":"Sí. Corte de niño $40 con los mismos barberos. Hay sala de espera con bebidas y mesa de pool."}},
-{"@type":"Question","name":"¿Cuál es el horario?","acceptedAnswer":{"@type":"Answer","text":"De lunes a sábado, de 10 AM a 8 PM. Los domingos, de 11 AM a 3 PM."}}]}
+{"@type":"Question","name":"¿Cuál es el horario?","acceptedAnswer":{"@type":"Answer","text":"De lunes a sábado, de 10 AM a 8 PM. Los domingos está cerrado."}}]}
 </script>
 
 <script>
