@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<!-- Barberia de las Estrellas | Wynwood, Miami | Cross Designs build v1 -->
-<html lang="en">
+<!-- Barberia de las Estrellas | Wynwood, Miami | Cross Designs build v2 -->
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Barbershop in Wynwood Miami | Barberia de las Estrellas</title>
-<meta name="description" content="Leo Messi's barber cuts hair in Wynwood. Fades from $50, beard work, color and the Star VIP filmed cut at 164 NW 20th St, Miami. Call (786) 851-7794.">
-<meta name="keywords" content="barbershop Wynwood, barber Miami, barberia Miami, fade haircut Wynwood, beard trim Miami, barbero argentino Miami, barbero uruguayo Miami, hair color men Miami, Nico Jaffe barber">
+<title>Barberia en Wynwood Miami | Barberia de las Estrellas</title>
+<meta name="description" content="Barberia de precision en Wynwood, Miami. Fades desde $50, barba, color y el paquete Star VIP filmado. 164 NW 20th St. Reserva al (786) 851-7794.">
+<meta name="keywords" content="barberia Wynwood, barberia Miami, barber shop Wynwood, fade Miami, corte de pelo Wynwood, barbero argentino Miami, barbero uruguayo Miami, color de pelo hombre Miami">
 <meta name="author" content="Barberia de las Estrellas">
 <meta name="robots" content="index, follow">
 <meta name="geo.region" content="US-FL">
@@ -15,1095 +15,923 @@
 <meta name="ICBM" content="25.7997, -80.1993">
 <link rel="canonical" href="https://crossfiber.github.io/barberia-estrellas/">
 
-<meta property="og:title" content="Barbershop in Wynwood Miami | Barberia de las Estrellas">
-<meta property="og:description" content="Leo Messi's barber cuts hair in Wynwood. Fades from $50, beard work, color and the Star VIP filmed cut at 164 NW 20th St, Miami. Call (786) 851-7794.">
+<meta property="og:title" content="Barberia en Wynwood Miami | Barberia de las Estrellas">
+<meta property="og:description" content="Barberia de precision en Wynwood, Miami. Fades desde $50, barba, color y el paquete Star VIP filmado. 164 NW 20th St. Reserva al (786) 851-7794.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://crossfiber.github.io/barberia-estrellas/">
 <meta property="og:site_name" content="Barberia de las Estrellas">
-<meta property="og:locale" content="en_US">
-<meta property="og:locale:alternate" content="es_US">
-<meta property="og:image" content="https://crossfiber.github.io/barberia-estrellas/assets/og-share.png?v=1">
+<meta property="og:locale" content="es_US">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="https://crossfiber.github.io/barberia-estrellas/assets/og-share.png?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Barberia de las Estrellas, barbershop at 164 NW 20th Street in Wynwood, Miami">
+<meta property="og:image:alt" content="Barberia de las Estrellas, barberia en 164 NW 20th Street, Wynwood, Miami">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Barbershop in Wynwood Miami | Barberia de las Estrellas">
-<meta name="twitter:description" content="Leo Messi's barber cuts hair in Wynwood. Fades from $50, beard work, color and the Star VIP filmed cut at 164 NW 20th St, Miami. Call (786) 851-7794.">
-<meta name="twitter:image" content="https://crossfiber.github.io/barberia-estrellas/assets/og-share.png?v=1">
-<meta name="twitter:image:alt" content="Barberia de las Estrellas, barbershop at 164 NW 20th Street in Wynwood, Miami">
+<meta name="twitter:title" content="Barberia en Wynwood Miami | Barberia de las Estrellas">
+<meta name="twitter:description" content="Barberia de precision en Wynwood, Miami. Fades desde $50, barba, color y el paquete Star VIP filmado. 164 NW 20th St. Reserva al (786) 851-7794.">
+<meta name="twitter:image" content="https://crossfiber.github.io/barberia-estrellas/assets/og-share.png?v=2">
+<meta name="twitter:image:alt" content="Barberia de las Estrellas, barberia en Wynwood, Miami">
 
-<link rel="icon" type="image/png" href="assets/favicon.png?v=1">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" href="assets/favicon.png?v=2">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="assets/messi-nicojaffe.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="assets/cut-taper.jpg" fetchpriority="high">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Barlow:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
 /* ============ TOKENS ============ */
 :root{
-  /* Neutrals: sampled from the shop's own concrete walls and black fixtures */
-  --ink:#0F0D0B;          /* warm near-black, derived from the logo gold hue at low luminance */
-  --ink-2:#171410;        /* raised surface */
-  --ink-3:#282219;        /* hairline / border */
-  --bone:#F4F0E8;         /* off-white, never pure white */
-  --bone-2:#E9E3D7;       /* second light tone */
-  --concrete:#8E8880;     /* mid neutral from the shop floor */
-  --concrete-d:#57524B;
-  /* Brand: sampled directly from the logo PNG */
-  --gold:#EFB36B;         /* ACCENT. Interactive elements only. */
+  --ink:#0F0D0B;
+  --ink-2:#16130F;
+  --line:#2A2419;
+  --line-l:rgba(15,13,11,.16);
+  --bone:#F4F0E8;
+  --bone-2:#EAE4D8;
+  --concrete:#8E8880;
+  --concrete-d:#5B564E;
+  --gold:#EFB36B;
   --gold-d:#C9873A;
-  --gold-soft:rgba(239,179,107,.14);
 
-  --nav-h:82px; --nav-h-sm:66px;
-  --max:1280px;
-  --sh:0 18px 44px rgba(0,0,0,.34);
-  --sh-sm:0 6px 18px rgba(0,0,0,.18);
+  --nav-h:66px; --nav-h-sm:54px;
+  --max:1240px;
+  --pad:40px;
   --ease:cubic-bezier(.2,.8,.2,1);
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 20px);-webkit-text-size-adjust:100%}
+*{box-sizing:border-box;margin:0;padding:0;border-radius:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 16px);-webkit-text-size-adjust:100%}
 body{background:var(--bone);color:var(--ink);font-family:'Barlow',system-ui,sans-serif;font-size:16px;line-height:1.62;overflow-x:hidden}
-img{display:block;max-width:100%}
+img{display:block;max-width:100%;height:auto}
 a{color:inherit}
-h1,h2,h3{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.005em;line-height:1.04}
+h1,h2,h3{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.005em;line-height:1.05}
 p{max-width:70ch}
-:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:2px}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+svg.i{width:1em;height:1em;fill:currentColor;flex:0 0 auto;vertical-align:-.12em}
 
-section{padding:104px 0;position:relative}
+section{padding:92px 0;position:relative}
 section.ends-bleed{padding-bottom:0}
-.sec-alt{background:var(--bone-2)}
 .sec-dark{background:var(--ink);color:var(--bone)}
-.sec-dark p{color:#D8D2C7}
+.sec-dark p{color:#D6D0C5}
+.sec-alt{background:var(--bone-2)}
+.w{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
 
-/* Squad-number motif: the recurring mark of this build */
+.kicker{display:block;font-size:.7rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--concrete-d);margin-bottom:12px}
+.sec-dark .kicker{color:var(--gold)}
+.lead{font-size:1.05rem;max-width:58ch}
 .sq{font-family:'Anton',sans-serif;transform:skewX(-8deg);display:inline-block;line-height:1}
 
-.kicker{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--concrete-d)}
-.sec-dark .kicker{color:var(--gold)}
-.kicker::before{content:'';width:26px;height:2px;background:var(--gold);display:block}
-
-
-/* ============ BUTTONS ============ */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--gold);color:var(--ink);
-  font-family:'Barlow',sans-serif;font-weight:700;font-size:.95rem;letter-spacing:.04em;text-transform:uppercase;
-  padding:15px 26px;border:none;border-radius:2px;text-decoration:none;cursor:pointer;
-  box-shadow:0 6px 20px rgba(239,179,107,.26);transition:transform .18s var(--ease),background .18s,box-shadow .18s}
-.btn:hover{background:#F7C387;transform:translateY(-2px);box-shadow:0 12px 28px rgba(239,179,107,.34)}
-.btn:active{transform:translateY(0)}
-.btn-ghost{background:transparent;color:var(--bone);border:1.5px solid rgba(244,240,232,.42);box-shadow:none}
-.btn-ghost:hover{background:rgba(244,240,232,.1);color:var(--bone);border-color:var(--bone);box-shadow:none}
-.btn-ink{background:var(--ink);color:var(--bone);box-shadow:none}
+/* ============ BUTTONS: square, solid, no pills ============ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--gold);color:var(--ink);
+  font-family:'Barlow',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase;
+  padding:14px 24px;border:none;text-decoration:none;cursor:pointer;transition:background .18s,transform .18s var(--ease)}
+.btn:hover{background:#F8C88F;transform:translateY(-1px)}
+.btn:active{transform:none}
+.btn-line{background:transparent;color:var(--bone);border:1px solid rgba(244,240,232,.38)}
+.btn-line:hover{background:rgba(244,240,232,.08);border-color:var(--bone);color:var(--bone)}
+.btn-ink{background:var(--ink);color:var(--bone)}
 .btn-ink:hover{background:#2A241C;color:var(--bone)}
-.btn-sm{padding:11px 19px;font-size:.84rem}
-.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.btn-sm{padding:10px 16px;font-size:.78rem;letter-spacing:.08em}
 
-/* ============ NAV (solid from load, bone so the positive logo reads correctly) ============ */
+/* ============ NAV ============ */
 nav.site-nav{position:fixed;inset:0 0 auto 0;height:var(--nav-h);z-index:120;background:var(--bone);
-  border-bottom:1px solid rgba(15,13,11,.12);box-shadow:0 2px 14px rgba(15,13,11,.07);display:flex;align-items:center}
-.nav-inner{max-width:var(--max);margin:0 auto;padding:0 40px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:22px}
-.brand{display:flex;align-items:center;gap:11px;text-decoration:none;flex:0 0 auto}
-.brand img{height:54px;width:54px;object-fit:contain}
-.brand-txt{display:flex;flex-direction:column;line-height:1}
-.brand-txt b{font-family:'Anton',sans-serif;font-size:1.02rem;letter-spacing:.02em;text-transform:uppercase}
-.brand-txt span{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--concrete-d);font-weight:600;margin-top:3px}
-.nav-links{display:flex;gap:26px;list-style:none}
-.nav-links a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;font-weight:600;font-size:.87rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink);padding:0;border-bottom:2px solid transparent;transition:color .18s,border-color .18s}
+  border-bottom:1px solid var(--line-l);display:flex;align-items:center}
+.nav-in{max-width:var(--max);margin:0 auto;padding:0 var(--pad);width:100%;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none;min-width:0;min-height:44px}
+.brand img{height:40px;width:40px;object-fit:contain}
+.brand b{font-family:'Anton',sans-serif;font-size:.92rem;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav-links{display:flex;gap:22px;list-style:none}
+.nav-links a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;font-weight:600;font-size:.8rem;letter-spacing:.07em;text-transform:uppercase;border-bottom:2px solid transparent;transition:color .18s,border-color .18s}
 .nav-links a:hover{color:var(--gold-d);border-bottom-color:var(--gold)}
-.nav-right{display:flex;align-items:center;gap:16px;flex:0 0 auto}
-.nav-tel{text-decoration:none;font-weight:700;font-size:.9rem;color:var(--ink);display:inline-flex;align-items:center;min-height:44px;gap:8px;white-space:nowrap}
-.nav-tel i{color:var(--gold-d)}
-.nav-tel:hover{color:var(--gold-d)}
-.mobile-actions{display:none;align-items:center;gap:9px}
-.m-call{width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:var(--gold);border-radius:2px;text-decoration:none;font-size:1rem}
-.hamburger{width:44px;height:44px;background:transparent;border:1.5px solid rgba(15,13,11,.24);border-radius:2px;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;padding:0;-webkit-appearance:none;appearance:none}
-.hamburger span{display:block;width:21px;height:2.5px;background:var(--ink);border-radius:2px}
+.nav-right{display:flex;align-items:center;gap:10px}
 
-/* DRAWER: mechanics borrowed from P&C, re-skinned as a matchday team sheet */
-.nav-overlay{position:fixed;inset:0;background:rgba(15,13,11,.62);opacity:0;visibility:hidden;transition:opacity .28s;z-index:130}
-.nav-overlay.open{opacity:1;visibility:visible}
-.nav-drawer{position:fixed;top:0;right:0;width:334px;max-width:89vw;height:100dvh;background:var(--ink);color:var(--bone);
-  z-index:140;transform:translateX(100%);transition:transform .34s var(--ease);display:flex;flex-direction:column;
-  box-shadow:-2px 0 40px rgba(0,0,0,.55);padding-top:env(safe-area-inset-top)}
-.nav-drawer.open{transform:translateX(0)}
-.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--ink-3)}
-.drawer-head .dh-t{font-family:'Anton',sans-serif;font-size:.95rem;letter-spacing:.16em;color:var(--gold)}
-.drawer-close{background:none;border:none;color:var(--bone);width:44px;height:44px;font-size:1.3rem;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
-.drawer-close:hover{color:var(--gold)}
-.drawer-links{display:flex;flex-direction:column;flex:1;overflow-y:auto;min-height:0;padding:6px 0}
-.drawer-links a{display:flex;align-items:center;gap:16px;padding:14px 22px;text-decoration:none;color:var(--bone);
-  font-family:'Anton',sans-serif;font-size:1.14rem;letter-spacing:.03em;text-transform:uppercase;
-  border-bottom:1px solid rgba(40,34,25,.62);transition:background .2s,color .2s,padding-left .2s}
-.drawer-links a .n{font-family:'Anton',sans-serif;font-size:.78rem;color:var(--gold);opacity:.82;transform:skewX(-8deg);min-width:22px}
-.drawer-links a:hover,.drawer-links a:active{background:var(--ink-2);color:var(--gold);padding-left:28px}
-.drawer-foot{padding:16px 20px calc(18px + env(safe-area-inset-bottom));border-top:1px solid var(--ink-3);background:var(--ink-2);display:flex;flex-direction:column;gap:10px}
-.drawer-tel{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--bone);color:var(--ink);
-  text-decoration:none;font-weight:700;font-size:1rem;padding:13px;border-radius:2px}
-.drawer-tel i{color:var(--gold-d)}
-.drawer-note{font-size:.76rem;color:var(--concrete);text-align:center;letter-spacing:.04em}
-body.drawer-open{overflow:hidden}
-body.drawer-open .mobile-actions{visibility:hidden}
+.lang{display:inline-flex;border:1px solid var(--line-l);height:32px;flex:0 0 auto}
+.lang button,.m-tel,.burger,.nav-tel{position:relative}
+.lang button::after,.m-tel::after,.burger::after,.nav-tel::after{content:"";position:absolute;left:0;right:0;top:50%;height:44px;transform:translateY(-50%)}
+.lang button{background:none;border:none;cursor:pointer;font-family:'Barlow',sans-serif;font-weight:700;font-size:.7rem;
+  letter-spacing:.1em;padding:0 9px;color:var(--concrete-d);transition:background .16s,color .16s}
+.lang button + button{border-left:1px solid var(--line-l)}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--gold)}
+.lang button:hover:not([aria-pressed="true"]){color:var(--ink)}
+
+.nav-tel{display:inline-flex;align-items:center;gap:7px;height:32px;padding:0 10px;border:1px solid var(--line-l);
+  text-decoration:none;font-weight:700;font-size:.78rem;white-space:nowrap;transition:.16s}
+.nav-tel svg{color:var(--gold-d)}
+.nav-tel:hover{background:var(--ink);color:var(--bone)}
+.nav-tel:hover svg{color:var(--gold)}
+.m-only{display:none}
+.burger{width:34px;height:32px;background:none;border:1px solid var(--line-l);display:none;flex-direction:column;
+  align-items:center;justify-content:center;gap:4px;cursor:pointer;padding:0;-webkit-appearance:none;appearance:none}
+.burger span{display:block;width:16px;height:2px;background:var(--ink)}
+.m-tel{display:none;width:34px;height:32px;align-items:center;justify-content:center;background:var(--ink);color:var(--gold);text-decoration:none;font-size:.9rem}
+
+/* ============ DRAWER ============ */
+.ov{position:fixed;inset:0;background:rgba(15,13,11,.6);opacity:0;visibility:hidden;transition:opacity .26s;z-index:130}
+.ov.open{opacity:1;visibility:visible}
+.drawer{position:fixed;top:0;right:0;width:310px;max-width:86vw;height:100dvh;background:var(--ink);color:var(--bone);
+  z-index:140;transform:translateX(100%);transition:transform .3s var(--ease);display:flex;flex-direction:column;
+  padding-top:env(safe-area-inset-top)}
+.drawer.open{transform:translateX(0)}
+.dr-top{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:1px solid var(--line)}
+.dr-top span{font-family:'Anton',sans-serif;font-size:.8rem;letter-spacing:.2em;color:var(--gold)}
+.dr-x{background:none;border:none;color:var(--bone);width:40px;height:40px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.1rem}
+.dr-x:hover{color:var(--gold)}
+.dr-links{display:flex;flex-direction:column;flex:1;overflow-y:auto;min-height:0;padding:14px 0}
+.dr-links a{display:block;padding:11px 22px;text-decoration:none;color:var(--bone);
+  font-family:'Anton',sans-serif;font-size:1.22rem;letter-spacing:.03em;text-transform:uppercase;transition:color .18s,padding-left .18s}
+.dr-links a:hover,.dr-links a:active{color:var(--gold);padding-left:28px}
+.dr-foot{padding:16px 20px calc(18px + env(safe-area-inset-bottom));border-top:1px solid var(--line);display:flex;flex-direction:column;gap:9px}
+.dr-tel{display:flex;align-items:center;justify-content:center;gap:9px;background:var(--bone);color:var(--ink);text-decoration:none;font-weight:700;font-size:.98rem;padding:12px}
+.dr-tel svg{color:var(--gold-d)}
+.dr-note{font-size:.74rem;color:var(--concrete);text-align:center;letter-spacing:.05em}
+body.dopen{overflow:hidden}
+body.dopen .m-only{visibility:hidden}
 
 /* ============ HERO ============ */
-.hero{background:var(--ink);color:var(--bone);padding:calc(var(--nav-h) + 62px) 0 96px;position:relative;overflow:hidden}
-.hero::after{content:'';position:absolute;right:-8%;top:-14%;width:52vw;height:52vw;max-width:720px;max-height:720px;
-  background:radial-gradient(circle,rgba(239,179,107,.11) 0%,transparent 62%);pointer-events:none}
-.hero-grid{max-width:var(--max);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1.04fr .96fr;gap:56px;align-items:center;position:relative;z-index:2}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(239,179,107,.42);color:var(--gold);
-  font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:7px 14px;border-radius:2px;margin-bottom:24px}
-.hero h1{font-size:clamp(2.35rem,4.4vw,4.05rem);margin-bottom:20px}
+.hero{background:var(--ink);color:var(--bone);padding:calc(var(--nav-h) + 58px) 0 80px;overflow:hidden}
+.hero-g{max-width:var(--max);margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center}
+.eyebrow{display:block;font-size:.68rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.hero h1{font-size:clamp(2.4rem,4.6vw,4.1rem);margin-bottom:20px}
 .hero h1 .g{color:var(--gold)}
-.hero .lede{font-size:1.09rem;color:#D8D2C7;margin-bottom:28px;max-width:56ch}
+.hero .lede{font-size:1.06rem;color:#D6D0C5;margin-bottom:26px;max-width:52ch}
 .hero .lede b{color:var(--bone);font-weight:600}
-.hero-ctas{display:flex;flex-wrap:wrap;gap:13px;margin-bottom:22px}
-.hero-note{display:flex;align-items:center;gap:10px;font-size:.86rem;color:var(--concrete);letter-spacing:.02em}
-.hero-note i{color:var(--gold)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:11px;margin-bottom:20px}
+.hero-note{font-size:.84rem;color:var(--concrete);padding-top:16px;border-top:1px solid var(--line);max-width:44ch}
 .hero-media{position:relative}
-.hero-photo{position:relative;border-radius:3px;overflow:hidden;box-shadow:var(--sh);aspect-ratio:1290/1239}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 22%}
-.hero-photo::after{content:'';position:absolute;inset:auto 0 0 0;height:46%;background:linear-gradient(to top,rgba(15,13,11,.9),transparent)}
-.photo-tag{position:absolute;left:20px;right:20px;bottom:18px;z-index:3;display:flex;align-items:flex-end;justify-content:space-between;gap:14px}
-.photo-tag .pt-l{font-family:'Anton',sans-serif;font-size:1.02rem;letter-spacing:.03em;color:var(--bone);line-height:1.2}
-.photo-tag .pt-s{display:block;font-family:'Barlow',sans-serif;font-weight:500;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-top:5px}
-.photo-tag .pt-n{font-family:'Anton',sans-serif;font-size:2.6rem;color:var(--gold);transform:skewX(-8deg);line-height:.8;opacity:.95}
+.hero-media img{width:100%;object-fit:cover;aspect-ratio:3/4;max-height:540px}
+.hero-cap{margin-top:12px;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--concrete)}
 
-/* ============ ROSTER STRIP (overlaps the hero bottom) ============ */
-.roster{background:var(--ink-2);border-top:2px solid var(--gold);margin-top:-52px;position:relative;z-index:6;padding:30px 0 34px;color:var(--bone)}
-.roster-head{max-width:var(--max);margin:0 auto 18px;padding:0 40px;display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap}
-.roster-head h2{font-size:1.16rem;letter-spacing:.13em;color:var(--bone)}
-.roster-head .rh-sub{font-size:.8rem;color:var(--concrete);letter-spacing:.05em}
-.roster-head .rh-sub a{display:inline-flex;align-items:center;min-height:44px}
-.roster-track{display:flex;gap:0;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:40px;padding:0 40px 4px;
-  max-width:var(--max);margin:0 auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-.roster-track::-webkit-scrollbar{display:none}
-.rp{flex:0 0 25%;scroll-snap-align:start;padding:6px 22px 4px;border-left:1px solid var(--ink-3);min-width:0}
-.rp:first-child{border-left:none;padding-left:0}
-.rp .rp-name{font-family:'Anton',sans-serif;font-size:1.28rem;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.rp .rp-club{font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-top:5px}
-.rp .rp-note{font-size:.79rem;color:var(--concrete);margin-top:6px;line-height:1.45}
+/* ============ PROMISE STRIP ============ */
+.promise{background:var(--ink-2);border-top:1px solid var(--gold);position:relative;z-index:5;margin-top:-40px;padding:26px 0;color:var(--bone)}
+.promise .w{display:flex;align-items:baseline;gap:26px;flex-wrap:wrap}
+.promise p{font-family:'Anton',sans-serif;font-size:clamp(1rem,1.9vw,1.35rem);text-transform:uppercase;letter-spacing:.02em;color:var(--bone);max-width:none}
+.promise small{font-size:.78rem;color:var(--concrete);letter-spacing:.05em}
 
-/* ============ EL 10 (leads with a pull quote, no centered heading) ============ */
-.quote-lead{max-width:var(--max);margin:0 auto 54px;padding:0 40px;display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:start}
-.quote-lead .qm{font-family:'Anton',sans-serif;font-size:6.4rem;line-height:.66;color:var(--gold);transform:skewX(-8deg)}
-.quote-lead blockquote{font-family:'Anton',sans-serif;font-size:clamp(1.85rem,3.7vw,3.1rem);line-height:1.08;text-transform:uppercase;max-width:20ch}
-.quote-lead .qt{font-size:1.02rem;color:var(--concrete-d);margin-top:16px;font-style:italic;max-width:44ch}
-.ten-grid{max-width:var(--max);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1fr 1fr;gap:48px}
-.ten-grid p{margin-bottom:16px;font-size:1.03rem}
-.ten-points{list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:6px}
-.ten-points li{display:flex;gap:13px;font-size:.98rem;line-height:1.55}
-.ten-points i{color:var(--gold-d);font-size:1.02rem;margin-top:4px;flex:0 0 20px}
-.ten-points b{font-weight:700}
+/* ============ SECTION HEAD ============ */
+.head{max-width:var(--max);margin:0 auto 44px;padding:0 var(--pad)}
+.head h2{font-size:clamp(1.9rem,3.6vw,3rem);max-width:18ch}
+.head-split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}
 
-/* CONTAINER BREAK: the shop, edge to edge */
-.bleed-band{position:relative;margin:78px 0 0;width:100vw;left:50%;transform:translateX(-50%);overflow:hidden;background:var(--ink)}
-.bleed-band img{width:100%;height:clamp(190px,26vw,330px);object-fit:cover;object-position:center 42%}
-.bleed-cap{position:absolute;left:0;right:0;bottom:0;padding:52px 40px 18px;
-  background:linear-gradient(to top,rgba(15,13,11,.92),transparent);color:var(--bone);
-  font-size:.92rem;letter-spacing:.03em;display:flex;align-items:center;gap:12px}
-.bleed-cap i{color:var(--gold)}
-.bleed-cap b{font-weight:700}
+/* ============ BEFORE / AFTER ============ */
+.ba{max-width:var(--max);margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.ba figure{position:relative;background:var(--ink);margin:0}
+.ba img{width:100%;aspect-ratio:3/4;object-fit:cover;max-height:620px}
+.ba figcaption{position:absolute;top:0;left:0;background:var(--gold);color:var(--ink);
+  font-family:'Anton',sans-serif;font-size:.8rem;letter-spacing:.18em;padding:7px 14px}
+.ba-note{max-width:var(--max);margin:18px auto 0;padding:0 var(--pad);font-size:.86rem;color:var(--concrete-d)}
+.sec-dark .ba-note{color:var(--concrete)}
 
-/* ============ LA CARTA: split-screen duplex ============ */
-.carta-head{max-width:var(--max);margin:0 auto 46px;padding:0 40px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}
-.carta-head h2{font-size:clamp(2rem,3.9vw,3.2rem);margin-top:14px}
-.carta-head .ch-r{font-size:1.02rem;color:#D8D2C7;padding-bottom:6px}
-.duplex{max-width:var(--max);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:.82fr 1.18fr;gap:44px;align-items:start}
-.duplex-media{position:sticky;top:calc(var(--nav-h) + 28px)}
-.dm-photo{position:relative;border-radius:3px;overflow:hidden;aspect-ratio:3/2;background:var(--ink-2);border:1px solid var(--ink-3)}
-.dm-photo img{width:100%;height:100%;object-fit:cover;object-position:center 62%}
-.dm-cap{margin-top:16px;font-size:.88rem;color:var(--concrete);line-height:1.55}
-.dm-cap b{color:var(--gold);font-weight:600;display:block;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:5px}
-.dm-badge{position:absolute;left:0;bottom:0;background:var(--gold);color:var(--ink);font-family:'Anton',sans-serif;
-  font-size:.86rem;letter-spacing:.1em;padding:9px 16px}
+/* ============ CUT GRID ============ */
+.cuts{max-width:var(--max);margin:56px auto 0;padding:0 var(--pad);display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.cuts > *{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--ink);margin:0}
+.cuts img{width:100%;height:100%;object-fit:cover}
+.cut-tag{position:absolute;left:0;bottom:0;background:rgba(15,13,11,.82);color:var(--bone);font-size:.68rem;
+  letter-spacing:.14em;text-transform:uppercase;padding:6px 11px}
 
-.ledger-group{margin-bottom:36px}
-.lg-title{display:flex;align-items:baseline;gap:14px;width:100%;padding:0 0 11px;border:none;border-bottom:2px solid var(--gold);
-  margin-bottom:2px;background:none;text-align:left;font-family:'Barlow',sans-serif;cursor:default;color:inherit}
-.lg-range,.lg-i{display:none}
-.lg-rows{display:block}
-.lg-title .lg-n{font-family:'Anton',sans-serif;font-size:.86rem;color:var(--gold);transform:skewX(-8deg)}
-.lg-title h3{font-size:1.12rem;letter-spacing:.11em;color:var(--bone)}
-.lg-title .lg-x{margin-left:auto;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--concrete)}
-.lrow{display:grid;grid-template-columns:1fr auto auto;gap:18px;align-items:center;padding:17px 0;border-bottom:1px solid var(--ink-3);transition:background .18s}
-.lrow:hover{background:rgba(239,179,107,.05)}
-.lrow .lr-l{min-width:0}
-.lrow .lr-n{font-family:'Anton',sans-serif;font-size:1.05rem;letter-spacing:.03em;color:var(--bone);display:flex;align-items:center;gap:10px}
-.lrow .lr-n i{color:var(--gold);font-size:.9rem}
-.lrow .lr-d{font-size:.86rem;color:var(--concrete);margin-top:4px;line-height:1.5;max-width:46ch}
-.lrow .lr-p{font-family:'Anton',sans-serif;font-size:1.42rem;color:var(--gold);transform:skewX(-8deg);white-space:nowrap}
-.lrow .lr-b{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:76px;font-size:.76rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--bone);text-decoration:none;
-  border:1px solid rgba(244,240,232,.3);padding:8px 13px;border-radius:2px;white-space:nowrap;transition:.18s}
-.lrow .lr-b:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}
-.carta-foot{max-width:var(--max);margin:34px auto 0;padding-bottom:0;padding:0 40px;display:flex;flex-wrap:wrap;align-items:center;gap:16px}
-.carta-foot .cf-t{font-size:.92rem;color:var(--concrete);flex:1;min-width:240px}
+.ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;padding:18px;
+  background:#191510;color:#7E766B;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;line-height:1.5;
+  border-top:2px solid var(--gold-d)}
+.ph em{font-style:normal;color:var(--gold-d);font-size:1.5rem;font-family:'Anton',sans-serif;letter-spacing:0}
+.ph.light{background:#DFD8CA;color:#6B6459}
 
-/* ============ STAR VIP POSTER BAND (container break #2) ============ */
-.vip{position:relative;width:100vw;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--ink);padding:66px 0;overflow:hidden}
-.vip::before{content:'';position:absolute;right:-40px;top:50%;transform:translateY(-50%) skewX(-8deg);width:340px;height:340px;border:44px solid rgba(15,13,11,.055);border-radius:50%}
-.vip-inner{max-width:var(--max);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:auto 1fr auto;gap:38px;align-items:center;position:relative;z-index:2}
-.vip-n{font-family:'Anton',sans-serif;font-size:clamp(4rem,9vw,7.4rem);line-height:.78;transform:skewX(-8deg);color:var(--ink);opacity:.16}
-.vip h2{font-size:clamp(1.8rem,3.5vw,2.9rem);margin-bottom:12px}
-.vip p{font-size:1.03rem;max-width:52ch;color:#2E2820}
-.vip .vip-price{font-family:'Anton',sans-serif;font-size:3.1rem;transform:skewX(-8deg);line-height:1}
-.vip .vip-price small{display:block;transform:skewX(8deg);font-family:'Barlow',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-top:8px}
+/* ============ LA CARTA ============ */
+.duplex{max-width:var(--max);margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:.78fr 1.22fr;gap:46px;align-items:start}
+.dm{position:sticky;top:calc(var(--nav-h) + 26px)}
+.dm img{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:center 62%}
+.dm p{margin-top:14px;font-size:.86rem;color:var(--concrete)}
+.dm b{display:block;color:var(--gold);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:5px;font-weight:600}
+.lgroup{margin-bottom:34px}
+.lgt{display:flex;align-items:baseline;gap:12px;width:100%;padding:0 0 10px;border:none;border-bottom:1px solid var(--gold);
+  background:none;text-align:left;font-family:'Barlow',sans-serif;color:inherit;cursor:default}
+.lgt h3{font-size:1.02rem;letter-spacing:.14em;color:var(--bone)}
+.lgt .n{font-family:'Anton',sans-serif;font-size:.8rem;color:var(--gold);transform:skewX(-8deg)}
+.lgt .x{margin-left:auto;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--concrete)}
+.lgt .rng,.lgt .ind{display:none}
+.lgr{display:block}
+.lrow{display:grid;grid-template-columns:1fr auto auto;gap:16px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line)}
+.lrow .n{font-family:'Anton',sans-serif;font-size:1rem;letter-spacing:.03em;color:var(--bone)}
+.lrow .d{font-size:.83rem;color:var(--concrete);margin-top:3px;line-height:1.5;max-width:44ch}
+.lrow .p{font-family:'Anton',sans-serif;font-size:1.35rem;color:var(--gold);transform:skewX(-8deg);white-space:nowrap}
+.lrow .b{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:74px;font-size:.72rem;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--bone);text-decoration:none;border:1px solid rgba(244,240,232,.28);padding:6px 12px;transition:.16s}
+.lrow .b:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.carta-foot{max-width:var(--max);margin:30px auto 0;padding:0 var(--pad);display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+.carta-foot p{font-size:.9rem;color:var(--concrete);flex:1;min-width:230px}
+
+/* ============ STAR VIP ============ */
+.vip{width:100vw;left:50%;transform:translateX(-50%);position:relative;background:var(--gold);color:var(--ink);padding:56px 0;margin:70px 0 0}
+.vip-in{max-width:var(--max);margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:auto 1fr auto;gap:34px;align-items:center}
+.vip .num{font-family:'Anton',sans-serif;font-size:clamp(3.4rem,8vw,6.4rem);line-height:.8;transform:skewX(-8deg);opacity:.17}
+.vip h2{font-size:clamp(1.7rem,3.2vw,2.6rem);margin-bottom:10px}
+.vip p{color:#2E2820;max-width:50ch}
+.vip .price{font-family:'Anton',sans-serif;font-size:2.9rem;transform:skewX(-8deg);line-height:1}
+.vip .price small{display:block;transform:skewX(8deg);font-family:'Barlow',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-top:6px}
 .vip-cta{display:flex;flex-direction:column;align-items:flex-end;gap:14px}
 
-/* ============ EL EQUIPO: team sheet, numbered rows ============ */
-.sheet{max-width:1080px;margin:0 auto;padding:0 40px}
-.sheet-row{display:grid;grid-template-columns:56px 96px 1fr 172px;gap:22px;align-items:center;padding:18px 0;border-bottom:1px solid rgba(15,13,11,.14)}
-.sheet-row:first-of-type{border-top:2px solid var(--ink)}
-.sheet-row .sr-n{font-family:'Anton',sans-serif;font-size:1.9rem;color:var(--gold-d);transform:skewX(-8deg);line-height:1}
-.sheet-av{width:96px;height:96px;border-radius:50%;overflow:hidden;background:var(--ink-2);position:relative}
-.sheet-av img{width:100%;height:100%;object-fit:cover;object-position:center 12%}
-.sheet-row h3{font-size:1.32rem;letter-spacing:.02em}
-.sheet-row .sr-role{font-size:.85rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--concrete-d);margin-top:5px}
-.sheet-row .sr-b{display:inline-flex;align-items:center;justify-content:center;min-height:44px;font-size:.76rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--ink);border:1.5px solid var(--ink);padding:9px 15px;border-radius:2px;white-space:nowrap;transition:.18s}
-.sheet-row .sr-b:hover{background:var(--gold);border-color:var(--gold)}
-.sheet-note{max-width:1080px;margin:22px auto 0;padding:0 40px;font-size:.86rem;color:var(--concrete-d)}
+/* ============ GUESTS ============ */
+.guests{max-width:var(--max);margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
+.guests figure{position:relative;margin:0;background:var(--ink);overflow:hidden}
+.guests img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
+.gcap{position:absolute;left:0;right:0;bottom:0;padding:36px 14px 12px;
+  background:linear-gradient(to top,rgba(15,13,11,.94),transparent);color:var(--bone)}
+.gcap b{display:block;font-family:'Anton',sans-serif;font-size:1rem;letter-spacing:.02em;text-transform:uppercase}
+.gcap span{display:block;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-top:3px}
 
-/* Placeholder tiles: honest, labelled, obviously not final art */
-.ph{background:repeating-linear-gradient(135deg,#D9D3C7 0 12px,#D2CBBE 12px 24px);border:2px dashed var(--gold-d);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:16px;
-  color:#5C564D;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.4}
-.ph i{font-size:1.4rem;color:var(--gold-d)}
-.ph.dark{background:repeating-linear-gradient(135deg,#1C1813 0 12px,#221D16 12px 24px);color:#9A9187}
-.sheet-av .ph{border-radius:50%;border-width:2px;font-size:.56rem;padding:8px;gap:4px}
-.sheet-av .ph i{font-size:1rem}
+/* ============ TEAM ============ */
+.team{max-width:1020px;margin:0 auto;padding:0 var(--pad)}
+.trow{display:grid;grid-template-columns:84px 1fr 160px;gap:20px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line-l)}
+.trow:first-child{border-top:1px solid var(--ink)}
+.tav{width:84px;height:84px;overflow:hidden;background:var(--bone-2)}
+.tav img{width:100%;height:100%;object-fit:cover;object-position:center 12%}
+.trow h3{font-size:1.2rem}
+.trow .r{font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--concrete-d);margin-top:3px}
+.trow .b{display:inline-flex;align-items:center;justify-content:center;min-height:44px;font-size:.72rem;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;text-decoration:none;border:1px solid var(--ink);padding:8px 14px;transition:.16s}
+.trow .b:hover{background:var(--gold);border-color:var(--gold)}
+.team-note{max-width:1020px;margin:18px auto 0;padding:0 var(--pad);font-size:.83rem;color:var(--concrete-d)}
 
-/* ============ WORK GALLERY ============ */
-.work-head{max-width:var(--max);margin:0 auto 34px;padding:0 40px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
-.work-head h2{font-size:clamp(1.9rem,3.6vw,2.9rem);max-width:16ch}
-.work-head .wh-r{font-size:.95rem;color:#D8D2C7;max-width:38ch}
-.work-grid{max-width:var(--max);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.work-grid > *{aspect-ratio:4/3;border-radius:2px;overflow:hidden;margin:0}
-.work-grid img{width:100%;height:100%;object-fit:cover}
-.work-hint{display:none;align-items:center;gap:9px;max-width:var(--max);margin:12px auto 0;padding:0 26px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--concrete)}
-.work-hint i{color:var(--gold)}
-
-/* ============ WYNWOOD / LOCATION ============ */
-.loc-grid{max-width:var(--max);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
-.loc-l h2{font-size:clamp(2rem,3.9vw,3rem);margin-bottom:16px}
-.loc-addr{font-style:normal;font-size:1.06rem;line-height:1.7;margin:18px 0 22px}
-.loc-addr a{display:inline-flex;align-items:center;min-height:44px;color:var(--gold-d);font-weight:700;text-decoration:none}
-.loc-addr a:hover{text-decoration:underline}
-.loc-perks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;margin-bottom:26px}
-.loc-perks li{display:flex;gap:11px;font-size:.93rem;line-height:1.45;min-height:24px}
-.loc-perks i{color:var(--gold-d);margin-top:3px}
-.hours{border-top:2px solid var(--ink);width:100%}
-.hours .hr{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(15,13,11,.13);font-size:.94rem}
-.hours .hr b{font-weight:600}
-.hours .hr.closed{color:var(--concrete-d)}
-.hours .hr.today{background:var(--gold-soft);padding-left:10px;padding-right:10px;margin:0 -10px}
-.map-frame{border-radius:3px;overflow:hidden;border:1px solid rgba(15,13,11,.16);box-shadow:var(--sh-sm);background:var(--bone-2)}
-.map-frame iframe{display:block;width:100%;height:440px;border:0;filter:grayscale(.35) contrast(1.05)}
+/* ============ LOCATION ============ */
+.loc{max-width:var(--max);margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:.9fr 1.1fr;gap:46px;align-items:start}
+.addr{font-style:normal;font-size:1.02rem;line-height:1.75;margin:16px 0 20px}
+.addr a{display:inline-flex;align-items:center;min-height:44px;color:var(--gold-d);font-weight:700;text-decoration:none}
+.addr a:hover{text-decoration:underline}
+.perks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:9px 18px;margin-bottom:24px}
+.perks li{font-size:.9rem;padding-left:14px;position:relative}
+.perks li::before{content:'';position:absolute;left:0;top:.62em;width:6px;height:1px;background:var(--gold-d)}
+.hours{border-top:1px solid var(--ink)}
+.hr{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line-l);font-size:.92rem}
+.hr.closed{color:var(--concrete-d)}
+.hr.today{color:var(--gold-d);font-weight:700}
+.map{border:1px solid var(--line-l)}
+.map iframe{display:block;width:100%;height:420px;border:0;filter:grayscale(.4) contrast(1.05)}
 
 /* ============ FAQ ============ */
-.faq-wrap{max-width:var(--max);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:.72fr 1.28fr;gap:52px;align-items:start}
-.faq-intro h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin:14px 0 14px}
-.faq-intro p{margin-bottom:22px}
-.acc-item{border-bottom:1px solid rgba(15,13,11,.15)}
-.acc-item:first-child{border-top:2px solid var(--ink)}
-.acc-head{width:100%;background:none;border:none;text-align:left;cursor:pointer;padding:19px 44px 19px 0;position:relative;
-  font-family:'Barlow',sans-serif;font-weight:600;font-size:1.03rem;color:var(--ink);line-height:1.45}
-.acc-head i{position:absolute;right:6px;top:22px;color:var(--gold-d);font-size:.95rem;transition:transform .3s var(--ease)}
-.acc-item.open .acc-head i{transform:rotate(45deg)}
-.acc-head:hover{color:var(--gold-d)}
-.acc-body{max-height:0;overflow:hidden;transition:max-height .34s var(--ease)}
-.acc-inner{padding:0 34px 21px 0;font-size:.97rem;color:#463F37;line-height:1.68}
+.faq{max-width:var(--max);margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:.7fr 1.3fr;gap:50px;align-items:start}
+.ai{border-bottom:1px solid var(--line-l)}
+.ai:first-child{border-top:1px solid var(--ink)}
+.ah{width:100%;background:none;border:none;text-align:left;cursor:pointer;padding:17px 40px 17px 0;position:relative;
+  font-family:'Barlow',sans-serif;font-weight:600;font-size:1rem;color:var(--ink);line-height:1.45}
+.ah::after,.ah::before{content:'';position:absolute;right:6px;top:50%;background:var(--gold-d);transition:transform .28s var(--ease)}
+.ah::before{width:13px;height:1.5px;margin-top:-.75px}
+.ah::after{width:1.5px;height:13px;margin-top:-6.5px;right:11.75px}
+.ai.open .ah::after{transform:rotate(90deg)}
+.ah:hover{color:var(--gold-d)}
+.ab{max-height:0;overflow:hidden;transition:max-height .32s var(--ease)}
+.ab-in{padding:0 30px 19px 0;font-size:.95rem;color:#453E36;line-height:1.68}
 
 /* ============ CONTACT ============ */
-.ct-head{max-width:var(--max);margin:0 auto 42px;padding:0 40px;text-align:center}
-.ct-head h2{font-size:clamp(2rem,4vw,3.1rem);margin-top:14px}
-.ct-head p{margin:14px auto 0}
-.ct-grid{max-width:1080px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1.12fr .88fr;gap:26px;align-items:start}
-.form-card{background:var(--ink-2);border:1px solid var(--ink-3);border-radius:3px;padding:32px 30px}
-.form-card h3{font-size:1.24rem;margin-bottom:6px;color:var(--bone)}
-.fsub{font-size:.9rem;color:var(--concrete);margin-bottom:22px}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.field{margin-bottom:15px}
-.field label{display:block;font-size:.76rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--gold);margin-bottom:7px}
-.field input,.field select,.field textarea{width:100%;background:var(--ink);border:1px solid var(--ink-3);border-radius:2px;
-  padding:12px 14px;color:var(--bone);font-family:'Barlow',sans-serif;font-size:.97rem;transition:border-color .18s}
-.field textarea{min-height:104px;resize:vertical}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);outline:none}
-.field input::placeholder,.field textarea::placeholder{color:#6B655C}
-.field .msg{display:none;font-size:.8rem;color:#F0A38A;margin-top:6px}
-.field.err input,.field.err select,.field.err textarea{border-color:#C9603F}
-.field.err .msg{display:block}
-.form-status{display:none;margin-top:16px;padding:13px 15px;border-radius:2px;font-size:.92rem}
-.form-status.show{display:block}
-.form-status.ok{background:rgba(239,179,107,.14);border:1px solid var(--gold);color:var(--bone)}
-.form-status.bad{background:rgba(201,96,63,.14);border:1px solid #C9603F;color:#F2C6B6}
-.form-disc{font-size:.8rem;color:var(--concrete);margin-top:14px;line-height:1.5}
-.info-card{background:var(--ink-2);border:1px solid var(--ink-3);border-radius:3px;padding:32px 30px}
-.info-card h3{font-size:1.24rem;margin-bottom:20px;color:var(--bone)}
-.info-row{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid var(--ink-3)}
-.info-row:last-of-type{border-bottom:none}
-.ii{width:38px;height:38px;flex:0 0 38px;display:inline-flex;align-items:center;justify-content:center;background:var(--ink);border:1px solid var(--ink-3);border-radius:2px;color:var(--gold)}
-.it{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--concrete);margin-bottom:3px}
-.info-row a{display:inline-flex;align-items:center;min-height:44px;color:var(--bone);text-decoration:none;font-weight:600;font-size:.98rem}
-.info-row a:hover{color:var(--gold)}
-.info-row span{font-size:.95rem;color:#D8D2C7}
+.ct{max-width:1060px;margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:start}
+.f{margin-bottom:16px}
+.f label{display:block;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.f input,.f select,.f textarea{width:100%;min-height:44px;background:transparent;border:none;border-bottom:1px solid var(--line);
+  padding:9px 0;color:var(--bone);font-family:'Barlow',sans-serif;font-size:.98rem;transition:border-color .18s}
+.f textarea{min-height:80px;resize:vertical}
+.f select option{background:var(--ink);color:var(--bone)}
+.f input:focus,.f select:focus,.f textarea:focus{border-bottom-color:var(--gold);outline:none}
+.f input::placeholder,.f textarea::placeholder{color:#6A6459}
+.f .m{display:none;font-size:.78rem;color:#EDA98C;margin-top:5px}
+.f.err input,.f.err select,.f.err textarea{border-bottom-color:#C9603F}
+.f.err .m{display:block}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fstat{display:none;margin-top:14px;padding:12px 0;border-top:1px solid var(--gold);font-size:.9rem;color:var(--bone)}
+.fstat.show{display:block}
+.fstat.bad{border-top-color:#C9603F;color:#F0C6B6}
+.fdisc{font-size:.78rem;color:var(--concrete);margin-top:12px}
+.irow{display:flex;flex-direction:column;gap:2px;padding:12px 0;border-bottom:1px solid var(--line)}
+.irow:last-of-type{border-bottom:none}
+.irow .t{font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--concrete)}
+.irow a{color:var(--bone);text-decoration:none;font-weight:600;font-size:.98rem;display:inline-flex;align-items:center;min-height:44px}
+.irow a:hover{color:var(--gold)}
+.irow span:not(.t){font-size:.94rem;color:#D6D0C5}
 
 /* ============ FOOTER ============ */
-footer{background:#0A0908;color:#CFC9BE;padding:64px 0 0}
-.foot-grid{max-width:var(--max);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1.1fr;gap:40px}
-.foot-brand .fb-chip{display:inline-block;background:var(--bone);border-radius:50%;padding:6px;line-height:0;margin-bottom:16px}
-.foot-brand .fb-chip img{width:74px;height:74px;object-fit:contain}
-.foot-brand p{font-size:.92rem;line-height:1.62;color:#9A938A;max-width:36ch}
-.foot-social{display:flex;gap:10px;margin-top:18px}
-.foot-social a{width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #26211A;border-radius:2px;color:#CFC9BE;text-decoration:none;transition:.18s}
-.foot-social a:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}
-.foot-col h4{font-family:'Anton',sans-serif;font-size:.92rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
-.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:2px}
-.foot-col a{display:inline-flex;align-items:center;min-height:44px;color:#9A938A;text-decoration:none;font-size:.92rem}
-.foot-col a:hover{color:var(--gold)}
-.foot-col address{font-style:normal;font-size:.92rem;line-height:1.85;color:#9A938A}
-.foot-col address a{color:#CFC9BE;font-weight:600}
-.foot-bottom{max-width:var(--max);margin:46px auto 0;padding:20px 40px calc(24px + env(safe-area-inset-bottom));border-top:1px solid #1C1811;
-  display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:.82rem;color:#726B62}
-.foot-bottom .fb-links{display:flex;gap:6px}
-.foot-bottom .fb-links a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px}
-.foot-bottom a{color:#726B62;text-decoration:none}
-.foot-bottom a:hover{color:var(--gold)}
-.built-by{display:inline-flex;align-items:center;min-height:44px;gap:9px;text-decoration:none;color:#726B62}
-.built-by img{height:19px;width:auto;opacity:.86}
-.built-by:hover img{opacity:1}
+footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
+.fg{max-width:var(--max);margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:1.5fr 1fr 1fr 1.1fr;gap:36px}
+.fb .chip{display:inline-block;background:var(--bone);padding:6px;line-height:0;margin-bottom:14px}
+.fb .chip img{width:64px;height:64px;object-fit:contain}
+.fb p{font-size:.88rem;line-height:1.6;color:#948D84;max-width:34ch}
+.fsoc{display:flex;gap:8px;margin-top:16px}
+.fsoc a{width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #241F19;color:#CFC9BE;text-decoration:none;font-size:.72rem;font-weight:700;letter-spacing:.06em;transition:.16s}
+.fsoc a:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.fc h4{font-family:'Anton',sans-serif;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.fc ul{list-style:none}
+.fc a{display:inline-flex;align-items:center;min-height:44px;color:#948D84;text-decoration:none;font-size:.88rem}
+.fc a:hover{color:var(--gold)}
+.fc address{font-style:normal;font-size:.88rem;line-height:1.9;color:#948D84}
+.fc address a{color:#CFC9BE;font-weight:600;min-height:44px}
+.fbot{max-width:var(--max);margin:40px auto 0;padding:18px var(--pad) calc(22px + env(safe-area-inset-bottom));border-top:1px solid #1A1610;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.8rem;color:#6E6860}
+.fbot a{color:#6E6860;text-decoration:none}
+.fbot a:hover{color:var(--gold)}
+.fbl{display:flex;gap:4px}
+.fbl a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px}
+.by{display:inline-flex;align-items:center;min-height:44px;gap:8px;text-decoration:none;color:#6E6860}
+.by img{height:18px;width:auto;opacity:.85}
+.by:hover img{opacity:1}
 
 /* ============ TABLET ============ */
-@media(max-width:1120px){
-  .nav-links{gap:18px}
-  .nav-links a{font-size:.81rem}
-  .duplex{grid-template-columns:.9fr 1.1fr;gap:32px}
-  .foot-grid{grid-template-columns:1fr 1fr 1fr;gap:34px}
-  .foot-brand{grid-column:1/-1}
+@media(max-width:1080px){
+  :root{--pad:26px}
+  .nav-links{gap:15px}
+  .nav-links a{font-size:.74rem}
+  .duplex{grid-template-columns:.85fr 1.15fr;gap:30px}
+  .fg{grid-template-columns:1fr 1fr 1fr}
+  .fb{grid-column:1/-1}
 }
-@media(max-width:980px){
+@media(max-width:960px){
   .nav-links,.nav-right .nav-tel,.nav-right .btn{display:none}
-  .mobile-actions{display:flex}
-  .nav-inner,.hero-grid,.quote-lead,.ten-grid,.carta-head,.duplex,.carta-foot,.vip-inner,.sheet,.sheet-note,.work-head,.work-grid,.loc-grid,.faq-wrap,.ct-head,.ct-grid,.foot-grid,.foot-bottom,.roster-head{padding-left:26px;padding-right:26px}
-  .roster-track{padding-left:26px;padding-right:26px;scroll-padding-left:26px}
-  .hero-grid{grid-template-columns:1fr;gap:32px}
-  .ten-grid,.carta-head,.loc-grid,.faq-wrap{grid-template-columns:1fr;gap:28px}
-  .duplex{grid-template-columns:1fr;gap:26px}
-  .duplex-media{position:static}
-  .dm-photo{aspect-ratio:16/9}
-  .vip-inner{grid-template-columns:1fr;gap:20px}
-  .vip-n{display:none}
-  .vip-cta{align-items:flex-start;flex-direction:row;flex-wrap:wrap;align-items:center;gap:22px}
-  .work-grid{grid-template-columns:1fr 1fr}
-  .map-frame iframe{height:330px}
-  .ct-grid{grid-template-columns:1fr}
+  .m-only{display:flex;align-items:center;gap:8px}
+  .burger{display:inline-flex}
+  .m-tel{display:inline-flex}
+  .hero-g,.head-split,.loc,.faq,.ct{grid-template-columns:1fr;gap:30px}
+  .duplex{grid-template-columns:1fr;gap:24px}
+  .dm{position:static}
+  .dm img{aspect-ratio:16/9}
+  .vip-in{grid-template-columns:1fr;gap:18px}
+  .vip .num{display:none}
+  .vip-cta{align-items:center;flex-direction:row;flex-wrap:wrap;gap:20px}
+  .guests{grid-template-columns:1fr 1fr}
+  .map iframe{height:320px}
 }
 
-/* ============ MOBILE (designed, not derived) ============ */
+/* ============ MOBILE ============ */
 @media(max-width:768px){
-  html{scroll-padding-top:calc(var(--nav-h-sm) + 16px)}
+  html{scroll-padding-top:calc(var(--nav-h-sm) + 12px)}
   nav.site-nav{height:var(--nav-h-sm)}
-  .brand img{height:44px;width:44px}
-  .brand-txt b{font-size:.9rem}
-  .brand{min-width:0}
-  .brand-txt{min-width:0}
-  .brand-txt b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .brand-txt span{font-size:.55rem;letter-spacing:.18em}
-  section{padding:58px 0}
+  .brand img{height:32px;width:32px}
+  .brand b{font-size:.76rem}
+  .lang{height:28px}
+  .lang button{font-size:.64rem;padding:0 7px}
+  .m-tel,.burger{width:30px;height:28px}
+  .burger span{width:14px}
+  section{padding:56px 0}
 
-  /* Hero: order designed independently. Hook, photo, then CTA above the fold. */
-  .hero{padding:calc(var(--nav-h-sm) + 26px) 0 74px}
-  .hero-grid{display:flex;flex-direction:column;gap:0}
+  .hero{padding:calc(var(--nav-h-sm) + 22px) 0 66px}
+  .hero-g{display:flex;flex-direction:column;gap:0}
   .hero-content{display:contents}
-  .eyebrow{order:1;margin-bottom:14px;align-self:flex-start;font-size:.63rem;padding:6px 11px}
-  .hero h1{order:2;font-size:2.15rem;margin-bottom:16px}
-  .hero-media{order:3;margin-bottom:20px}
-  .hero-ctas{order:4;margin-bottom:16px;gap:10px;display:flex;flex-wrap:wrap}
-  .hero-ctas .btn{flex:1 1 100%}
-  .hero .lede{order:5;font-size:.99rem;margin-bottom:14px}
-  .hero-note{order:6;font-size:.8rem;align-items:flex-start}
-  .hero-note i{margin-top:4px}
-  .hero-photo{aspect-ratio:16/10}
-  .hero-photo img{object-position:center 24%}
-  .photo-tag{left:14px;right:14px;bottom:12px}
-  .photo-tag .pt-l{font-size:.88rem}
-  .photo-tag .pt-n{font-size:2rem}
+  .eyebrow{order:1;margin-bottom:10px;font-size:.6rem;letter-spacing:.2em}
+  .hero h1{order:2;font-size:2.1rem;margin-bottom:14px}
+  .hero-media{order:3;margin-bottom:16px}
+  .hero-media img{aspect-ratio:16/11;max-height:none;object-position:center 34%}
+  .hero-cap{order:4;margin:10px 0 16px}
+  .hero-cta{order:5;margin-bottom:14px;gap:9px;display:flex;flex-wrap:wrap}
+  .hero-cta .btn{flex:1 1 100%}
+  .hero .lede{order:6;font-size:.97rem;margin-bottom:14px}
+  .hero-note{order:7;font-size:.8rem;max-width:none}
 
-  .roster{margin-top:-40px;padding:24px 0 28px}
-  .roster-head{margin-bottom:14px}
-  .roster-head h2{font-size:1rem}
-  .roster-head .rh-sub{font-size:.74rem}
-  .rp{flex:0 0 74%;padding:4px 18px 2px}
-  .rp .rp-name{font-size:1.12rem}
+  .promise{margin-top:-28px;padding:18px 0}
+  .promise .w{flex-direction:column;gap:6px}
+  .promise p{font-size:1rem}
 
-  .quote-lead{grid-template-columns:1fr;gap:8px;margin-bottom:34px}
-  .quote-lead .qm{font-size:3.6rem}
-  .quote-lead blockquote{font-size:1.68rem;max-width:none}
-  .quote-lead .qt{font-size:.95rem}
-  .ten-grid{gap:22px}
-  .ten-grid p{font-size:.97rem;margin-bottom:13px}
-  .ten-points{gap:11px}
-  .ten-points li{font-size:.9rem;line-height:1.5}
-  .bleed-band img{height:170px}
-  .bleed-band{margin-top:44px}
-  .bleed-cap{padding:44px 26px 14px;font-size:.83rem;align-items:flex-start}
-  .bleed-cap i{margin-top:4px}
+  .head{margin-bottom:26px}
+  .head h2{max-width:none}
 
-  .carta-head{margin-bottom:24px}
-  .carta-head .ch-r{font-size:.95rem;padding-bottom:0}
-  .dm-cap{display:none}
-  .lrow .lr-d{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-  .lrow{grid-template-columns:1fr 92px;gap:2px 14px;padding:13px 0;align-items:start}
-  .lrow .lr-l{grid-column:1;grid-row:1/3}
-  .lrow .lr-p{grid-column:2;grid-row:1;font-size:1.3rem;justify-self:end;line-height:1.05}
-  .lrow .lr-b{grid-column:2;grid-row:2;justify-self:end;align-self:end;min-width:82px;min-height:44px;padding:6px 10px;font-size:.7rem}
-  /* Collapsible price groups: max-height only, one mechanism, Cortes open by default */
-  .lg-title{cursor:pointer;padding:16px 0 13px;min-height:48px;align-items:center;position:relative}
-  .lg-title .lg-x{display:none}
-  .lg-range{display:block;margin-left:auto;font-family:'Anton',sans-serif;font-size:.92rem;color:var(--gold);
-    transform:skewX(-8deg);padding-right:26px}
-  .lg-i{display:block;position:absolute;right:2px;top:50%;margin-top:-7px;color:var(--gold);font-size:.9rem;transition:transform .3s var(--ease)}
-  .ledger-group.open .lg-i{transform:rotate(45deg)}
-  .lg-rows{max-height:0;overflow:hidden;transition:max-height .36s var(--ease)}
-  .ledger-group{margin-bottom:14px}
-  .lrow .lr-n{font-size:.98rem}
-  .lrow .lr-d{font-size:.83rem;max-width:none}
-  .lg-title h3{font-size:1rem}
-  .carta-foot{flex-direction:column;align-items:stretch;margin-top:22px;gap:12px}
-  .carta-foot .cf-t{font-size:.87rem}
+  .ba img{aspect-ratio:3/4;max-height:none}
+  .ba figcaption{font-size:.62rem;letter-spacing:.12em;padding:5px 8px}
+
+  .cuts{margin-top:34px;grid-template-columns:1fr 1fr}
+  .cut-tag{font-size:.6rem;padding:5px 8px;letter-spacing:.1em}
+  .ph{font-size:.6rem;letter-spacing:.1em;padding:12px}
+  .ph em{font-size:1.2rem}
+
+  .lrow{grid-template-columns:1fr 88px;gap:2px 12px;padding:13px 0;align-items:start}
+  .lrow .l{grid-column:1;grid-row:1/3}
+  .lrow .p{grid-column:2;grid-row:1;justify-self:end;font-size:1.28rem;line-height:1.05}
+  .lrow .b{grid-column:2;grid-row:2;justify-self:end;align-self:end;min-width:80px;padding:5px 9px;font-size:.66rem}
+  .lrow .d{font-size:.81rem;max-width:none;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .lgt{padding:14px 0 10px;min-height:46px;align-items:center;cursor:pointer;position:relative}
+  .lgt .x{display:none}
+  .lgt .rng{display:block;margin-left:auto;font-family:'Anton',sans-serif;font-size:.88rem;color:var(--gold);transform:skewX(-8deg);padding-right:22px}
+  .lgt .ind{display:block;position:absolute;right:2px;top:50%;width:11px;height:11px;margin-top:-5.5px}
+  .lgt .ind::before,.lgt .ind::after{content:'';position:absolute;background:var(--gold);transition:transform .28s var(--ease)}
+  .lgt .ind::before{left:0;top:5px;width:11px;height:1.5px}
+  .lgt .ind::after{left:4.75px;top:0;width:1.5px;height:11px}
+  .lgroup.open .lgt .ind::after{transform:rotate(90deg)}
+  .lgr{max-height:0;overflow:hidden;transition:max-height .34s var(--ease)}
+  .lgroup{margin-bottom:10px}
+  .dm p{display:none}
+  .carta-foot{flex-direction:column;align-items:stretch;gap:12px}
   .carta-foot .btn{width:100%}
 
-  .vip{padding:44px 0}
-  .vip::before{display:none}
-  .vip h2{font-size:1.72rem}
-  .vip p{font-size:.97rem}
-  .vip-cta{flex-direction:column;align-items:stretch;gap:16px;width:100%}
-  .vip .vip-price{font-size:2.5rem}
+  .vip{padding:40px 0;margin-top:52px}
+  .vip h2{font-size:1.6rem}
+  .vip-cta{flex-direction:column;align-items:stretch;gap:14px;width:100%}
+  .vip .price{font-size:2.3rem}
   .vip-cta .btn{width:100%}
 
-  /* Team sheet compresses to a 2-up card set, never 1-up */
-  .sheet{padding:0 26px}
-  .sheet-rows{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  .sheet-row{display:flex;flex-direction:column;align-items:flex-start;gap:11px;padding:16px 14px;border:1px solid rgba(15,13,11,.16);
-    border-bottom:1px solid rgba(15,13,11,.16);border-top:none;border-radius:3px;background:var(--bone)}
-  .sheet-row:first-of-type{border-top:1px solid rgba(15,13,11,.16)}
-  .sheet-row .sr-n{font-size:1.28rem}
-  .sheet-av{width:72px;height:72px}
-  .sheet-row h3{font-size:1rem}
-  .sheet-row .sr-role{font-size:.72rem;letter-spacing:.07em}
-  .sheet-row .sr-b{font-size:.68rem;padding:8px 11px;align-self:stretch;text-align:center}
-  .sheet-note{padding:0 26px;font-size:.82rem}
+  .guests{grid-template-columns:1fr 1fr}
+  .gcap{padding:26px 10px 9px}
+  .gcap b{font-size:.82rem}
+  .gcap span{font-size:.6rem;letter-spacing:.08em}
 
-  .work-head h2{font-size:1.72rem}
-  .work-head .wh-r{font-size:.9rem}
-  /* The work becomes a peeking filmstrip rather than three stacked rows */
-  .work-grid{display:flex;grid-template-columns:none;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;
-    scroll-padding-left:26px;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:4px}
-  .work-grid::-webkit-scrollbar{display:none}
-  .work-grid > *{flex:0 0 76%;scroll-snap-align:center;aspect-ratio:4/3}
-  .work-hint{display:flex}
+  .team-rows{display:grid;grid-template-columns:1fr 1fr;gap:22px 16px}
+  .trow{display:flex;flex-direction:column;align-items:flex-start;gap:9px;padding:0 0 16px;border-top:none;border-bottom:1px solid var(--line-l)}
+  .trow:first-child{border-top:none}
+  .tav{width:68px;height:68px}
+  .trow h3{font-size:.98rem}
+  .trow .r{font-size:.68rem;letter-spacing:.07em}
+  .trow .b{font-size:.65rem;padding:7px 10px;align-self:stretch}
 
-  .loc-addr{font-size:.98rem}
-  .loc-perks{grid-template-columns:1fr 1fr;gap:10px 14px}
-  .loc-perks li{font-size:.86rem}
-  .hours .hr{padding:8px 0;font-size:.9rem}
-  .map-frame iframe{height:230px}
-
-  .acc-head{font-size:.98rem;padding:17px 40px 17px 0}
-  .acc-inner{font-size:.94rem;padding-right:18px}
-
-  .form-card,.info-card{padding:22px 18px}
-  .frow{grid-template-columns:1fr 1fr;gap:12px}
-  .field{margin-bottom:13px}
-  .field textarea{min-height:84px}
-  .ct-head{margin-bottom:26px}
-  .info-row{padding:11px 0}
-
-  .foot-grid{grid-template-columns:1fr 1fr;gap:22px}
-  .foot-brand{grid-column:1/-1}
-  .foot-col:last-child{grid-column:1/-1}
-  .foot-col a{min-height:44px;font-size:.9rem}
-  .foot-col h4{margin-bottom:8px}
-  .foot-brand p{font-size:.88rem}
-  .foot-bottom{padding:18px 26px calc(22px + env(safe-area-inset-bottom));flex-direction:column;align-items:flex-start;gap:12px}
+  .perks{grid-template-columns:1fr 1fr;gap:8px 14px}
+  .perks li{font-size:.84rem}
+  .hr{padding:7px 0;font-size:.88rem}
+  .map iframe{height:250px}
+  .ah{font-size:.95rem;padding:15px 36px 15px 0}
+  .ab-in{font-size:.92rem;padding-right:14px}
+  .frow{grid-template-columns:1fr;gap:0}
+  .fg{grid-template-columns:1fr 1fr;gap:24px}
+  .fb{grid-column:1/-1}
+  .fc:last-child{grid-column:1/-1}
+  .fbot{flex-direction:column;align-items:flex-start;gap:8px}
 }
-@media(max-width:420px){
-  .brand-txt span{display:none}
-  .brand-txt b{font-size:.8rem}
-  .hero h1{font-size:1.92rem}
-  .work-grid{grid-template-columns:1fr 1fr}
-  .sheet-row{padding:14px 12px}
-  .sheet-av{width:64px;height:64px}
-  .sheet-row h3{font-size:.94rem}
+@media(max-width:400px){
+  .brand b{display:none}
+  .hero h1{font-size:1.88rem}
 }
-
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
 }
 </style>
 </head>
 <body>
 
-<!-- ============ NAV ============ -->
-<nav class="site-nav" id="siteNav">
-  <div class="nav-inner">
-    <a href="#top" class="brand" aria-label="Barberia de las Estrellas, home">
-      <img src="assets/logo.png?v=1" width="54" height="54" alt="Barberia de las Estrellas logo, gold star inside a gold ring">
-      <span class="brand-txt"><b>Barberia de las Estrellas</b><span>Wynwood &middot; Miami</span></span>
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18.3 5.7 12 12l6.3 6.3-1.4 1.4L10.6 13.4 4.3 19.7 2.9 18.3 9.2 12 2.9 5.7l1.4-1.4 6.3 6.3 6.3-6.3z"/></symbol>
+</svg>
+
+<nav class="site-nav">
+  <div class="nav-in">
+    <a href="#top" class="brand" aria-label="Barberia de las Estrellas">
+      <img src="assets/logo.png?v=2" width="40" height="40" alt="Barberia de las Estrellas">
+      <b>Barberia de las Estrellas</b>
     </a>
     <ul class="nav-links">
-      <li><a href="#el10">El 10</a></li>
-      <li><a href="#carta">Services</a></li>
-      <li><a href="#equipo">Barbers</a></li>
-      <li><a href="#trabajos">The Work</a></li>
-      <li><a href="#wynwood">Visit</a></li>
+      <li><a href="#trabajo" data-es="El Trabajo" data-en="The Work">El Trabajo</a></li>
+      <li><a href="#carta" data-es="Precios" data-en="Prices">Precios</a></li>
+      <li><a href="#invitados" data-es="Invitados" data-en="Guests">Invitados</a></li>
+      <li><a href="#equipo" data-es="Barberos" data-en="Barbers">Barberos</a></li>
+      <li><a href="#visitar" data-es="Visitar" data-en="Visit">Visitar</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
     <div class="nav-right">
-      <a href="tel:+17868517794" class="nav-tel"><i class="fa-solid fa-phone-volume"></i> (786) 851-7794</a>
-      <a href="https://www.barberiadelasestrellas.com/s/appointments" class="btn btn-sm" target="_blank" rel="noopener">Book a Chair</a>
-    </div>
-    <div class="mobile-actions">
-      <a href="tel:+17868517794" class="m-call" aria-label="Call Barberia de las Estrellas"><i class="fa-solid fa-phone-volume"></i></a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navDrawer"><span></span><span></span><span></span></button>
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="tel:+17868517794" class="nav-tel"><svg class="i"><use href="#i-tel"/></svg> (786) 851-7794</a>
+      <a href="https://www.barberiadelasestrellas.com/s/appointments" class="btn btn-sm" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a>
+      <div class="m-only">
+        <a href="tel:+17868517794" class="m-tel" aria-label="Llamar"><svg class="i"><use href="#i-tel"/></svg></a>
+        <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </div>
 </nav>
 
-<div class="nav-overlay" id="navOverlay"></div>
-<aside class="nav-drawer" id="navDrawer" aria-hidden="true" aria-label="Site menu">
-  <div class="drawer-head">
-    <span class="dh-t">EL PLANTEL</span>
-    <button class="drawer-close" id="drawerClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+<div class="ov" id="ov"></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="dr-top">
+    <span>Menu</span>
+    <button class="dr-x" id="drx" aria-label="Cerrar"><svg class="i"><use href="#i-x"/></svg></button>
   </div>
-  <nav class="drawer-links">
-    <a href="#el10"><span class="n">01</span> El 10</a>
-    <a href="#carta"><span class="n">02</span> Services</a>
-    <a href="#vip"><span class="n">03</span> Star VIP</a>
-    <a href="#equipo"><span class="n">04</span> Barbers</a>
-    <a href="#trabajos"><span class="n">05</span> The Work</a>
-    <a href="#wynwood"><span class="n">06</span> Visit</a>
-    <a href="#faq"><span class="n">07</span> FAQ</a>
-    <a href="#contact"><span class="n">08</span> Contact</a>
+  <nav class="dr-links">
+    <a href="#trabajo" data-es="El Trabajo" data-en="The Work">El Trabajo</a>
+    <a href="#carta" data-es="Precios" data-en="Prices">Precios</a>
+    <a href="#vip">Star VIP</a>
+    <a href="#invitados" data-es="Invitados" data-en="Guests">Invitados</a>
+    <a href="#equipo" data-es="Barberos" data-en="Barbers">Barberos</a>
+    <a href="#visitar" data-es="Visitar" data-en="Visit">Visitar</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
   </nav>
-  <div class="drawer-foot">
-    <a href="tel:+17868517794" class="drawer-tel"><i class="fa-solid fa-phone-volume"></i> (786) 851-7794</a>
-    <a href="https://www.barberiadelasestrellas.com/s/appointments" class="btn" target="_blank" rel="noopener">Book a Chair</a>
-    <span class="drawer-note">Mon and Wed to Sat, 10am to 8pm</span>
+  <div class="dr-foot">
+    <a href="tel:+17868517794" class="dr-tel"><svg class="i"><use href="#i-tel"/></svg> (786) 851-7794</a>
+    <a href="https://www.barberiadelasestrellas.com/s/appointments" class="btn" target="_blank" rel="noopener" data-es="Reservar tu silla" data-en="Book your chair">Reservar tu silla</a>
+    <span class="dr-note" data-es="Lun y Mie a Sab, 10:00 a 20:00" data-en="Mon and Wed to Sat, 10am to 8pm">Lun y Mie a Sab, 10:00 a 20:00</span>
   </div>
 </aside>
 
 <span id="top"></span>
 
-<!-- ============ HERO ============ -->
 <header class="hero">
-  <div class="hero-grid">
+  <div class="hero-g">
     <div class="hero-content">
-      <span class="eyebrow">164 NW 20th St &middot; Wynwood, Miami</span>
-      <h1>Leo Messi's Barber<br><span class="g">Cuts Hair in Wynwood</span></h1>
-      <div class="hero-ctas">
-        <a href="https://www.barberiadelasestrellas.com/s/appointments" class="btn" target="_blank" rel="noopener"><i class="fa-solid fa-scissors"></i> Book Your Chair</a>
-        <a href="tel:+17868517794" class="btn btn-ghost"><i class="fa-solid fa-phone-volume"></i> (786) 851-7794</a>
+      <span class="eyebrow">164 NW 20th St, Wynwood, Miami</span>
+      <h1 data-es="Cortes de precision.<br><span class=&quot;g&quot;>Discrecion incluida.</span>" data-en="Precision cuts.<br><span class=&quot;g&quot;>Discretion included.</span>">Cortes de precision.<br><span class="g">Discrecion incluida.</span></h1>
+      <div class="hero-cta">
+        <a href="https://www.barberiadelasestrellas.com/s/appointments" class="btn" target="_blank" rel="noopener" data-es="Reservar tu silla" data-en="Book your chair">Reservar tu silla</a>
+        <a href="tel:+17868517794" class="btn btn-line"><svg class="i"><use href="#i-tel"/></svg> (786) 851-7794</a>
       </div>
-      <p class="lede">Nico Jaffe travels to Leo. The rest of the week his team is at <b>164 NW 20th St</b>, working the same clippers on whoever walks in. Argentine, Uruguayan and Colombian barbers. <b>Fades from $50.</b></p>
-      <div class="hero-note"><i class="fa-solid fa-square-parking"></i> Free parking on premises. Walk-ins welcome when a chair is open, but Saturdays book out.</div>
+      <p class="lede" data-es="Barberos argentinos, uruguayos y colombianos en el medio de Wynwood. Fades desde <b>$50</b>, sin apuro y sin publico. Lo que pasa en la silla se queda en la silla." data-en="Argentine, Uruguayan and Colombian barbers in the middle of Wynwood. Fades from <b>$50</b>, unhurried and unwatched. What happens in the chair stays in the chair.">Barberos argentinos, uruguayos y colombianos en el medio de Wynwood. Fades desde <b>$50</b>, sin apuro y sin publico. Lo que pasa en la silla se queda en la silla.</p>
+      <p class="hero-note" data-es="Estacionamiento gratis en el lugar. Se atiende sin cita cuando hay silla libre, pero los sabados se llenan." data-en="Free parking on site. Walk-ins welcome when a chair is open, but Saturdays fill up.">Estacionamiento gratis en el lugar. Se atiende sin cita cuando hay silla libre, pero los sabados se llenan.</p>
     </div>
     <div class="hero-media">
-      <div class="hero-photo">
-        <img src="assets/messi-nicojaffe.jpg" width="1290" height="1239" fetchpriority="high"
-             alt="Nico Jaffe of Barberia de las Estrellas standing beside Leo Messi seated in a barber chair, full barber kit laid out on the counter">
-        <div class="photo-tag">
-          <span class="pt-l">Nico Jaffe &amp; Leo Messi<span class="pt-s">October 2024 &middot; house call</span></span>
-          <span class="pt-n sq">10</span>
-        </div>
-      </div>
+      <img src="assets/cut-taper.jpg" width="698" height="930" fetchpriority="high"
+           alt="Corte lateral con taper fade y rulos definidos hecho en Barberia de las Estrellas, Wynwood">
+      <p class="hero-cap" data-es="Taper fade con rulos, terminado a mano" data-en="Taper fade with curls, finished by hand">Taper fade con rulos, terminado a mano</p>
     </div>
   </div>
 </header>
 
-<!-- ============ ROSTER STRIP (overlaps hero) ============ -->
-<section class="roster" aria-label="Footballers who have sat in the chair">
-  <div class="roster-head">
-    <h2>The Chair Record</h2>
-    <span class="rh-sub">Every name below is documented on <a href="https://www.instagram.com/barberiaestrellas/" target="_blank" rel="noopener" style="color:var(--gold)">@barberiaestrellas</a></span>
-  </div>
-  <div class="roster-track" id="rosterTrack">
-    <article class="rp">
-      <div class="rp-name">Leo Messi</div>
-      <div class="rp-club">Inter Miami CF</div>
-      <p class="rp-note">House call, October 2024. Left a signed shirt at the shop.</p>
-    </article>
-    <article class="rp">
-      <div class="rp-name">Chelo Weigandt</div>
-      <div class="rp-club">Inter Miami CF</div>
-      <p class="rp-note">In the Wynwood chair, February 2025. Cut by Magic.</p>
-    </article>
-    <article class="rp">
-      <div class="rp-name">Lamine Yamal</div>
-      <div class="rp-club">FC Barcelona</div>
-      <p class="rp-note">Cut by Nico Jaffe on the road.</p>
-    </article>
-    <article class="rp">
-      <div class="rp-name">Rodrygo Goes</div>
-      <div class="rp-club">Real Madrid</div>
-      <p class="rp-note">Cut by Nico Jaffe on the road.</p>
-    </article>
+<section class="promise">
+  <div class="w">
+    <p data-es="Sin cargo de consulta. Sin lista de espera inventada. Sin fotos sin permiso." data-en="No consultation fee. No invented waitlist. No photos without permission.">Sin cargo de consulta. Sin lista de espera inventada. Sin fotos sin permiso.</p>
+    <small data-es="Los diez precios estan publicados mas abajo." data-en="All ten prices are published below.">Los diez precios estan publicados mas abajo.</small>
   </div>
 </section>
 
-<!-- ============ EL 10 (pull-quote lead, no centered heading) ============ -->
-<section id="el10" class="ends-bleed">
-  <div class="quote-lead">
-    <span class="qm">&ldquo;</span>
+<section id="trabajo">
+  <div class="head head-split">
     <div>
-      <blockquote>Si el 10 nos elige, debe ser por algo.</blockquote>
-      <p class="qt">If the number 10 picks us, there has to be a reason. It is the line the shop has used since day one, and it is still the whole argument.</p>
+      <span class="kicker" data-es="El Trabajo" data-en="The Work">El Trabajo</span>
+      <h2 data-es="Mira el fade, no el discurso." data-en="Judge the fade, not the copy.">Mira el fade, no el discurso.</h2>
     </div>
+    <p class="lead" data-es="Una hora de silla, no veinte minutos. Se limpia la nuca, se define la barba y se peina antes de que te levantes. Si algo no cierra, se corrige en el momento." data-en="An hour in the chair, not twenty minutes. The neck gets cleaned, the beard gets shaped and the hair gets styled before you stand up. If something is off, it gets fixed there and then.">Una hora de silla, no veinte minutos. Se limpia la nuca, se define la barba y se peina antes de que te levantes. Si algo no cierra, se corrige en el momento.</p>
   </div>
-  <div class="ten-grid">
-    <div>
-      <p>You are not booking a celebrity. You are booking the barber who cuts them, on a normal Wednesday, for the price of a normal haircut.</p>
-      <p>Nico Jaffe left Uruguay, built this shop in Wynwood, and now flies out to cut some of the most photographed heads in football. Between those trips the same clippers, the same technique and the same four barbers are here on 20th Street.</p>
-      <p>No membership, no consultation fee, no upsell ladder. Book, sit, get the cut that shows up on a Champions League broadcast.</p>
-    </div>
-    <div>
-      <ul class="ten-points">
-        <li><i class="fa-solid fa-futbol"></i><span><b>Four documented footballers.</b> Messi, Chelo Weigandt, Lamine Yamal and Rodrygo Goes. Every one of them posted, dated and public.</span></li>
-        <li><i class="fa-solid fa-shirt"></i><span><b>A signed shirt wall.</b> The Almada 23 and the Argentina kit are hanging on the wall behind the chairs. Come see them.</span></li>
-        <li><i class="fa-solid fa-earth-americas"></i><span><b>Three countries on staff.</b> Argentine, Uruguayan and Colombian barbers, so somebody here cuts hair the way you grew up having it cut.</span></li>
-        <li><i class="fa-solid fa-martini-glass-citrus"></i><span><b>A lounge, not a waiting room.</b> Drinks, a pool table and a room built to sit in. Bring somebody.</span></li>
-        <li><i class="fa-solid fa-clapperboard"></i><span><b>We film cuts.</b> The Star VIP package includes a reel of your cut, shot and edited here.</span></li>
-      </ul>
-    </div>
+
+  <div class="ba">
+    <figure>
+      <img src="assets/ba-before.jpg" width="747" height="996" loading="lazy" alt="Antes: pelo crecido y barba sin definir, en la silla de Barberia de las Estrellas">
+      <figcaption data-es="Antes" data-en="Before">Antes</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/ba-after.jpg" width="800" height="1066" loading="lazy" alt="Despues: corte texturizado con fade y barba definida, hecho en Barberia de las Estrellas">
+      <figcaption data-es="Despues" data-en="After">Despues</figcaption>
+    </figure>
   </div>
-  <!-- CONTAINER BREAK -->
-  <figure class="bleed-band" style="margin-bottom:0">
-    <img src="assets/shop-wynwood.jpg" width="2400" height="351" loading="lazy"
-         alt="Inside Barberia de las Estrellas in Wynwood: framed Almada 23 and Argentina jerseys, neon mirrors, black barber chairs with star capes and a gold trophy">
-    <figcaption class="bleed-cap"><i class="fa-solid fa-palette"></i><span><b>164 NW 20th St, Suite 209.</b> Framed shirts, neon, a trophy and four chairs, in the middle of the Wynwood Art District.</span></figcaption>
-  </figure>
+  <p class="ba-note" data-es="Mismo cliente, misma visita. Corte, barba y peinado: $65." data-en="Same client, same visit. Cut, beard and styling: $65.">Mismo cliente, misma visita. Corte, barba y peinado: $65.</p>
+
+  <div class="cuts">
+    <figure><img src="assets/cut-taper.jpg" width="698" height="930" loading="lazy" alt="Taper fade con rulos hecho en Wynwood"><span class="cut-tag" data-es="Taper fade" data-en="Taper fade">Taper fade</span></figure>
+    <figure><img src="assets/work-jersey10.jpg" width="1000" height="750" loading="lazy" alt="Camiseta numero 10 de Barberia de las Estrellas frente al mural del local"><span class="cut-tag" data-es="El local" data-en="The shop">El local</span></figure>
+    <figure><img src="assets/work-jerseys.jpg" width="640" height="480" loading="lazy" alt="Pared de camisetas enmarcadas en Barberia de las Estrellas"><span class="cut-tag" data-es="La pared" data-en="The wall">La pared</span></figure>
+    <div class="ph"><em>+</em><span data-es="Skin fade" data-en="Skin fade">Skin fade</span></div>
+    <div class="ph"><em>+</em><span data-es="Color platinado" data-en="Platinum color">Color platinado</span></div>
+    <div class="ph"><em>+</em><span data-es="Diseno a maquina" data-en="Line design">Diseno a maquina</span></div>
+  </div>
+  <p class="ba-note" data-es="[FOTOS PENDIENTES en los tres ultimos recuadros.]" data-en="[PHOTOS PENDING in the last three tiles.]">[FOTOS PENDIENTES en los tres ultimos recuadros.]</p>
 </section>
 
-<!-- ============ LA CARTA: split-screen duplex ============ -->
 <section id="carta" class="sec-dark ends-bleed">
-  <div class="carta-head">
+  <div class="head head-split">
     <div>
-      <span class="kicker">La Carta</span>
-      <h2>Every price, before you sit down.</h2>
+      <span class="kicker" data-es="La Carta" data-en="The Menu">La Carta</span>
+      <h2 data-es="Todos los precios, antes de sentarte." data-en="Every price, before you sit down.">Todos los precios, antes de sentarte.</h2>
     </div>
-    <p class="ch-r">Ten services, three groups, no consultation fee and no surprise line at the end. Prices are the same whether it is your first cut here or your fiftieth.</p>
+    <p class="lead" data-es="Diez servicios, tres grupos, sin cargo de consulta y sin sorpresas al final. El precio es el mismo si es tu primera vez o la numero cincuenta." data-en="Ten services, three groups, no consultation fee and no surprise line at the end. The price is the same whether it is your first cut here or your fiftieth.">Diez servicios, tres grupos, sin cargo de consulta y sin sorpresas al final. El precio es el mismo si es tu primera vez o la numero cincuenta.</p>
   </div>
 
   <div class="duplex">
-    <div class="duplex-media">
-      <div class="dm-photo">
-        <img src="assets/kit-counter.jpg" width="1250" height="639" loading="lazy"
-             alt="The full barber kit Barberia de las Estrellas works with: clippers, shears, combs, blades and tonics laid out on the counter">
-        <span class="dm-badge">Same kit. Same $50.</span>
-      </div>
-      <p class="dm-cap"><b>Why the prices look normal</b>The clippers, blades and technique on this counter are the ones used on every walk-in at 20th Street. The travel is the only thing that changes.</p>
+    <div class="dm">
+      <img src="assets/kit-counter.jpg" width="1250" height="639" loading="lazy" alt="Maquinas, tijeras, navajas y tonicos listos sobre la mesada">
+      <p><b data-es="El equipo de trabajo" data-en="The kit">El equipo de trabajo</b><span data-es="Las mismas maquinas y navajas para todos. No hay una silla buena y una silla barata." data-en="The same clippers and blades for everyone. There is no good chair and cheap chair.">Las mismas maquinas y navajas para todos. No hay una silla buena y una silla barata.</span></p>
     </div>
 
     <div class="ledger">
-      <div class="ledger-group">
-        <button class="lg-title" type="button" aria-expanded="true"><span class="lg-n sq">01</span><h3>Cortes</h3><span class="lg-x">Cuts &amp; beard</span><span class="lg-range">$15 to $65</span><i class="fa-solid fa-plus lg-i" aria-hidden="true"></i></button>
-        <div class="lg-rows">
-        <div class="lrow">
-          <div class="lr-l"><div class="lr-n"><i class="fa-solid fa-scissors"></i>Haircut or Fade</div><p class="lr-d">The house cut. Skin fade, taper, scissor work, whatever the head asks for.</p></div>
-          <span class="lr-p">$50</span>
-          <a href="https://www.barberiadelasestrellas.com/s/appointments" class="lr-b" target="_blank" rel="noopener">Book</a>
-        </div>
-        <div class="lrow">
-          <div class="lr-l"><div class="lr-n"><i class="fa-solid fa-mug-hot"></i>Haircut + Beard</div><p class="lr-d">Cut plus a full beard shape, line-up and hot towel finish.</p></div>
-          <span class="lr-p">$65</span>
-          <a href="https://www.barberiadelasestrellas.com/s/appointments" class="lr-b" target="_blank" rel="noopener">Book</a>
-        </div>
-        <div class="lrow">
-          <div class="lr-l"><div class="lr-n"><i class="fa-solid fa-child-reaching"></i>Kids Haircut</div><p class="lr-d">Same barbers, same room, shorter chair time.</p></div>
-          <span class="lr-p">$40</span>
-          <a href="https://www.barberiadelasestrellas.com/s/appointments" class="lr-b" target="_blank" rel="noopener">Book</a>
-        </div>
-        <div class="lrow">
-          <div class="lr-l"><div class="lr-n"><i class="fa-solid fa-user-tie"></i>Beard Maintenance</div><p class="lr-d">Shape and line-up between cuts. In and out.</p></div>
-          <span class="lr-p">$25</span>
-          <a href="https://www.barberiadelasestrellas.com/s/appointments" class="lr-b" target="_blank" rel="noopener">Book</a>
-        </div>
-        <div class="lrow">
-          <div class="lr-l"><div class="lr-n"><i class="fa-solid fa-pen-nib"></i>Eyebrows</div><p class="lr-d">Detail work, added to any service or booked on its own.</p></div>
-          <span class="lr-p">$15</span>
-          <a href="https://www.barberiadelasestrellas.com/s/appointments" class="lr-b" target="_blank" rel="noopener">Book</a>
-        </div>
+      <div class="lgroup">
+        <button class="lgt" type="button" aria-expanded="true"><span class="n sq">01</span><h3 data-es="Cortes" data-en="Cuts">Cortes</h3><span class="x" data-es="Corte y barba" data-en="Cuts and beard">Corte y barba</span><span class="rng">$15 - $65</span><span class="ind"></span></button>
+        <div class="lgr">
+          <div class="lrow"><div class="l"><div class="n" data-es="Corte o Fade" data-en="Haircut or Fade">Corte o Fade</div><p class="d" data-es="El corte de la casa. Skin fade, taper o tijera, como lo pida la cabeza." data-en="The house cut. Skin fade, taper or scissor work, whatever the head asks for.">El corte de la casa. Skin fade, taper o tijera, como lo pida la cabeza.</p></div><span class="p">$50</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
+          <div class="lrow"><div class="l"><div class="n" data-es="Corte + Barba" data-en="Haircut + Beard">Corte + Barba</div><p class="d" data-es="Corte con perfilado completo de barba y toalla caliente." data-en="Cut with a full beard shape, line-up and hot towel finish.">Corte con perfilado completo de barba y toalla caliente.</p></div><span class="p">$65</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
+          <div class="lrow"><div class="l"><div class="n" data-es="Corte de Nino" data-en="Kids Haircut">Corte de Nino</div><p class="d" data-es="Mismos barberos, mismo local, menos tiempo en la silla." data-en="Same barbers, same room, shorter chair time.">Mismos barberos, mismo local, menos tiempo en la silla.</p></div><span class="p">$40</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
+          <div class="lrow"><div class="l"><div class="n" data-es="Mantenimiento de Barba" data-en="Beard Maintenance">Mantenimiento de Barba</div><p class="d" data-es="Perfilado y contorno entre cortes. Entras y salis." data-en="Shape and line-up between cuts. In and out.">Perfilado y contorno entre cortes. Entras y salis.</p></div><span class="p">$25</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
+          <div class="lrow"><div class="l"><div class="n" data-es="Cejas" data-en="Eyebrows">Cejas</div><p class="d" data-es="Detalle fino, se agrega a cualquier servicio o va solo." data-en="Detail work, added to any service or booked on its own.">Detalle fino, se agrega a cualquier servicio o va solo.</p></div><span class="p">$15</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
         </div>
       </div>
 
-      <div class="ledger-group">
-        <button class="lg-title" type="button" aria-expanded="false"><span class="lg-n sq">02</span><h3>Color</h3><span class="lg-x">Platinum, highlights, tone</span><span class="lg-range">$75 to $250</span><i class="fa-solid fa-plus lg-i" aria-hidden="true"></i></button>
-        <div class="lg-rows">
-        <div class="lrow">
-          <div class="lr-l"><div class="lr-n"><i class="fa-solid fa-droplet"></i>Ba&ntilde;o Color (Repaso)</div><p class="lr-d">Refresh on an existing color. The maintenance visit between full jobs.</p></div>
-          <span class="lr-p">$75</span>
-          <a href="https://www.barberiadelasestrellas.com/s/appointments" class="lr-b" target="_blank" rel="noopener">Book</a>
-        </div>
-        <div class="lrow">
-          <div class="lr-l"><div class="lr-n"><i class="fa-solid fa-wand-magic-sparkles"></i>Highlights + Haircut</div><p class="lr-d">Partial lift with the cut built around it. Allow extra chair time.</p></div>
-          <span class="lr-p">$160</span>
-          <a href="https://www.barberiadelasestrellas.com/s/appointments" class="lr-b" target="_blank" rel="noopener">Book</a>
-        </div>
-        <div class="lrow">
-          <div class="lr-l"><div class="lr-n"><i class="fa-solid fa-palette"></i>Full Color Global + Haircut</div><p class="lr-d">Full head color and cut. The platinum and blonde work you see on the feed.</p></div>
-          <span class="lr-p">$250</span>
-          <a href="https://www.barberiadelasestrellas.com/s/appointments" class="lr-b" target="_blank" rel="noopener">Book</a>
-        </div>
+      <div class="lgroup">
+        <button class="lgt" type="button" aria-expanded="false"><span class="n sq">02</span><h3>Color</h3><span class="x" data-es="Platinado, mechas, tono" data-en="Platinum, highlights, tone">Platinado, mechas, tono</span><span class="rng">$75 - $250</span><span class="ind"></span></button>
+        <div class="lgr">
+          <div class="lrow"><div class="l"><div class="n" data-es="Bano de Color (Repaso)" data-en="Color Refresh">Bano de Color (Repaso)</div><p class="d" data-es="Repaso sobre un color existente. La visita de mantenimiento." data-en="Refresh on an existing color. The maintenance visit between full jobs.">Repaso sobre un color existente. La visita de mantenimiento.</p></div><span class="p">$75</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
+          <div class="lrow"><div class="l"><div class="n" data-es="Mechas + Corte" data-en="Highlights + Haircut">Mechas + Corte</div><p class="d" data-es="Decoloracion parcial con el corte armado alrededor. Reserva tiempo extra." data-en="Partial lift with the cut built around it. Allow extra chair time.">Decoloracion parcial con el corte armado alrededor. Reserva tiempo extra.</p></div><span class="p">$160</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
+          <div class="lrow"><div class="l"><div class="n" data-es="Color Global + Corte" data-en="Full Color + Haircut">Color Global + Corte</div><p class="d" data-es="Color completo y corte. El platinado y el rubio que ves en el feed." data-en="Full head color and cut. The platinum and blonde work you see on the feed.">Color completo y corte. El platinado y el rubio que ves en el feed.</p></div><span class="p">$250</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
         </div>
       </div>
 
-      <div class="ledger-group">
-        <button class="lg-title" type="button" aria-expanded="false"><span class="lg-n sq">03</span><h3>VIP</h3><span class="lg-x">The full sit-down</span><span class="lg-range">$85 to $180</span><i class="fa-solid fa-plus lg-i" aria-hidden="true"></i></button>
-        <div class="lg-rows">
-        <div class="lrow">
-          <div class="lr-l"><div class="lr-n"><i class="fa-solid fa-spray-can-sparkles"></i>Full Service VIP</div><p class="lr-d">Haircut, beard, eyebrows and hairstyle in one appointment.</p></div>
-          <span class="lr-p">$85</span>
-          <a href="https://www.barberiadelasestrellas.com/s/appointments" class="lr-b" target="_blank" rel="noopener">Book</a>
-        </div>
-        <div class="lrow">
-          <div class="lr-l"><div class="lr-n"><i class="fa-solid fa-clapperboard"></i>Star VIP</div><p class="lr-d">Full Service plus a filmed and edited reel of your cut. Details below.</p></div>
-          <span class="lr-p">$180</span>
-          <a href="#vip" class="lr-b">See it</a>
-        </div>
+      <div class="lgroup">
+        <button class="lgt" type="button" aria-expanded="false"><span class="n sq">03</span><h3>VIP</h3><span class="x" data-es="La sesion completa" data-en="The full sit-down">La sesion completa</span><span class="rng">$85 - $180</span><span class="ind"></span></button>
+        <div class="lgr">
+          <div class="lrow"><div class="l"><div class="n">Full Service VIP</div><p class="d" data-es="Corte, barba, cejas y peinado en una sola cita." data-en="Haircut, beard, eyebrows and styling in one appointment.">Corte, barba, cejas y peinado en una sola cita.</p></div><span class="p">$85</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
+          <div class="lrow"><div class="l"><div class="n">Star VIP</div><p class="d" data-es="Full Service mas un reel filmado y editado de tu corte. Detalle abajo." data-en="Full Service plus a filmed and edited reel of your cut. Details below.">Full Service mas un reel filmado y editado de tu corte. Detalle abajo.</p></div><span class="p">$180</span><a href="#vip" class="b" data-es="Ver" data-en="See it">Ver</a></div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="carta-foot">
-    <p class="cf-t">Not sure which one? Call and describe the head. Somebody here will tell you honestly which service you actually need, including the cheaper one.</p>
-    <a href="tel:+17868517794" class="btn"><i class="fa-solid fa-phone-volume"></i> Ask a Barber</a>
+    <p data-es="No sabes cual pedir? Llama y describi la cabeza. Alguien te va a decir honestamente cual necesitas, incluso si es el mas barato." data-en="Not sure which one? Call and describe the head. Somebody here will tell you honestly which service you actually need, including the cheaper one.">No sabes cual pedir? Llama y describi la cabeza. Alguien te va a decir honestamente cual necesitas, incluso si es el mas barato.</p>
+    <a href="tel:+17868517794" class="btn"><svg class="i"><use href="#i-tel"/></svg> <span data-es="Preguntar" data-en="Ask a barber">Preguntar</span></a>
   </div>
 
-  <!-- ============ STAR VIP POSTER BAND (container break #2) ============ -->
-  <div class="vip" id="vip" style="margin-top:78px">
-    <div class="vip-inner">
-      <span class="vip-n">180</span>
+  <div class="vip" id="vip">
+    <div class="vip-in">
+      <span class="num sq">180</span>
       <div>
-        <h2>Star VIP: you leave with the cut and the footage.</h2>
-        <p>Haircut, beard, eyebrows and styling, filmed and edited into a reel you can post the same day. It is the package the shop built after realising half the room was already filming. Ninety minutes, one barber, one camera.</p>
+        <h2 data-es="Star VIP: te vas con el corte y con el material." data-en="Star VIP: you leave with the cut and the footage.">Star VIP: te vas con el corte y con el material.</h2>
+        <p data-es="Corte, barba, cejas y peinado, filmado y editado en un reel que podes subir el mismo dia. Noventa minutos, un barbero, una camara. Se filma solo si vos queres." data-en="Haircut, beard, eyebrows and styling, filmed and edited into a reel you can post the same day. Ninety minutes, one barber, one camera. Filmed only if you want it.">Corte, barba, cejas y peinado, filmado y editado en un reel que podes subir el mismo dia. Noventa minutos, un barbero, una camara. Se filma solo si vos queres.</p>
       </div>
       <div class="vip-cta">
-        <span class="vip-price sq">$180<small>All in</small></span>
-        <a href="https://www.barberiadelasestrellas.com/s/appointments" class="btn btn-ink" target="_blank" rel="noopener"><i class="fa-solid fa-clapperboard"></i> Book Star VIP</a>
+        <span class="price sq">$180<small data-es="Todo incluido" data-en="All in">Todo incluido</small></span>
+        <a href="https://www.barberiadelasestrellas.com/s/appointments" class="btn btn-ink" target="_blank" rel="noopener" data-es="Reservar Star VIP" data-en="Book Star VIP">Reservar Star VIP</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ EL EQUIPO: team sheet ============ -->
-<section id="equipo" class="sec-alt">
-  <div class="sheet" style="margin-bottom:26px">
-    <span class="kicker">El Equipo</span>
-    <h2 style="font-size:clamp(2rem,3.9vw,3rem);margin-top:14px;max-width:20ch">Four barbers. Three countries. Pick your chair.</h2>
-  </div>
-  <div class="sheet">
-    <div class="sheet-rows">
-      <article class="sheet-row">
-        <span class="sr-n sq">01</span>
-        <div class="sheet-av">
-          <img src="assets/barber-magic.jpg" width="1400" height="1236" loading="lazy" alt="Magic, Argentine barber at Barberia de las Estrellas in Wynwood, holding barber shears">
-        </div>
-        <div>
-          <h3>Magic</h3>
-          <div class="sr-role">Barbero Argentino</div>
-        </div>
-        <a href="https://www.barberiadelasestrellas.com/s/appointments" class="sr-b" target="_blank" rel="noopener">Book Magic</a>
-      </article>
-      <article class="sheet-row">
-        <span class="sr-n sq">02</span>
-        <div class="sheet-av">
-          <div class="ph"><i class="fa-solid fa-camera-retro"></i>Photo</div>
-        </div>
-        <div>
-          <h3>Lucas Farinha</h3>
-          <div class="sr-role">Barbero Uruguayo</div>
-        </div>
-        <a href="https://www.barberiadelasestrellas.com/s/appointments" class="sr-b" target="_blank" rel="noopener">Book Lucas</a>
-      </article>
-      <article class="sheet-row">
-        <span class="sr-n sq">03</span>
-        <div class="sheet-av">
-          <div class="ph"><i class="fa-solid fa-camera-retro"></i>Photo</div>
-        </div>
-        <div>
-          <h3>Mathi</h3>
-          <div class="sr-role">Barbero Argentino</div>
-        </div>
-        <a href="https://www.barberiadelasestrellas.com/s/appointments" class="sr-b" target="_blank" rel="noopener">Book Mathi</a>
-      </article>
-      <article class="sheet-row">
-        <span class="sr-n sq">04</span>
-        <div class="sheet-av">
-          <div class="ph"><i class="fa-solid fa-camera-retro"></i>Photo</div>
-        </div>
-        <div>
-          <h3>Alejandro</h3>
-          <div class="sr-role">Barbero Colombiano</div>
-        </div>
-        <a href="https://www.barberiadelasestrellas.com/s/appointments" class="sr-b" target="_blank" rel="noopener">Book Alejandro</a>
-      </article>
-    </div>
-  </div>
-  <p class="sheet-note">Owner: Nico Jaffe. Powered by @NicoJaffe and @Kinginz. [BARBER PHOTOS NEEDED: Lucas Farinha, Mathi, Alejandro.]</p>
-</section>
-
-<!-- ============ THE WORK ============ -->
-<section id="trabajos" class="sec-dark">
-  <div class="work-head">
+<section id="invitados" class="sec-alt">
+  <div class="head head-split">
     <div>
-      <h2>Los trabajos. Judge the fades, not the copy.</h2>
+      <span class="kicker" data-es="Invitados" data-en="Guests">Invitados</span>
+      <h2 data-es="Han pasado por esta silla." data-en="They have sat in this chair.">Han pasado por esta silla.</h2>
     </div>
-    <p class="wh-r">The feed is where this shop actually lives. 179 posts, 8,614 followers, and every celebrity claim on this page traceable back to a dated post.</p>
+    <p class="lead" data-es="No publicamos a nadie sin permiso, asi que esta lista es mas corta que la realidad. Estos dejaron que la subamos. El resto sabe por que vuelve." data-en="We do not post anyone without permission, so this list is shorter than the truth. These ones let us. The rest know why they come back.">No publicamos a nadie sin permiso, asi que esta lista es mas corta que la realidad. Estos dejaron que la subamos. El resto sabe por que vuelve.</p>
   </div>
-  <div class="work-grid">
-    <figure><img src="assets/work-jerseys.jpg" width="640" height="480" loading="lazy" alt="The signed shirt wall at Barberia de las Estrellas: framed Almada 23 jersey and neon mirrors in the Wynwood shop"></figure>
-    <figure><img src="assets/work-floor.jpg" width="640" height="480" loading="lazy" alt="Barber chairs with star-print capes on the floor at Barberia de las Estrellas in Wynwood, Miami"></figure>
-    <figure><img src="assets/work-jersey10.jpg" width="1000" height="750" loading="lazy" alt="Nico Jaffe holding the Barberia de las Estrellas number 10 shirt in front of the shop's gold logo wall in Wynwood, Miami"></figure>
-    <div class="ph dark"><i class="fa-solid fa-scissors"></i>Fade, before and after</div>
-    <div class="ph dark"><i class="fa-solid fa-wand-magic-sparkles"></i>Platinum color job</div>
-    <div class="ph dark"><i class="fa-solid fa-futbol"></i>Chelo Weigandt in the chair</div>
-  </div>
-  <div class="work-hint"><i class="fa-solid fa-angles-right"></i> Swipe the strip</div>
-  <div class="carta-foot" style="margin-top:28px">
-    <p class="cf-t">[REAL PHOTOS NEEDED for the three labelled tiles: a before-and-after fade, a platinum color job, and Chelo Weigandt in the chair. All three exist on @barberiaestrellas and are pending client upload.]</p>
-    <a href="https://www.instagram.com/barberiaestrellas/" class="btn" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> See the Feed</a>
+  <div class="guests">
+    <figure>
+      <img src="assets/messi-nicojaffe.jpg" width="1290" height="1239" loading="lazy" alt="Nico Jaffe junto a Leo Messi sentado en la silla de barbero, con el equipo de trabajo sobre la mesada">
+      <figcaption class="gcap"><b>Leo Messi</b><span data-es="Inter Miami CF, octubre 2024, a domicilio" data-en="Inter Miami CF, October 2024, house call">Inter Miami CF, octubre 2024, a domicilio</span></figcaption>
+    </figure>
+    <figure>
+      <img src="assets/guest-yamal.jpg" width="900" height="1124" loading="lazy" alt="Nico Jaffe junto a Lamine Yamal con la camiseta de Espana">
+      <figcaption class="gcap"><b>Lamine Yamal</b><span>FC Barcelona</span></figcaption>
+    </figure>
+    <figure>
+      <img src="assets/guest-02.jpg" width="891" height="1114" loading="lazy" alt="Nico Jaffe junto a un cliente en Barberia de las Estrellas">
+      <figcaption class="gcap"><b>[NOMBRE]</b><span data-es="Nombre a confirmar" data-en="Name to confirm">Nombre a confirmar</span></figcaption>
+    </figure>
+    <figure>
+      <img src="assets/guest-03.jpg" width="900" height="1125" loading="lazy" alt="Nico Jaffe junto a un cliente en Barberia de las Estrellas">
+      <figcaption class="gcap"><b>[NOMBRE]</b><span data-es="Nombre a confirmar" data-en="Name to confirm">Nombre a confirmar</span></figcaption>
+    </figure>
   </div>
 </section>
 
-<!-- ============ WYNWOOD / VISIT ============ -->
-<section id="wynwood">
-  <div class="loc-grid">
-    <div class="loc-l">
-      <h2>Second floor, Suite 209, in the middle of Wynwood.</h2>
-      <address class="loc-addr">
+<section id="equipo">
+  <div class="head">
+    <span class="kicker" data-es="El Equipo" data-en="The Team">El Equipo</span>
+    <h2 data-es="Cuatro barberos. Tres paises. Elegi tu silla." data-en="Four barbers. Three countries. Pick your chair.">Cuatro barberos. Tres paises. Elegi tu silla.</h2>
+  </div>
+  <div class="team">
+    <div class="team-rows">
+      <article class="trow">
+        <div class="tav"><img src="assets/barber-magic.jpg" width="1400" height="1236" loading="lazy" alt="Magic, barbero argentino en Barberia de las Estrellas"></div>
+        <div><h3>Magic</h3><div class="r" data-es="Barbero Argentino" data-en="Argentine Barber">Barbero Argentino</div></div>
+        <a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a>
+      </article>
+      <article class="trow">
+        <div class="tav"><div class="ph light" style="height:100%"><em>+</em></div></div>
+        <div><h3>Lucas Farinha</h3><div class="r" data-es="Barbero Uruguayo" data-en="Uruguayan Barber">Barbero Uruguayo</div></div>
+        <a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a>
+      </article>
+      <article class="trow">
+        <div class="tav"><div class="ph light" style="height:100%"><em>+</em></div></div>
+        <div><h3>Mathi</h3><div class="r" data-es="Barbero Argentino" data-en="Argentine Barber">Barbero Argentino</div></div>
+        <a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a>
+      </article>
+      <article class="trow">
+        <div class="tav"><div class="ph light" style="height:100%"><em>+</em></div></div>
+        <div><h3>Alejandro</h3><div class="r" data-es="Barbero Colombiano" data-en="Colombian Barber">Barbero Colombiano</div></div>
+        <a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a>
+      </article>
+    </div>
+  </div>
+  <p class="team-note" data-es="Dueno: Nico Jaffe. [FOTOS PENDIENTES: Lucas Farinha, Mathi, Alejandro.]" data-en="Owner: Nico Jaffe. [PHOTOS PENDING: Lucas Farinha, Mathi, Alejandro.]">Dueno: Nico Jaffe. [FOTOS PENDIENTES: Lucas Farinha, Mathi, Alejandro.]</p>
+</section>
+
+<section id="visitar" class="sec-alt">
+  <div class="loc">
+    <div>
+      <h2 style="font-size:clamp(1.8rem,3.4vw,2.7rem)" data-es="Segundo piso, Suite 209, en el medio de Wynwood." data-en="Second floor, Suite 209, in the middle of Wynwood.">Segundo piso, Suite 209, en el medio de Wynwood.</h2>
+      <address class="addr">
         164 NW 20th St, Suite 209<br>
         Miami, Florida 33127<br>
         <a href="tel:+17868517794">(786) 851-7794</a><br>
         <a href="mailto:barberiadelasestrellas@gmail.com">barberiadelasestrellas@gmail.com</a>
       </address>
-      <ul class="loc-perks">
-        <li><i class="fa-solid fa-square-parking"></i><span>Free parking on premises</span></li>
-        <li><i class="fa-solid fa-martini-glass-citrus"></i><span>Drinks and a pool table</span></li>
-        <li><i class="fa-solid fa-language"></i><span>Se habla espa&ntilde;ol</span></li>
-        <li><i class="fa-solid fa-palette"></i><span>Wynwood Walls, two blocks</span></li>
+      <ul class="perks">
+        <li data-es="Estacionamiento gratis" data-en="Free parking on site">Estacionamiento gratis</li>
+        <li data-es="Bebidas y mesa de pool" data-en="Drinks and a pool table">Bebidas y mesa de pool</li>
+        <li data-es="Se habla espanol e ingles" data-en="Spanish and English spoken">Se habla espanol e ingles</li>
+        <li data-es="Wynwood Walls a dos cuadras" data-en="Wynwood Walls, two blocks">Wynwood Walls a dos cuadras</li>
       </ul>
-      <div class="hours" id="hoursTable">
-        <div class="hr" data-day="1"><b>Monday</b><span>10:00 am to 8:00 pm</span></div>
-        <div class="hr closed" data-day="2"><b>Tuesday</b><span>Closed</span></div>
-        <div class="hr" data-day="3"><b>Wednesday</b><span>10:00 am to 8:00 pm</span></div>
-        <div class="hr" data-day="4"><b>Thursday</b><span>10:00 am to 8:00 pm</span></div>
-        <div class="hr" data-day="5"><b>Friday</b><span>10:00 am to 8:00 pm</span></div>
-        <div class="hr" data-day="6"><b>Saturday</b><span>10:00 am to 8:00 pm</span></div>
-        <div class="hr closed" data-day="0"><b>Sunday</b><span>Closed</span></div>
+      <div class="hours" id="hours">
+        <div class="hr" data-day="1"><b data-es="Lunes" data-en="Monday">Lunes</b><span>10:00 - 20:00</span></div>
+        <div class="hr closed" data-day="2"><b data-es="Martes" data-en="Tuesday">Martes</b><span data-es="Cerrado" data-en="Closed">Cerrado</span></div>
+        <div class="hr" data-day="3"><b data-es="Miercoles" data-en="Wednesday">Miercoles</b><span>10:00 - 20:00</span></div>
+        <div class="hr" data-day="4"><b data-es="Jueves" data-en="Thursday">Jueves</b><span>10:00 - 20:00</span></div>
+        <div class="hr" data-day="5"><b data-es="Viernes" data-en="Friday">Viernes</b><span>10:00 - 20:00</span></div>
+        <div class="hr" data-day="6"><b data-es="Sabado" data-en="Saturday">Sabado</b><span>10:00 - 20:00</span></div>
+        <div class="hr closed" data-day="0"><b data-es="Domingo" data-en="Sunday">Domingo</b><span data-es="Cerrado" data-en="Closed">Cerrado</span></div>
       </div>
-      <div style="margin-top:26px"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=164+NW+20th+St+Suite+209+Miami+FL+33127" class="btn" target="_blank" rel="noopener"><i class="fa-solid fa-location-crosshairs"></i> Get Directions</a></div>
+      <div style="margin-top:24px"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=164+NW+20th+St+Suite+209+Miami+FL+33127" class="btn" target="_blank" rel="noopener" data-es="Como llegar" data-en="Get directions">Como llegar</a></div>
     </div>
-    <div class="map-frame">
-      <iframe title="Map to Barberia de las Estrellas, 164 NW 20th Street Suite 209, Miami FL 33127" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    <div class="map">
+      <iframe title="Mapa a Barberia de las Estrellas, 164 NW 20th Street Suite 209, Miami FL 33127" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         src="https://www.google.com/maps?q=164%20NW%2020th%20St%20Suite%20209%20Miami%20FL%2033127&amp;output=embed"></iframe>
     </div>
   </div>
 </section>
 
-<!-- ============ FAQ ============ -->
-<section id="faq" class="sec-alt">
-  <div class="faq-wrap">
-    <div class="faq-intro">
-      <span class="kicker">Preguntas</span>
-      <h2>Answered before you call.</h2>
-      <p>The questions the front desk actually gets, in the order it gets them. Still stuck, call and ask a barber directly.</p>
-      <a href="tel:+17868517794" class="btn"><i class="fa-solid fa-phone-volume"></i> (786) 851-7794</a>
+<section id="faq">
+  <div class="faq">
+    <div>
+      <span class="kicker" data-es="Preguntas" data-en="Questions">Preguntas</span>
+      <h2 style="font-size:clamp(1.8rem,3.2vw,2.5rem);margin-bottom:14px" data-es="Respondidas antes de que llames." data-en="Answered before you call.">Respondidas antes de que llames.</h2>
+      <p style="margin-bottom:20px" data-es="Las que mas nos hacen, en el orden en que nos las hacen." data-en="The questions the front desk actually gets, in the order it gets them.">Las que mas nos hacen, en el orden en que nos las hacen.</p>
+      <a href="tel:+17868517794" class="btn btn-ink"><svg class="i"><use href="#i-tel"/></svg> (786) 851-7794</a>
     </div>
-    <div class="accordion">
-      <div class="acc-item"><button class="acc-head" aria-expanded="false">Does Leo Messi actually get cut at the shop? <i class="fa-solid fa-plus"></i></button><div class="acc-body"><div class="acc-inner">No, and we will not pretend otherwise. Nico Jaffe travels to Leo. What is at the shop is the same barber, the same clippers and the same technique, plus the shirt Leo signed and left here. Chelo Weigandt of Inter Miami has been cut in the Wynwood chair, in February 2025.</div></div></div>
-      <div class="acc-item"><button class="acc-head" aria-expanded="false">How much is a normal haircut? <i class="fa-solid fa-plus"></i></button><div class="acc-body"><div class="acc-inner">A haircut or fade is $50. Haircut plus beard is $65. Kids are $40. Every price is listed on this page and nothing gets added at the register.</div></div></div>
-      <div class="acc-item"><button class="acc-head" aria-expanded="false">Do you take walk-ins? <i class="fa-solid fa-plus"></i></button><div class="acc-body"><div class="acc-inner">Yes, when a chair is open. Fridays and Saturdays fill up, so booking ahead is the safer move. Booking is free and takes about a minute.</div></div></div>
-      <div class="acc-item"><button class="acc-head" aria-expanded="false">Where do I park? <i class="fa-solid fa-plus"></i></button><div class="acc-body"><div class="acc-inner">Free parking on premises. That is unusual for this part of Wynwood, so use it rather than circling 20th Street. The shop is on the second floor, Suite 209.</div></div></div>
-      <div class="acc-item"><button class="acc-head" aria-expanded="false">What is the Star VIP package? <i class="fa-solid fa-plus"></i></button><div class="acc-body"><div class="acc-inner">$180 for the Full Service VIP (haircut, beard, eyebrows and styling) plus a filmed and edited reel of your cut that you can post the same day. Around ninety minutes with one barber and one camera.</div></div></div>
-      <div class="acc-item"><button class="acc-head" aria-expanded="false">Can I request a specific barber? <i class="fa-solid fa-plus"></i></button><div class="acc-body"><div class="acc-inner">Yes. Magic, Lucas Farinha, Mathi and Alejandro can each be booked by name, and every barber row on this page books that barber directly. If you have no preference, take whoever is open. The standard is the same.</div></div></div>
-      <div class="acc-item"><button class="acc-head" aria-expanded="false">Do the barbers speak English? <i class="fa-solid fa-plus"></i></button><div class="acc-body"><div class="acc-inner">Both. The team is Argentine, Uruguayan and Colombian, so Spanish is the room's first language, but every barber works in English all day. Explain the cut in whichever one is easier for you.</div></div></div>
-      <div class="acc-item"><button class="acc-head" aria-expanded="false">Do you do color and platinum on men's hair? <i class="fa-solid fa-plus"></i></button><div class="acc-body"><div class="acc-inner">Yes, and it is a real part of the business, not a side service. Ba&ntilde;o color refresh is $75, highlights with a cut are $160, and a full global color with a cut is $250. Colour needs more chair time, so book it rather than walking in.</div></div></div>
-      <div class="acc-item"><button class="acc-head" aria-expanded="false">Are kids welcome? <i class="fa-solid fa-plus"></i></button><div class="acc-body"><div class="acc-inner">Yes. Kids cuts are $40 with the same barbers. There is a lounge and a pool table, so whoever brings them has somewhere to sit.</div></div></div>
-      <div class="acc-item"><button class="acc-head" aria-expanded="false">What are the hours? <i class="fa-solid fa-plus"></i></button><div class="acc-body"><div class="acc-inner">Monday and Wednesday through Saturday, 10:00 am to 8:00 pm. Closed Tuesday and Sunday.</div></div></div>
+    <div class="acc">
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="Cuanto sale un corte normal?" data-en="How much is a normal haircut?">Cuanto sale un corte normal?</button><div class="ab"><div class="ab-in" data-es="Corte o fade, $50. Corte con barba, $65. Ninos, $40. Todos los precios estan en esta pagina y no se agrega nada en la caja." data-en="A haircut or fade is $50. Haircut plus beard is $65. Kids are $40. Every price is listed on this page and nothing gets added at the register.">Corte o fade, $50. Corte con barba, $65. Ninos, $40. Todos los precios estan en esta pagina y no se agrega nada en la caja.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="Cuanto dura una cita?" data-en="How long does an appointment take?">Cuanto dura una cita?</button><div class="ab"><div class="ab-in" data-es="Un corte con barba lleva cerca de una hora. El color necesita mas tiempo de silla, entre hora y media y dos horas segun el largo. No apuramos para meter otro cliente." data-en="A cut with beard runs about an hour. Color needs more chair time, between ninety minutes and two hours depending on length. Nobody gets rushed to squeeze in the next client.">Un corte con barba lleva cerca de una hora. El color necesita mas tiempo de silla, entre hora y media y dos horas segun el largo. No apuramos para meter otro cliente.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="Me van a sacar fotos?" data-en="Will you photograph me?">Me van a sacar fotos?</button><div class="ab"><div class="ab-in" data-es="Solo si vos decis que si. No se sube nada a redes sin permiso, y eso vale para todos por igual. El paquete Star VIP es el unico que incluye camara, y lo pedis vos." data-en="Only if you say yes. Nothing goes on social media without permission, and that applies to everyone equally. The Star VIP package is the only one that involves a camera, and you are the one who asks for it.">Solo si vos decis que si. No se sube nada a redes sin permiso, y eso vale para todos por igual. El paquete Star VIP es el unico que incluye camara, y lo pedis vos.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="Atienden sin cita?" data-en="Do you take walk-ins?">Atienden sin cita?</button><div class="ab"><div class="ab-in" data-es="Si, cuando hay silla libre. Viernes y sabado se llenan, asi que reservar es mas seguro. Reservar es gratis y lleva un minuto." data-en="Yes, when a chair is open. Fridays and Saturdays fill up, so booking ahead is the safer move. Booking is free and takes about a minute.">Si, cuando hay silla libre. Viernes y sabado se llenan, asi que reservar es mas seguro. Reservar es gratis y lleva un minuto.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="Donde estaciono?" data-en="Where do I park?">Donde estaciono?</button><div class="ab"><div class="ab-in" data-es="Estacionamiento gratis en el lugar, algo poco comun en esta parte de Wynwood. El local esta en el segundo piso, Suite 209." data-en="Free parking on the premises, which is unusual for this part of Wynwood. The shop is on the second floor, Suite 209.">Estacionamiento gratis en el lugar, algo poco comun en esta parte de Wynwood. El local esta en el segundo piso, Suite 209.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="Puedo pedir un barbero especifico?" data-en="Can I request a specific barber?">Puedo pedir un barbero especifico?</button><div class="ab"><div class="ab-in" data-es="Si. Magic, Lucas Farinha, Mathi y Alejandro se reservan por nombre desde esta pagina. Si no tenes preferencia, tomas al que este libre. El estandar es el mismo." data-en="Yes. Magic, Lucas Farinha, Mathi and Alejandro can each be booked by name from this page. If you have no preference, take whoever is open. The standard is the same.">Si. Magic, Lucas Farinha, Mathi y Alejandro se reservan por nombre desde esta pagina. Si no tenes preferencia, tomas al que este libre. El estandar es el mismo.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="Hablan ingles?" data-en="Do the barbers speak English?">Hablan ingles?</button><div class="ab"><div class="ab-in" data-es="Los dos idiomas. El equipo es argentino, uruguayo y colombiano, asi que el espanol es el idioma del local, pero todos trabajan en ingles todo el dia." data-en="Both. The team is Argentine, Uruguayan and Colombian, so Spanish is the room's first language, but every barber works in English all day.">Los dos idiomas. El equipo es argentino, uruguayo y colombiano, asi que el espanol es el idioma del local, pero todos trabajan en ingles todo el dia.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="Hacen color y platinado en hombres?" data-en="Do you do color and platinum on men's hair?">Hacen color y platinado en hombres?</button><div class="ab"><div class="ab-in" data-es="Si, y es una parte real del negocio, no un servicio de costado. Bano de color, $75. Mechas con corte, $160. Color global con corte, $250. Conviene reservar y no venir sin cita." data-en="Yes, and it is a real part of the business, not a side service. Color refresh is $75, highlights with a cut are $160, and a full global color with a cut is $250. Book it rather than walking in.">Si, y es una parte real del negocio, no un servicio de costado. Bano de color, $75. Mechas con corte, $160. Color global con corte, $250. Conviene reservar y no venir sin cita.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="Vienen ninos?" data-en="Are kids welcome?">Vienen ninos?</button><div class="ab"><div class="ab-in" data-es="Si. Corte de nino $40 con los mismos barberos. Hay sala de espera con bebidas y mesa de pool para el que lo acompana." data-en="Yes. Kids cuts are $40 with the same barbers. There is a lounge with drinks and a pool table for whoever brings them.">Si. Corte de nino $40 con los mismos barberos. Hay sala de espera con bebidas y mesa de pool para el que lo acompana.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="Cual es el horario?" data-en="What are the hours?">Cual es el horario?</button><div class="ab"><div class="ab-in" data-es="Lunes y de miercoles a sabado, de 10:00 a 20:00. Cerrado martes y domingo." data-en="Monday and Wednesday through Saturday, 10:00 am to 8:00 pm. Closed Tuesday and Sunday.">Lunes y de miercoles a sabado, de 10:00 a 20:00. Cerrado martes y domingo.</div></div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ CONTACT ============ -->
-<section id="contact" class="sec-dark">
-  <div class="ct-head">
-    <h2>Tell us what you want done.</h2>
-    <p>Send the cut, the day and a number. Somebody will text you back. If you would rather just book a time yourself, the booking page is one tap away.</p>
+<section id="contacto" class="sec-dark">
+  <div class="head" style="text-align:center">
+    <span class="kicker" data-es="Contacto" data-en="Contact">Contacto</span>
+    <h2 style="max-width:none" data-es="Deci que te queres hacer." data-en="Tell us what you want done.">Deci que te queres hacer.</h2>
   </div>
-  <div class="ct-grid">
-    <div class="form-card">
-      <h3>Request an Appointment</h3>
-      <p class="fsub">Four fields. That is the whole form.</p>
-      <form id="bookForm" novalidate onsubmit="return submitForm(event)">
+  <div class="ct">
+    <div>
+      <h3 style="font-size:1.15rem;margin-bottom:4px" data-es="Pedir un turno" data-en="Request an appointment">Pedir un turno</h3>
+      <p style="font-size:.88rem;color:#8E8880;margin-bottom:20px" data-es="Cuatro campos. Nada mas." data-en="Four fields. That is the whole form.">Cuatro campos. Nada mas.</p>
+      <form id="form" novalidate>
         <div class="frow">
-          <div class="field" id="f-name">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name">
-            <div class="msg">We need a name to put on the chair.</div>
-          </div>
-          <div class="field" id="f-phone">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="(786) 555-0123" autocomplete="tel">
-            <div class="msg">Add a number we can text back, like (786) 555-0123.</div>
-          </div>
+          <div class="f" id="f-name"><label for="name" data-es="Nombre" data-en="Name">Nombre</label><input type="text" id="name" autocomplete="name" data-es-ph="Tu nombre" data-en-ph="Your name" placeholder="Tu nombre"><div class="m" data-es="Necesitamos un nombre para la silla." data-en="We need a name to put on the chair.">Necesitamos un nombre para la silla.</div></div>
+          <div class="f" id="f-phone"><label for="phone" data-es="Telefono" data-en="Phone">Telefono</label><input type="tel" id="phone" autocomplete="tel" placeholder="(786) 555-0123"><div class="m" data-es="Dejanos un numero al que podamos escribirte." data-en="Add a number we can text back.">Dejanos un numero al que podamos escribirte.</div></div>
         </div>
-        <div class="field" id="f-service">
-          <label for="service">Service</label>
-          <select id="service" name="service">
-            <option value="">Pick a service</option>
-            <option>Haircut or Fade &middot; $50</option>
-            <option>Haircut + Beard &middot; $65</option>
-            <option>Kids Haircut &middot; $40</option>
-            <option>Beard Maintenance &middot; $25</option>
-            <option>Eyebrows &middot; $15</option>
-            <option>Ba&ntilde;o Color (Repaso) &middot; $75</option>
-            <option>Highlights + Haircut &middot; $160</option>
-            <option>Full Color Global + Haircut &middot; $250</option>
-            <option>Full Service VIP &middot; $85</option>
-            <option>Star VIP (with reel) &middot; $180</option>
-            <option>Not sure yet</option>
+        <div class="f" id="f-service"><label for="service" data-es="Servicio" data-en="Service">Servicio</label>
+          <select id="service">
+            <option value="" data-es="Elegi un servicio" data-en="Pick a service">Elegi un servicio</option>
+            <option data-es="Corte o Fade, $50" data-en="Haircut or Fade, $50">Corte o Fade, $50</option>
+            <option data-es="Corte + Barba, $65" data-en="Haircut + Beard, $65">Corte + Barba, $65</option>
+            <option data-es="Corte de Nino, $40" data-en="Kids Haircut, $40">Corte de Nino, $40</option>
+            <option data-es="Mantenimiento de Barba, $25" data-en="Beard Maintenance, $25">Mantenimiento de Barba, $25</option>
+            <option data-es="Cejas, $15" data-en="Eyebrows, $15">Cejas, $15</option>
+            <option data-es="Bano de Color, $75" data-en="Color Refresh, $75">Bano de Color, $75</option>
+            <option data-es="Mechas + Corte, $160" data-en="Highlights + Haircut, $160">Mechas + Corte, $160</option>
+            <option data-es="Color Global + Corte, $250" data-en="Full Color + Haircut, $250">Color Global + Corte, $250</option>
+            <option>Full Service VIP, $85</option>
+            <option>Star VIP, $180</option>
+            <option data-es="Todavia no se" data-en="Not sure yet">Todavia no se</option>
           </select>
-          <div class="msg">Pick the closest one. We can change it in the chair.</div>
+          <div class="m" data-es="Elegi el mas parecido. Se puede cambiar en la silla." data-en="Pick the closest one. We can change it in the chair.">Elegi el mas parecido. Se puede cambiar en la silla.</div>
         </div>
-        <div class="field">
-          <label for="message">Anything else</label>
-          <textarea id="message" name="message" placeholder="Preferred barber, preferred day, or what you want the cut to look like."></textarea>
-        </div>
-        <button type="submit" class="btn" style="width:100%"><i class="fa-solid fa-paper-plane"></i> Send Request</button>
-        <div class="form-status" id="formStatus"></div>
-        <p class="form-disc">We text back about the chair, and that is it.</p>
+        <div class="f"><label for="msg" data-es="Algo mas" data-en="Anything else">Algo mas</label><textarea id="msg" data-es-ph="Barbero preferido, dia preferido, o como queres que quede." data-en-ph="Preferred barber, preferred day, or what you want the cut to look like." placeholder="Barbero preferido, dia preferido, o como queres que quede."></textarea></div>
+        <button type="submit" class="btn" style="width:100%" data-es="Enviar" data-en="Send request">Enviar</button>
+        <div class="fstat" id="fstat"></div>
+        <p class="fdisc" data-es="Te escribimos por el turno y nada mas." data-en="We text back about the chair, and that is it.">Te escribimos por el turno y nada mas.</p>
       </form>
     </div>
-    <div class="info-card">
-      <h3>Find Us</h3>
-      <div class="info-row"><div class="ii"><i class="fa-solid fa-phone-volume"></i></div><div><div class="it">Call or text</div><a href="tel:+17868517794">(786) 851-7794</a></div></div>
-      <div class="info-row"><div class="ii"><i class="fa-solid fa-envelope"></i></div><div><div class="it">Email</div><a href="mailto:barberiadelasestrellas@gmail.com">barberiadelasestrellas@gmail.com</a></div></div>
-      <div class="info-row"><div class="ii"><i class="fa-solid fa-location-crosshairs"></i></div><div><div class="it">Walk in</div><span>164 NW 20th St, Suite 209<br>Miami, FL 33127</span></div></div>
-      <div class="info-row"><div class="ii"><i class="fa-brands fa-instagram"></i></div><div><div class="it">Follow</div><a href="https://www.instagram.com/barberiaestrellas/" target="_blank" rel="noopener">@barberiaestrellas</a></div></div>
-      <div class="info-row"><div class="ii"><i class="fa-solid fa-square-parking"></i></div><div><div class="it">Parking</div><span>Free, on premises</span></div></div>
-      <div style="margin-top:22px"><a href="https://www.barberiadelasestrellas.com/s/appointments" class="btn" style="width:100%" target="_blank" rel="noopener"><i class="fa-solid fa-scissors"></i> Book a Chair</a></div>
+    <div>
+      <h3 style="font-size:1.15rem;margin-bottom:16px" data-es="Encontranos" data-en="Find us">Encontranos</h3>
+      <div class="irow"><span class="t" data-es="Llamar o escribir" data-en="Call or text">Llamar o escribir</span><a href="tel:+17868517794">(786) 851-7794</a></div>
+      <div class="irow"><span class="t">Email</span><a href="mailto:barberiadelasestrellas@gmail.com">barberiadelasestrellas@gmail.com</a></div>
+      <div class="irow"><span class="t" data-es="Direccion" data-en="Walk in">Direccion</span><span>164 NW 20th St, Suite 209, Miami, FL 33127</span></div>
+      <div class="irow"><span class="t">Instagram</span><a href="https://www.instagram.com/barberiaestrellas/" target="_blank" rel="noopener">@barberiaestrellas</a></div>
+      <div class="irow"><span class="t" data-es="Estacionamiento" data-en="Parking">Estacionamiento</span><span data-es="Gratis, en el lugar" data-en="Free, on site">Gratis, en el lugar</span></div>
+      <div style="margin-top:22px"><a href="https://www.barberiadelasestrellas.com/s/appointments" class="btn" style="width:100%" target="_blank" rel="noopener" data-es="Reservar una silla" data-en="Book a chair">Reservar una silla</a></div>
     </div>
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
 <footer>
-  <div class="foot-grid">
-    <div class="foot-brand">
-      <span class="fb-chip"><img src="assets/logo.png?v=1" width="74" height="74" alt="Barberia de las Estrellas logo"></span>
-      <p>The Wynwood barbershop run by Leo Messi's barber. Argentine, Uruguayan and Colombian barbers cutting on 20th Street since 2024.</p>
-      <div class="foot-social">
-        <a href="https://www.instagram.com/barberiaestrellas/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.facebook.com/61567021010209" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="tel:+17868517794" aria-label="Call"><i class="fa-solid fa-phone-volume"></i></a>
-        <a href="mailto:barberiadelasestrellas@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+  <div class="fg">
+    <div class="fb">
+      <span class="chip"><img src="assets/logo.png?v=2" width="64" height="64" alt="Barberia de las Estrellas"></span>
+      <p data-es="Barberia de precision en Wynwood. Barberos argentinos, uruguayos y colombianos cortando en la calle 20 desde 2024." data-en="Precision barbering in Wynwood. Argentine, Uruguayan and Colombian barbers cutting on 20th Street since 2024.">Barberia de precision en Wynwood. Barberos argentinos, uruguayos y colombianos cortando en la calle 20 desde 2024.</p>
+      <div class="fsoc">
+        <a href="https://www.instagram.com/barberiaestrellas/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="https://www.facebook.com/61567021010209" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+        <a href="tel:+17868517794" aria-label="Telefono">TEL</a>
       </div>
     </div>
-    <div class="foot-col">
-      <h4>The Shop</h4>
+    <div class="fc">
+      <h4 data-es="El Local" data-en="The Shop">El Local</h4>
       <ul>
-        <li><a href="#el10">El 10</a></li>
-        <li><a href="#equipo">The Barbers</a></li>
-        <li><a href="#trabajos">The Work</a></li>
-        <li><a href="#wynwood">Visit Wynwood</a></li>
+        <li><a href="#trabajo" data-es="El Trabajo" data-en="The Work">El Trabajo</a></li>
+        <li><a href="#invitados" data-es="Invitados" data-en="Guests">Invitados</a></li>
+        <li><a href="#equipo" data-es="Los Barberos" data-en="The Barbers">Los Barberos</a></li>
+        <li><a href="#visitar" data-es="Visitar Wynwood" data-en="Visit Wynwood">Visitar Wynwood</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-    <div class="foot-col">
-      <h4>Services</h4>
+    <div class="fc">
+      <h4 data-es="Servicios" data-en="Services">Servicios</h4>
       <ul>
-        <li><a href="#carta">Haircut or Fade &middot; $50</a></li>
-        <li><a href="#carta">Haircut + Beard &middot; $65</a></li>
-        <li><a href="#carta">Kids Haircut &middot; $40</a></li>
-        <li><a href="#carta">Beard Maintenance &middot; $25</a></li>
-        <li><a href="#carta">Color &amp; Highlights</a></li>
-        <li><a href="#vip">Star VIP &middot; $180</a></li>
+        <li><a href="#carta" data-es="Corte o Fade, $50" data-en="Haircut or Fade, $50">Corte o Fade, $50</a></li>
+        <li><a href="#carta" data-es="Corte + Barba, $65" data-en="Haircut + Beard, $65">Corte + Barba, $65</a></li>
+        <li><a href="#carta" data-es="Corte de Nino, $40" data-en="Kids Haircut, $40">Corte de Nino, $40</a></li>
+        <li><a href="#carta" data-es="Color y Mechas" data-en="Color and Highlights">Color y Mechas</a></li>
+        <li><a href="#vip">Star VIP, $180</a></li>
       </ul>
     </div>
-    <div class="foot-col">
-      <h4>Contact</h4>
+    <div class="fc">
+      <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
       <address>
         <a href="tel:+17868517794">(786) 851-7794</a><br>
         <a href="mailto:barberiadelasestrellas@gmail.com">barberiadelasestrellas@gmail.com</a><br>
         164 NW 20th St, Suite 209<br>
         Miami, FL 33127<br>
-        Mon, Wed to Sat: 10am to 8pm<br>
-        Closed Tue and Sun
+        <span data-es="Lun, Mie a Sab: 10:00 a 20:00" data-en="Mon, Wed to Sat: 10am to 8pm">Lun, Mie a Sab: 10:00 a 20:00</span><br>
+        <span data-es="Cerrado martes y domingo" data-en="Closed Tuesday and Sunday">Cerrado martes y domingo</span>
       </address>
     </div>
   </div>
-  <div class="foot-bottom">
+  <div class="fbot">
     <div>&copy; 2026 Barberia de las Estrellas. Wynwood, Miami.</div>
-    <div class="fb-links"><a href="#carta">Prices</a><a href="#wynwood">Directions</a><a href="https://www.barberiadelasestrellas.com/s/appointments" target="_blank" rel="noopener">Book</a></div>
-    <a class="built-by" href="https://crossdesigned.com" target="_blank" rel="noopener" aria-label="Website built by Cross Designs">Built by <img src="assets/cross-logo-white.png" alt="Cross Designs, South Florida web studio"></a>
+    <div class="fbl">
+      <a href="#carta" data-es="Precios" data-en="Prices">Precios</a>
+      <a href="#visitar" data-es="Como llegar" data-en="Directions">Como llegar</a>
+      <a href="https://www.barberiadelasestrellas.com/s/appointments" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a>
+    </div>
+    <a class="by" href="https://crossdesigned.com" target="_blank" rel="noopener" aria-label="Website built by Cross Designs"><span data-es="Hecho por" data-en="Built by">Hecho por</span> <img src="assets/cross-logo-white.png" alt="Cross Designs"></a>
   </div>
 </footer>
 
-<!-- ============ JSON-LD ============ -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"HairSalon","@id":"https://crossfiber.github.io/barberia-estrellas/#barbershop","name":"Barberia de las Estrellas","alternateName":"Barberia de las Estrellas by Nico Jaffe","image":"https://crossfiber.github.io/barberia-estrellas/assets/og-share.png?v=1","logo":"https://crossfiber.github.io/barberia-estrellas/assets/logo.png?v=1","url":"https://crossfiber.github.io/barberia-estrellas/","telephone":"+1-786-851-7794","email":"barberiadelasestrellas@gmail.com","priceRange":"$15-$250","currenciesAccepted":"USD","paymentAccepted":"Cash, Credit Card, Apple Pay, Google Pay, Cash App","description":"Barberia de las Estrellas is a barbershop at 164 NW 20th Street, Suite 209 in the Wynwood Art District of Miami, Florida, owned by Nico Jaffe, the barber for Leo Messi. Argentine, Uruguayan and Colombian barbers offering fades, beard work, eyebrow detailing, men's color and the Star VIP filmed-cut package. Fades from $50. Free parking on premises.","slogan":"La Barberia que elige el 10","founder":{"@type":"Person","name":"Nico Jaffe","jobTitle":"Owner and Barber"},"address":{"@type":"PostalAddress","streetAddress":"164 NW 20th St, Suite 209","addressLocality":"Miami","addressRegion":"FL","postalCode":"33127","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":25.7997,"longitude":-80.1993},"hasMap":"https://www.google.com/maps?q=164+NW+20th+St+Suite+209+Miami+FL+33127","areaServed":[{"@type":"City","name":"Miami"},{"@type":"Place","name":"Wynwood"},{"@type":"Place","name":"Midtown Miami"},{"@type":"Place","name":"Edgewater"},{"@type":"Place","name":"Design District"},{"@type":"City","name":"Miami Beach"},{"@type":"AdministrativeArea","name":"Miami-Dade County"}],"knowsAbout":["Skin fade","Taper fade","Beard shaping","Eyebrow detailing","Men's hair color","Platinum blonde men's hair","Kids haircuts","Barber content reels"],"knowsLanguage":["es","en"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"20:00"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Barberia de las Estrellas Service Menu","itemListElement":[
-{"@type":"Offer","price":"50","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Haircut or Fade","description":"Skin fade, taper or scissor cut."}},
-{"@type":"Offer","price":"65","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Haircut + Beard","description":"Haircut with full beard shape, line-up and hot towel finish."}},
-{"@type":"Offer","price":"40","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Kids Haircut","description":"Children's haircut with the same barbers."}},
-{"@type":"Offer","price":"25","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Beard Maintenance","description":"Beard shape and line-up between cuts."}},
-{"@type":"Offer","price":"15","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Eyebrows","description":"Eyebrow detailing, standalone or added to any service."}},
-{"@type":"Offer","price":"75","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Bano Color (Repaso)","description":"Refresh on existing hair color."}},
-{"@type":"Offer","price":"160","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Highlights + Haircut","description":"Partial lift with a haircut built around it."}},
-{"@type":"Offer","price":"250","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Full Color Global + Haircut","description":"Full head color with a haircut."}},
-{"@type":"Offer","price":"85","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Full Service VIP","description":"Haircut, beard, eyebrows and hairstyle in one appointment."}},
-{"@type":"Offer","price":"180","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Star VIP","description":"Full Service VIP plus a filmed and edited reel of the cut."}}]},"sameAs":["https://www.instagram.com/barberiaestrellas/","https://www.facebook.com/61567021010209","https://www.barberiadelasestrellas.com/"]}
+{"@context":"https://schema.org","@type":"HairSalon","@id":"https://crossfiber.github.io/barberia-estrellas/#barbershop","name":"Barberia de las Estrellas","alternateName":"Barberia de las Estrellas by Nico Jaffe","image":"https://crossfiber.github.io/barberia-estrellas/assets/og-share.png?v=2","logo":"https://crossfiber.github.io/barberia-estrellas/assets/logo.png?v=2","url":"https://crossfiber.github.io/barberia-estrellas/","telephone":"+1-786-851-7794","email":"barberiadelasestrellas@gmail.com","priceRange":"$15-$250","currenciesAccepted":"USD","paymentAccepted":"Cash, Credit Card, Apple Pay, Google Pay, Cash App","description":"Barberia de precision en 164 NW 20th Street, Suite 209, Wynwood, Miami. Barberos argentinos, uruguayos y colombianos. Fades desde $50, barba, cejas, color masculino y el paquete Star VIP filmado. Estacionamiento gratis en el lugar. Se habla espanol e ingles.","slogan":"Cortes de precision, discrecion incluida","founder":{"@type":"Person","name":"Nico Jaffe","jobTitle":"Owner and Barber"},"address":{"@type":"PostalAddress","streetAddress":"164 NW 20th St, Suite 209","addressLocality":"Miami","addressRegion":"FL","postalCode":"33127","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":25.7997,"longitude":-80.1993},"hasMap":"https://www.google.com/maps?q=164+NW+20th+St+Suite+209+Miami+FL+33127","areaServed":[{"@type":"City","name":"Miami"},{"@type":"Place","name":"Wynwood"},{"@type":"Place","name":"Midtown Miami"},{"@type":"Place","name":"Edgewater"},{"@type":"Place","name":"Design District"},{"@type":"City","name":"Miami Beach"},{"@type":"AdministrativeArea","name":"Miami-Dade County"}],"knowsAbout":["Skin fade","Taper fade","Beard shaping","Eyebrow detailing","Men's hair color","Platinum blonde men's hair","Kids haircuts","Barber content reels"],"knowsLanguage":["es","en"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"20:00"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Carta de servicios","itemListElement":[
+{"@type":"Offer","price":"50","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Corte o Fade","description":"Skin fade, taper o corte a tijera."}},
+{"@type":"Offer","price":"65","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Corte + Barba","description":"Corte con perfilado completo de barba y toalla caliente."}},
+{"@type":"Offer","price":"40","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Corte de Nino","description":"Corte para ninos con los mismos barberos."}},
+{"@type":"Offer","price":"25","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Mantenimiento de Barba","description":"Perfilado y contorno de barba entre cortes."}},
+{"@type":"Offer","price":"15","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Cejas","description":"Detalle de cejas, solo o agregado a cualquier servicio."}},
+{"@type":"Offer","price":"75","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Bano de Color","description":"Repaso sobre color existente."}},
+{"@type":"Offer","price":"160","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Mechas + Corte","description":"Decoloracion parcial con corte."}},
+{"@type":"Offer","price":"250","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Color Global + Corte","description":"Color completo de cabeza con corte."}},
+{"@type":"Offer","price":"85","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Full Service VIP","description":"Corte, barba, cejas y peinado en una cita."}},
+{"@type":"Offer","price":"180","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Star VIP","description":"Full Service VIP mas un reel filmado y editado del corte."}}]},"sameAs":["https://www.instagram.com/barberiaestrellas/","https://www.facebook.com/61567021010209","https://www.barberiadelasestrellas.com/"]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Barberia de las Estrellas","url":"https://crossfiber.github.io/barberia-estrellas/","logo":"https://crossfiber.github.io/barberia-estrellas/assets/logo.png?v=1","contactPoint":[
-{"@type":"ContactPoint","contactType":"reservations","telephone":"+1-786-851-7794","availableLanguage":["English","Spanish"],"areaServed":"US"},
-{"@type":"ContactPoint","contactType":"customer service","email":"barberiadelasestrellas@gmail.com","availableLanguage":["English","Spanish"],"areaServed":"US"}],
+{"@context":"https://schema.org","@type":"Organization","name":"Barberia de las Estrellas","url":"https://crossfiber.github.io/barberia-estrellas/","logo":"https://crossfiber.github.io/barberia-estrellas/assets/logo.png?v=2","contactPoint":[
+{"@type":"ContactPoint","contactType":"reservations","telephone":"+1-786-851-7794","availableLanguage":["Spanish","English"],"areaServed":"US"},
+{"@type":"ContactPoint","contactType":"customer service","email":"barberiadelasestrellas@gmail.com","availableLanguage":["Spanish","English"],"areaServed":"US"}],
 "sameAs":["https://www.instagram.com/barberiaestrellas/","https://www.facebook.com/61567021010209"]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Does Leo Messi actually get cut at the shop?","acceptedAnswer":{"@type":"Answer","text":"No. Nico Jaffe travels to Leo Messi. What is at the Wynwood shop is the same barber, the same clippers and the same technique, plus the shirt Leo signed and left there. Chelo Weigandt of Inter Miami CF was cut in the Wynwood chair in February 2025."}},
-{"@type":"Question","name":"How much is a haircut at Barberia de las Estrellas?","acceptedAnswer":{"@type":"Answer","text":"A haircut or fade is $50. Haircut plus beard is $65. Kids haircuts are $40. Every price is listed on the site and nothing is added at the register."}},
-{"@type":"Question","name":"Do you take walk-ins?","acceptedAnswer":{"@type":"Answer","text":"Yes, when a chair is open. Fridays and Saturdays fill up, so booking ahead is safer. Booking is free and takes about a minute."}},
-{"@type":"Question","name":"Where do I park?","acceptedAnswer":{"@type":"Answer","text":"Free parking on premises, which is unusual for Wynwood. The shop is on the second floor at 164 NW 20th Street, Suite 209."}},
-{"@type":"Question","name":"What is the Star VIP package?","acceptedAnswer":{"@type":"Answer","text":"Star VIP is $180 and includes the Full Service VIP haircut, beard, eyebrows and styling, plus a filmed and edited reel of the cut. It runs about ninety minutes with one barber and one camera."}},
-{"@type":"Question","name":"Can I request a specific barber?","acceptedAnswer":{"@type":"Answer","text":"Yes. Magic, Lucas Farinha, Mathi and Alejandro can each be booked by name."}},
-{"@type":"Question","name":"Do the barbers speak English?","acceptedAnswer":{"@type":"Answer","text":"Both English and Spanish. The team is Argentine, Uruguayan and Colombian, so Spanish is the room's first language, but every barber works in English all day."}},
-{"@type":"Question","name":"Do you do color and platinum on men's hair?","acceptedAnswer":{"@type":"Answer","text":"Yes. A bano color refresh is $75, highlights with a cut are $160, and a full global color with a cut is $250. Color needs extra chair time, so book rather than walking in."}},
-{"@type":"Question","name":"Are kids welcome?","acceptedAnswer":{"@type":"Answer","text":"Yes. Kids cuts are $40 with the same barbers, and there is a lounge with a pool table for whoever brings them."}},
-{"@type":"Question","name":"What are the hours?","acceptedAnswer":{"@type":"Answer","text":"Monday and Wednesday through Saturday, 10:00 am to 8:00 pm. Closed Tuesday and Sunday."}}]}
+{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"es","mainEntity":[
+{"@type":"Question","name":"Cuanto sale un corte normal?","acceptedAnswer":{"@type":"Answer","text":"Corte o fade, $50. Corte con barba, $65. Ninos, $40. Todos los precios estan publicados y no se agrega nada en la caja."}},
+{"@type":"Question","name":"Cuanto dura una cita?","acceptedAnswer":{"@type":"Answer","text":"Un corte con barba lleva cerca de una hora. El color necesita entre hora y media y dos horas segun el largo."}},
+{"@type":"Question","name":"Me van a sacar fotos?","acceptedAnswer":{"@type":"Answer","text":"Solo si el cliente da permiso. No se publica nada en redes sin autorizacion. El paquete Star VIP es el unico que incluye camara y lo pide el cliente."}},
+{"@type":"Question","name":"Atienden sin cita?","acceptedAnswer":{"@type":"Answer","text":"Si, cuando hay silla libre. Viernes y sabado se llenan, asi que conviene reservar. Reservar es gratis."}},
+{"@type":"Question","name":"Donde estaciono?","acceptedAnswer":{"@type":"Answer","text":"Estacionamiento gratis en el lugar, poco comun en Wynwood. El local esta en el segundo piso, Suite 209."}},
+{"@type":"Question","name":"Puedo pedir un barbero especifico?","acceptedAnswer":{"@type":"Answer","text":"Si. Magic, Lucas Farinha, Mathi y Alejandro se reservan por nombre."}},
+{"@type":"Question","name":"Hablan ingles?","acceptedAnswer":{"@type":"Answer","text":"Espanol e ingles. El equipo es argentino, uruguayo y colombiano y trabaja en los dos idiomas."}},
+{"@type":"Question","name":"Hacen color y platinado en hombres?","acceptedAnswer":{"@type":"Answer","text":"Si. Bano de color $75, mechas con corte $160, color global con corte $250. Conviene reservar."}},
+{"@type":"Question","name":"Vienen ninos?","acceptedAnswer":{"@type":"Answer","text":"Si. Corte de nino $40 con los mismos barberos. Hay sala de espera con bebidas y mesa de pool."}},
+{"@type":"Question","name":"Cual es el horario?","acceptedAnswer":{"@type":"Answer","text":"Lunes y de miercoles a sabado, de 10:00 a 20:00. Cerrado martes y domingo."}}]}
 </script>
 
-<!-- ============ JS ============ -->
 <script>
 if ('scrollRestoration' in history) { history.scrollRestoration = 'auto'; }
 (function(){
   if (window.location.hash) { history.replaceState(null, '', window.location.pathname); }
 
-  /* Drawer */
-  var hb=document.getElementById('hamburger'), dr=document.getElementById('navDrawer'),
-      ov=document.getElementById('navOverlay'), dc=document.getElementById('drawerClose');
-  function openDrawer(){dr.classList.add('open');ov.classList.add('open');document.body.classList.add('drawer-open');dr.setAttribute('aria-hidden','false');hb.setAttribute('aria-expanded','true');}
-  function closeDrawer(){dr.classList.remove('open');ov.classList.remove('open');document.body.classList.remove('drawer-open');dr.setAttribute('aria-hidden','true');hb.setAttribute('aria-expanded','false');}
-  hb.addEventListener('click',openDrawer);
-  dc.addEventListener('click',closeDrawer);
-  ov.addEventListener('click',closeDrawer);
-  dr.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeDrawer);});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&dr.classList.contains('open'))closeDrawer();});
+  /* ---- language ---- */
+  var LANGS=['es','en'];
+  function applyLang(l){
+    document.documentElement.lang=l;
+    document.querySelectorAll('[data-'+l+']').forEach(function(el){
+      var v=el.getAttribute('data-'+l); if(v!==null) el.innerHTML=v;
+    });
+    document.querySelectorAll('[data-'+l+'-ph]').forEach(function(el){
+      el.setAttribute('placeholder', el.getAttribute('data-'+l+'-ph'));
+    });
+    document.querySelectorAll('.lang button').forEach(function(b){
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-lang')===l));
+    });
+    document.querySelectorAll('.ai.open .ab').forEach(function(b){b.style.maxHeight=b.scrollHeight+'px';});
+    document.querySelectorAll('.lgroup.open .lgr').forEach(function(b){b.style.maxHeight=b.scrollHeight+'px';});
+    try{localStorage.setItem('bde-lang',l);}catch(e){}
+  }
+  var stored=null; try{stored=localStorage.getItem('bde-lang');}catch(e){}
+  document.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click',function(){applyLang(b.getAttribute('data-lang'));});
+  });
+  applyLang(LANGS.indexOf(stored)>-1?stored:'es');
 
-  /* Anchor scroll without leaving a hash */
+  /* ---- drawer ---- */
+  var bg=document.getElementById('burger'), dr=document.getElementById('drawer'),
+      ov=document.getElementById('ov'), dx=document.getElementById('drx');
+  function openD(){dr.classList.add('open');ov.classList.add('open');document.body.classList.add('dopen');dr.setAttribute('aria-hidden','false');bg.setAttribute('aria-expanded','true');}
+  function closeD(){dr.classList.remove('open');ov.classList.remove('open');document.body.classList.remove('dopen');dr.setAttribute('aria-hidden','true');bg.setAttribute('aria-expanded','false');}
+  bg.addEventListener('click',openD); dx.addEventListener('click',closeD); ov.addEventListener('click',closeD);
+  dr.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeD);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&dr.classList.contains('open'))closeD();});
+
+  /* ---- anchors, no hash left behind ---- */
   document.querySelectorAll('a[href^="#"]').forEach(function(l){
     l.addEventListener('click',function(e){
       var id=l.getAttribute('href'); if(id.length<2) return;
@@ -1114,71 +942,64 @@ if ('scrollRestoration' in history) { history.scrollRestoration = 'auto'; }
     });
   });
 
-  /* Accordion: one mechanism, max-height only, single open */
-  document.querySelectorAll('.acc-head').forEach(function(btn){
+  /* ---- FAQ accordion ---- */
+  document.querySelectorAll('.ah').forEach(function(btn){
     btn.addEventListener('click',function(){
-      var item=btn.parentElement, body=item.querySelector('.acc-body'), isOpen=item.classList.contains('open');
-      document.querySelectorAll('.acc-item').forEach(function(i){
+      var item=btn.parentElement, body=item.querySelector('.ab'), isOpen=item.classList.contains('open');
+      document.querySelectorAll('.ai').forEach(function(i){
         i.classList.remove('open');
-        i.querySelector('.acc-head').setAttribute('aria-expanded','false');
-        i.querySelector('.acc-body').style.maxHeight=null;
+        i.querySelector('.ah').setAttribute('aria-expanded','false');
+        i.querySelector('.ab').style.maxHeight=null;
       });
       if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true');body.style.maxHeight=body.scrollHeight+'px';}
     });
   });
 
-  /* Price-group accordion: mobile only, max-height mechanism, Cortes open */
-  var groups=[].slice.call(document.querySelectorAll('.ledger-group'));
+  /* ---- price groups collapse on mobile only ---- */
+  var groups=[].slice.call(document.querySelectorAll('.lgroup'));
   var mq=window.matchMedia('(max-width:768px)');
-  function setGroup(g,open){
-    var rows=g.querySelector('.lg-rows'), btn=g.querySelector('.lg-title');
-    g.classList.toggle('open',open);
-    btn.setAttribute('aria-expanded',open?'true':'false');
-    rows.style.maxHeight = open ? rows.scrollHeight+'px' : null;
+  function setG(g,o){
+    var rows=g.querySelector('.lgr'), btn=g.querySelector('.lgt');
+    g.classList.toggle('open',o); btn.setAttribute('aria-expanded',o?'true':'false');
+    rows.style.maxHeight=o?rows.scrollHeight+'px':null;
   }
-  function syncGroups(){
-    if(mq.matches){
-      groups.forEach(function(g,i){ setGroup(g, g.classList.contains('open') || i===0); });
-    } else {
-      groups.forEach(function(g){ g.classList.remove('open'); g.querySelector('.lg-rows').style.maxHeight=null; g.querySelector('.lg-title').setAttribute('aria-expanded','true'); });
-    }
+  function syncG(){
+    if(mq.matches){ groups.forEach(function(g,i){ setG(g, g.classList.contains('open')||i===0); }); }
+    else { groups.forEach(function(g){ g.classList.remove('open'); g.querySelector('.lgr').style.maxHeight=null; g.querySelector('.lgt').setAttribute('aria-expanded','true'); }); }
   }
-  groups.forEach(function(g){
-    g.querySelector('.lg-title').addEventListener('click',function(){
-      if(!mq.matches) return;
-      setGroup(g, !g.classList.contains('open'));
-    });
-  });
-  syncGroups();
-  var rt; window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(syncGroups,140);});
+  groups.forEach(function(g){ g.querySelector('.lgt').addEventListener('click',function(){ if(mq.matches) setG(g,!g.classList.contains('open')); }); });
+  syncG();
+  var rt; window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){
+    syncG(); document.querySelectorAll('.ai.open .ab').forEach(function(b){b.style.maxHeight=b.scrollHeight+'px';});},140);});
 
-  /* Highlight today's row in the hours table */
-  var today=new Date().getDay();
-  var row=document.querySelector('#hoursTable .hr[data-day="'+today+'"]');
+  /* ---- today's hours ---- */
+  var row=document.querySelector('#hours .hr[data-day="'+new Date().getDay()+'"]');
   if(row) row.classList.add('today');
-})();
 
-/* Form: JS validation, branded inline errors, no native tooltips */
-function submitForm(e){
-  e.preventDefault();
-  var st=document.getElementById('formStatus'), ok=true;
-  function mark(id,bad){var el=document.getElementById(id); if(el) el.classList.toggle('err',bad); if(bad) ok=false;}
-  var name=(document.getElementById('name').value||'').trim();
-  var phone=(document.getElementById('phone').value||'').trim();
-  var service=document.getElementById('service').value;
-  mark('f-name',!name);
-  mark('f-phone',phone.replace(/\D/g,'').length<10);
-  mark('f-service',!service);
-  if(!ok){st.className='form-status show bad';st.textContent='Almost. Check the highlighted fields and send it again.';return false;}
-  st.className='form-status show ok';
-  st.innerHTML="Got it. Somebody will text you back. Want a time locked in right now? <a href='https://www.barberiadelasestrellas.com/s/appointments' target='_blank' rel='noopener' style='color:var(--gold);font-weight:700'>Book a chair</a> or call <a href='tel:+17868517794' style='color:var(--gold);font-weight:700'>(786) 851-7794</a>.";
-  document.getElementById('bookForm').reset();
-  return false;
-}
-document.querySelectorAll('#bookForm input,#bookForm select,#bookForm textarea').forEach(function(el){
-  el.addEventListener('input',function(){var f=el.closest('.field'); if(f) f.classList.remove('err');});
-  el.addEventListener('change',function(){var f=el.closest('.field'); if(f) f.classList.remove('err');});
-});
+  /* ---- form ---- */
+  var form=document.getElementById('form'), st=document.getElementById('fstat');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var es=document.documentElement.lang==='es', ok=true;
+    function mark(id,bad){var el=document.getElementById(id); if(el) el.classList.toggle('err',bad); if(bad) ok=false;}
+    var n=(document.getElementById('name').value||'').trim();
+    var p=(document.getElementById('phone').value||'').trim();
+    mark('f-name',!n);
+    mark('f-phone',p.replace(/\D/g,'').length<10);
+    mark('f-service',!document.getElementById('service').value);
+    if(!ok){ st.className='fstat show bad';
+      st.textContent = es ? 'Casi. Revisa los campos marcados y volve a enviar.' : 'Almost. Check the highlighted fields and send it again.';
+      return; }
+    st.className='fstat show';
+    st.innerHTML = es
+      ? 'Listo. Te vamos a escribir. Queres cerrar el horario ahora? <a href="https://www.barberiadelasestrellas.com/s/appointments" target="_blank" rel="noopener" style="color:#EFB36B;font-weight:700">Reservar</a> o llama al <a href="tel:+17868517794" style="color:#EFB36B;font-weight:700">(786) 851-7794</a>.'
+      : 'Got it. Somebody will text you back. Want a time locked in now? <a href="https://www.barberiadelasestrellas.com/s/appointments" target="_blank" rel="noopener" style="color:#EFB36B;font-weight:700">Book a chair</a> or call <a href="tel:+17868517794" style="color:#EFB36B;font-weight:700">(786) 851-7794</a>.';
+    form.reset();
+  });
+  form.querySelectorAll('input,select,textarea').forEach(function(el){
+    ['input','change'].forEach(function(ev){ el.addEventListener(ev,function(){ var f=el.closest('.f'); if(f) f.classList.remove('err'); }); });
+  });
+})();
 </script>
 </body>
 </html>
