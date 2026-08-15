@@ -318,10 +318,12 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
 .fc address{font-style:normal;font-size:.88rem;line-height:1.9;color:#948D84}
 .fc address a{color:#CFC9BE;font-weight:600;min-height:44px}
 .fbot{max-width:var(--max);margin:40px auto 0;padding:18px var(--pad) calc(22px + env(safe-area-inset-bottom));border-top:1px solid #1A1610;
-  display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.8rem;color:#6E6860}
+  display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px 16px;font-size:.8rem;color:#6E6860}
+.fbot .by{justify-self:end}
+.fbl{justify-self:center}
 .fbot a{color:#6E6860;text-decoration:none}
 .fbot a:hover{color:var(--gold)}
-.fbl{display:flex;gap:4px}
+.fbl{display:flex;gap:4px;flex-wrap:wrap;justify-content:center}
 .fbl a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px}
 .by{display:inline-flex;align-items:center;min-height:44px;gap:8px;text-decoration:none;color:#6E6860}
 .by img{height:18px;width:auto;opacity:.85}
@@ -449,7 +451,8 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
   .fg{grid-template-columns:1fr 1fr;gap:24px}
   .fb{grid-column:1/-1}
   .fc:last-child{grid-column:1/-1}
-  .fbot{flex-direction:column;align-items:flex-start;gap:8px}
+  .fbot{grid-template-columns:1fr;justify-items:center;text-align:center;gap:6px}
+  .fbot .by{justify-self:center}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -511,7 +514,7 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
     <div class="dr-cta">
       <a href="tel:+17868517794" class="dr-tel"><svg class="i"><use href="#i-tel"/></svg> (786) 851-7794</a>
       <a href="https://www.barberiadelasestrellas.com/s/appointments" class="btn" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a>
-      <span class="dr-note" data-es="Lun a Sab 10 a 20 hs. Dom 11 a 15 hs." data-en="Mon to Sat 10am to 8pm. Sun 11am to 3pm.">Lun a Sab 10 a 20 hs. Dom 11 a 15 hs.</span>
+      <span class="dr-note" data-es="Lun a Sab 10 AM a 8 PM. Dom 11 AM a 3 PM." data-en="Mon to Sat 10 AM to 8 PM. Sun 11 AM to 3 PM.">Lun a Sab 10 AM a 8 PM. Dom 11 AM a 3 PM.</span>
     </div>
   </nav>
 </aside>
@@ -527,8 +530,8 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
         <a href="https://www.barberiadelasestrellas.com/s/appointments" class="btn" target="_blank" rel="noopener" data-es="Reservar tu silla" data-en="Book your chair">Reservar tu silla</a>
         <a href="tel:+17868517794" class="btn btn-line"><svg class="i"><use href="#i-tel"/></svg> (786) 851-7794</a>
       </div>
-      <p class="lede" data-es="Barberos argentinos, uruguayos y colombianos en el medio de Wynwood. Fades desde <b>$50</b>, con turno reservado y tiempo de sobra. Por esta silla pasan futbolistas y peleadores, y se van con el mismo corte que hacemos todo el dia." data-en="Argentine, Uruguayan and Colombian barbers in the middle of Wynwood. Fades from <b>$50</b>, by appointment, with time to spare. Footballers and fighters sit in this chair, and they leave with the same cut we do all day.">Barberos argentinos, uruguayos y colombianos en el medio de Wynwood. Fades desde <b>$50</b>, con turno reservado y tiempo de sobra. Por esta silla pasan futbolistas y peleadores, y se van con el mismo corte que hacemos todo el dia.</p>
-      <p class="hero-note" data-es="Abierto los siete dias. Estacionamiento gratis en el lugar. Se atiende sin cita cuando hay silla libre." data-en="Open seven days. Free parking on site. Walk-ins taken whenever a chair is free.">Abierto los siete dias. Estacionamiento gratis en el lugar. Se atiende sin cita cuando hay silla libre.</p>
+      <p class="lede" data-es="Barberos argentinos, uruguayos y colombianos en pleno Wynwood. Fades desde <b>$50</b>, con cita reservada y tiempo de sobra. Por esta silla pasan futbolistas, peleadores y músicos, y todos salen con el mismo corte que hacemos todo el día." data-en="Argentine, Uruguayan and Colombian barbers in the middle of Wynwood. Fades from <b>$50</b>, by appointment, with time to spare. Footballers, fighters and musicians sit in this chair, and they all leave with the same cut we give everyone.">Barberos argentinos, uruguayos y colombianos en pleno Wynwood. Fades desde <b>$50</b>, con cita reservada y tiempo de sobra. Por esta silla pasan futbolistas, peleadores y músicos, y todos salen con el mismo corte que hacemos todo el día.</p>
+      <p class="hero-note" data-es="Abierto los siete días. Estacionamiento gratis en el lugar. Se atiende sin cita cuando hay silla libre." data-en="Open seven days. Free parking on site. Walk-ins welcome whenever a chair is free.">Abierto los siete días. Estacionamiento gratis en el lugar. Se atiende sin cita cuando hay silla libre.</p>
     </div>
     <div class="hero-media">
       <img src="assets/hero-crew.jpg" width="1000" height="1000" fetchpriority="high"
@@ -540,8 +543,8 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
 
 <section class="promise">
   <div class="w">
-    <p data-es="Turno a tiempo. Una hora por cabeza. Diez precios publicados." data-en="On-time appointments. A full hour of work. Ten published prices.">Turno a tiempo. Una hora por cabeza. Diez precios publicados.</p>
-    <small data-es="La carta completa esta mas abajo." data-en="The full menu is below.">La carta completa esta mas abajo.</small>
+    <p data-es="Puntualidad. Una hora por cabeza. Diez precios publicados." data-en="On time. A full hour per head. Ten prices, all published.">Puntualidad. Una hora por cabeza. Diez precios publicados.</p>
+    <small data-es="La carta completa está más abajo." data-en="The full price list is below.">La carta completa está más abajo.</small>
   </div>
 </section>
 
@@ -550,7 +553,7 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
     <div>
       <h2 data-es="El trabajo habla." data-en="The work speaks.">El trabajo habla.</h2>
     </div>
-    <p class="lead" data-es="Se limpia la nuca, se define la barba y se peina antes de que te levantes de la silla. Si algo no cierra, se corrige en el momento y no en la proxima visita." data-en="The neck gets cleaned, the beard gets shaped and the hair gets styled before you stand up. If something is off it gets fixed on the spot, not next visit.">Se limpia la nuca, se define la barba y se peina antes de que te levantes de la silla. Si algo no cierra, se corrige en el momento y no en la proxima visita.</p>
+    <p class="lead" data-es="Te limpiamos la nuca, te definimos la barba y te peinamos antes de que te levantes de la silla. Si algo no queda, se corrige en el momento y no en la próxima visita." data-en="We clean the neck, shape the beard and style the hair before you get out of the chair. If something is off, it gets fixed right there, not on your next visit.">Te limpiamos la nuca, te definimos la barba y te peinamos antes de que te levantes de la silla. Si algo no queda, se corrige en el momento y no en la próxima visita.</p>
   </div>
 
   <div class="ba">
@@ -559,19 +562,19 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
       <figcaption data-es="Antes" data-en="Before">Antes</figcaption>
     </figure>
     <figure>
-      <img src="assets/ba-after.jpg" width="800" height="1066" loading="lazy" alt="Despues: corte texturizado con fade y barba definida, hecho en Barberia de las Estrellas">
-      <figcaption data-es="Despues" data-en="After">Despues</figcaption>
+      <img src="assets/ba-after.jpg" width="800" height="1066" loading="lazy" alt="Después: corte texturizado con fade y barba definida, hecho en Barberia de las Estrellas">
+      <figcaption data-es="Después" data-en="After">Después</figcaption>
     </figure>
   </div>
   <p class="ba-note" data-es="Mismo cliente, misma visita. Corte y barba: $65." data-en="Same client, same visit. Cut and beard: $65.">Mismo cliente, misma visita. Corte y barba: $65.</p>
 
   <div class="cuts">
     <figure><img src="assets/cut-taper.jpg" width="698" height="930" loading="lazy" alt="Taper fade con rulos hecho en Wynwood"><span class="cut-tag" data-es="Taper fade" data-en="Taper fade">Taper fade</span></figure>
-    <figure><img src="assets/work-jersey10.jpg" width="1000" height="750" loading="lazy" alt="Camiseta numero 10 de Barberia de las Estrellas frente al mural del local"><span class="cut-tag" data-es="El local" data-en="The shop">El local</span></figure>
+    <figure><img src="assets/work-jersey10.jpg" width="1000" height="750" loading="lazy" alt="Camiseta número 10 de Barberia de las Estrellas frente al mural del local"><span class="cut-tag" data-es="El local" data-en="The shop">El local</span></figure>
     <div class="ph"><em>+</em><span data-es="Corte + barba" data-en="Cut + beard">Corte + barba</span></div>
     <div class="ph"><em>+</em><span data-es="Skin fade" data-en="Skin fade">Skin fade</span></div>
     <div class="ph"><em>+</em><span data-es="Color platinado" data-en="Platinum color">Color platinado</span></div>
-    <div class="ph"><em>+</em><span data-es="Diseno a maquina" data-en="Line design">Diseno a maquina</span></div>
+    <div class="ph"><em>+</em><span data-es="Diseño a máquina" data-en="Line design">Diseño a máquina</span></div>
   </div>
   <p class="ba-note" data-es="[4 FOTOS DE CORTES PENDIENTES.]" data-en="[4 HAIRCUT PHOTOS PENDING.]">[4 FOTOS DE CORTES PENDIENTES.]</p>
 </section>
@@ -581,48 +584,48 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
     <div>
       <h2 data-es="Precios, antes de sentarte." data-en="Every price, before you sit.">Precios, antes de sentarte.</h2>
     </div>
-    <p class="lead" data-es="Diez servicios con el precio puesto. Lo que ves es lo que pagas, sea tu primera vez o la numero cincuenta." data-en="Ten services with the price on them. What you see is what you pay, whether it is your first cut here or your fiftieth.">Diez servicios con el precio puesto. Lo que ves es lo que pagas, sea tu primera vez o la numero cincuenta.</p>
+    <p class="lead" data-es="Diez servicios con el precio a la vista. Lo que ves es lo que pagas, sea tu primera vez o la número cincuenta." data-en="Ten services, every price listed. What you see is what you pay, whether it is your first cut here or your fiftieth.">Diez servicios con el precio a la vista. Lo que ves es lo que pagas, sea tu primera vez o la número cincuenta.</p>
   </div>
 
   <div class="duplex">
     <div class="dm">
-      <img src="assets/kit-counter.jpg" width="1200" height="800" loading="lazy" alt="Nico Jaffe junto a Leo Messi en la silla, con las maquinas y navajas listas sobre la mesada">
-      <p><b data-es="El equipo de trabajo" data-en="The kit">El equipo de trabajo</b><span data-es="Las mismas maquinas y navajas para todos. No hay una silla buena y una silla barata." data-en="The same clippers and blades for everyone. There is no good chair and cheap chair.">Las mismas maquinas y navajas para todos. No hay una silla buena y una silla barata.</span></p>
+      <img src="assets/kit-counter.jpg" width="1200" height="800" loading="lazy" alt="Nico Jaffe junto a Leo Messi en la silla, con las máquinas y navajas listas sobre la mesada">
+      <p><b data-es="Las herramientas" data-en="The tools">Las herramientas</b><span data-es="Las mismas máquinas y navajas para todos. Aquí no hay silla cara y silla barata." data-en="The same clippers and blades for everyone. There is no premium chair and budget chair here.">Las mismas máquinas y navajas para todos. Aquí no hay silla cara y silla barata.</span></p>
     </div>
 
     <div class="ledger">
       <div class="lgroup">
         <button class="lgt" type="button" aria-expanded="true"><span class="n sq">01</span><h3 data-es="Cortes" data-en="Cuts">Cortes</h3><span class="x" data-es="Corte y barba" data-en="Cuts and beard">Corte y barba</span><span class="rng">$15 - $65</span><span class="ind"></span></button>
         <div class="lgr">
-          <div class="lrow"><div class="l"><div class="n" data-es="Corte o Fade" data-en="Haircut or Fade">Corte o Fade</div><p class="d" data-es="El corte de la casa. Skin fade, taper o tijera, como lo pida la cabeza." data-en="The house cut. Skin fade, taper or scissor work, whatever the head asks for.">El corte de la casa. Skin fade, taper o tijera, como lo pida la cabeza.</p></div><span class="p">$50</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
-          <div class="lrow"><div class="l"><div class="n" data-es="Corte + Barba" data-en="Haircut + Beard">Corte + Barba</div><p class="d" data-es="Corte con perfilado completo de barba y toalla caliente." data-en="Cut with a full beard shape, line-up and hot towel finish.">Corte con perfilado completo de barba y toalla caliente.</p></div><span class="p">$65</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
-          <div class="lrow"><div class="l"><div class="n" data-es="Corte de Nino" data-en="Kids Haircut">Corte de Nino</div><p class="d" data-es="Mismos barberos, mismo local, menos tiempo en la silla." data-en="Same barbers, same room, shorter chair time.">Mismos barberos, mismo local, menos tiempo en la silla.</p></div><span class="p">$40</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
-          <div class="lrow"><div class="l"><div class="n" data-es="Perfilado de Barba" data-en="Beard Trim + Line-Up">Perfilado de Barba</div><p class="d" data-es="Contorno y linea entre cortes. Entras y salis." data-en="Shape and line-up between cuts. In and out.">Contorno y linea entre cortes. Entras y salis.</p></div><span class="p">$25</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
-          <div class="lrow"><div class="l"><div class="n" data-es="Cejas" data-en="Eyebrow Detail">Cejas</div><p class="d" data-es="Detalle fino, se agrega a cualquier servicio o va solo." data-en="Detail work, added to any service or booked on its own.">Detalle fino, se agrega a cualquier servicio o va solo.</p></div><span class="p">$15</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
+          <div class="lrow"><div class="l"><div class="n" data-es="Corte o Fade" data-en="Haircut or Fade">Corte o Fade</div><p class="d" data-es="El corte de la casa. Skin fade, taper o tijera, según lo que pida tu pelo." data-en="The house cut. Skin fade, taper or scissor work, whichever your hair calls for.">El corte de la casa. Skin fade, taper o tijera, según lo que pida tu pelo.</p></div><span class="p">$50</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
+          <div class="lrow"><div class="l"><div class="n" data-es="Corte + Barba" data-en="Haircut + Beard">Corte + Barba</div><p class="d" data-es="Corte con perfilado completo de barba y toalla caliente." data-en="Haircut with a full beard shape, line-up and hot towel finish.">Corte con perfilado completo de barba y toalla caliente.</p></div><span class="p">$65</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
+          <div class="lrow"><div class="l"><div class="n" data-es="Corte de Niño" data-en="Kids Haircut">Corte de Niño</div><p class="d" data-es="Mismos barberos, mismo local, menos tiempo en la silla." data-en="Same barbers, same room, less time in the chair.">Mismos barberos, mismo local, menos tiempo en la silla.</p></div><span class="p">$40</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
+          <div class="lrow"><div class="l"><div class="n" data-es="Perfilado de Barba" data-en="Beard Trim + Line-Up">Perfilado de Barba</div><p class="d" data-es="Contorno y línea entre cortes. Entras y sales." data-en="Shape and line-up between cuts. In and out.">Contorno y línea entre cortes. Entras y sales.</p></div><span class="p">$25</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
+          <div class="lrow"><div class="l"><div class="n" data-es="Cejas" data-en="Eyebrow Detail">Cejas</div><p class="d" data-es="Detalle fino. Se agrega a cualquier servicio o se reserva solo." data-en="Detail work. Add it to any service or book it on its own.">Detalle fino. Se agrega a cualquier servicio o se reserva solo.</p></div><span class="p">$15</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
         </div>
       </div>
 
       <div class="lgroup">
         <button class="lgt" type="button" aria-expanded="false"><span class="n sq">02</span><h3>Color</h3><span class="x" data-es="Platinado, mechas, tono" data-en="Platinum, highlights, tone">Platinado, mechas, tono</span><span class="rng">$75 - $250</span><span class="ind"></span></button>
         <div class="lgr">
-          <div class="lrow"><div class="l"><div class="n" data-es="Bano de Color (Repaso)" data-en="Color Refresh">Bano de Color (Repaso)</div><p class="d" data-es="Repaso sobre un color existente. La visita de mantenimiento." data-en="Refresh on an existing color. The maintenance visit.">Repaso sobre un color existente. La visita de mantenimiento.</p></div><span class="p">$75</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
-          <div class="lrow"><div class="l"><div class="n" data-es="Mechas + Corte" data-en="Highlights + Haircut">Mechas + Corte</div><p class="d" data-es="Decoloracion parcial con el corte armado alrededor." data-en="Partial lift with the cut built around it. Allow extra chair time.">Decoloracion parcial con el corte armado alrededor.</p></div><span class="p">$160</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
-          <div class="lrow"><div class="l"><div class="n" data-es="Color Global + Corte" data-en="Full Color + Haircut">Color Global + Corte</div><p class="d" data-es="Color completo y corte. El platinado y el rubio que ves en el feed." data-en="Full head color and cut. The platinum and blonde work you see on the feed.">Color completo y corte. El platinado y el rubio que ves en el feed.</p></div><span class="p">$250</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
+          <div class="lrow"><div class="l"><div class="n" data-es="Baño de Color (Repaso)" data-en="Color Refresh">Baño de Color (Repaso)</div><p class="d" data-es="Repaso sobre un color existente. La visita de mantenimiento." data-en="A refresh over existing color. The maintenance visit.">Repaso sobre un color existente. La visita de mantenimiento.</p></div><span class="p">$75</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
+          <div class="lrow"><div class="l"><div class="n" data-es="Mechas + Corte" data-en="Highlights + Haircut">Mechas + Corte</div><p class="d" data-es="Decoloración parcial con el corte armado alrededor." data-en="Partial lift with the cut built around the new tone.">Decoloración parcial con el corte armado alrededor.</p></div><span class="p">$160</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
+          <div class="lrow"><div class="l"><div class="n" data-es="Color Global + Corte" data-en="Full Color + Haircut">Color Global + Corte</div><p class="d" data-es="Color completo y corte. El platinado y el rubio que ves en el feed." data-en="Full head color and cut. The platinum and blonde you see on the feed.">Color completo y corte. El platinado y el rubio que ves en el feed.</p></div><span class="p">$250</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
         </div>
       </div>
 
       <div class="lgroup">
-        <button class="lgt" type="button" aria-expanded="false"><span class="n sq">03</span><h3>VIP</h3><span class="x" data-es="La sesion completa" data-en="The full sit-down">La sesion completa</span><span class="rng">$85 - $180</span><span class="ind"></span></button>
+        <button class="lgt" type="button" aria-expanded="false"><span class="n sq">03</span><h3>VIP</h3><span class="x" data-es="La sesión completa" data-en="The full session">La sesión completa</span><span class="rng">$85 - $180</span><span class="ind"></span></button>
         <div class="lgr">
           <div class="lrow"><div class="l"><div class="n">Full Service VIP</div><p class="d" data-es="Corte, barba, cejas y peinado en una sola cita." data-en="Haircut, beard, eyebrows and styling in one appointment.">Corte, barba, cejas y peinado en una sola cita.</p></div><span class="p">$85</span><a href="https://www.barberiadelasestrellas.com/s/appointments" class="b" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a></div>
-          <div class="lrow"><div class="l"><div class="n" data-es="Estrella VIP" data-en="Star VIP">Estrella VIP</div><p class="d" data-es="Full Service mas un reel filmado y editado de tu corte. Detalle abajo." data-en="Full Service plus a filmed and edited reel of your cut. Details below.">Full Service mas un reel filmado y editado de tu corte. Detalle abajo.</p></div><span class="p">$180</span><a href="#vip" class="b" data-es="Ver" data-en="See it">Ver</a></div>
+          <div class="lrow"><div class="l"><div class="n" data-es="Estrella VIP" data-en="Star VIP">Estrella VIP</div><p class="d" data-es="Full Service más un reel filmado y editado de tu corte. Detalle abajo." data-en="Full Service plus a filmed and edited reel of your cut. Details below.">Full Service más un reel filmado y editado de tu corte. Detalle abajo.</p></div><span class="p">$180</span><a href="#vip" class="b" data-es="Ver" data-en="See it">Ver</a></div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="carta-foot">
-    <p data-es="No sabes cual pedir? Llama y describi la cabeza. Alguien te va a decir honestamente cual necesitas, incluso si es el mas barato." data-en="Not sure which one? Call and describe the head. Somebody here will tell you honestly which service you actually need, including the cheaper one.">No sabes cual pedir? Llama y describi la cabeza. Alguien te va a decir honestamente cual necesitas, incluso si es el mas barato.</p>
+    <p data-es="¿No sabes cuál pedir? Llámanos y cuéntanos cómo tienes el pelo. Te decimos con honestidad cuál te conviene, aunque sea el más barato." data-en="Not sure which one to book? Call us and tell us what your hair is doing. We will tell you honestly which service you need, even if it is the cheapest one.">¿No sabes cuál pedir? Llámanos y cuéntanos cómo tienes el pelo. Te decimos con honestidad cuál te conviene, aunque sea el más barato.</p>
     <a href="tel:+17868517794" class="btn"><svg class="i"><use href="#i-tel"/></svg> <span data-es="Preguntar" data-en="Ask a barber">Preguntar</span></a>
   </div>
 
@@ -630,8 +633,8 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
     <div class="vip-in">
       <span class="num sq">180</span>
       <div>
-        <h2 data-es="Estrella VIP: te vas con el corte y con el material." data-en="Star VIP: you leave with the cut and the footage.">Estrella VIP: te vas con el corte y con el material.</h2>
-        <p data-es="Corte, barba, cejas y peinado, filmado y editado en un reel que podes subir el mismo dia. Noventa minutos, un barbero, una camara. Se filma solo si vos queres." data-en="Haircut, beard, eyebrows and styling, filmed and edited into a reel you can post the same day. Ninety minutes, one barber, one camera. Filmed only if you want it.">Corte, barba, cejas y peinado, filmado y editado en un reel que podes subir el mismo dia. Noventa minutos, un barbero, una camara. Se filma solo si vos queres.</p>
+        <h2 data-es="Estrella VIP: te vas con el corte y con el video." data-en="Star VIP: you leave with the cut and the footage.">Estrella VIP: te vas con el corte y con el video.</h2>
+        <p data-es="Corte, barba, cejas y peinado, filmado y editado en un reel que puedes subir el mismo día. Noventa minutos, un barbero, una cámara. Solo se filma si tú lo pides." data-en="Haircut, beard, eyebrows and styling, filmed and edited into a reel you can post the same day. Ninety minutes, one barber, one camera. We only film if you ask us to.">Corte, barba, cejas y peinado, filmado y editado en un reel que puedes subir el mismo día. Noventa minutos, un barbero, una cámara. Solo se filma si tú lo pides.</p>
       </div>
       <div class="vip-cta">
         <span class="price sq">$180<small data-es="Todo incluido" data-en="All in">Todo incluido</small></span>
@@ -646,7 +649,7 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
     <div>
       <h2 data-es="Han pasado por esta silla." data-en="They have sat in this chair.">Han pasado por esta silla.</h2>
     </div>
-    <p class="lead" data-es="Futbolistas, peleadores y musicos. Gente que vive delante de una camara y viene por el mismo corte que hacemos todo el dia." data-en="Footballers, fighters and musicians. People who live in front of a camera, in for the same cut we do all day.">Futbolistas, peleadores y musicos. Gente que vive delante de una camara y viene por el mismo corte que hacemos todo el dia.</p>
+    <p class="lead" data-es="Futbolistas, peleadores y músicos. Gente que vive delante de una cámara y viene por el mismo corte que hacemos todo el día." data-en="Footballers, fighters and musicians. People who live in front of a camera, in for the same cut we do all day.">Futbolistas, peleadores y músicos. Gente que vive delante de una cámara y viene por el mismo corte que hacemos todo el día.</p>
   </div>
   <div class="guests">
     <figure>
@@ -654,15 +657,15 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
       <figcaption class="gcap"><b>Leo Messi</b><span>Inter Miami CF</span></figcaption>
     </figure>
     <figure>
-      <img src="assets/guest-yamal.jpg" width="900" height="1124" loading="lazy" alt="Nico Jaffe junto a Lamine Yamal con la camiseta de Espana">
+      <img src="assets/guest-yamal.jpg" width="900" height="1124" loading="lazy" alt="Nico Jaffe junto a Lamine Yamal con la camiseta de España">
       <figcaption class="gcap"><b>Lamine Yamal</b><span>FC Barcelona</span></figcaption>
     </figure>
     <figure>
       <img src="assets/guest-02.jpg" width="891" height="1114" loading="lazy" alt="El rapero Trueno con su barbero en Barberia de las Estrellas, Wynwood">
-      <figcaption class="gcap"><b>Trueno</b><span data-es="Musico" data-en="Musician">Musico</span></figcaption>
+      <figcaption class="gcap"><b>Trueno</b><span data-es="Músico" data-en="Musician">Músico</span></figcaption>
     </figure>
     <figure>
-      <img src="assets/guest-03.jpg?v=2" width="900" height="1125" loading="lazy" alt="Alex Pereira en la silla de Barberia de las Estrellas con la capa de la barberia">
+      <img src="assets/guest-03.jpg?v=2" width="900" height="1125" loading="lazy" alt="Alex Pereira en la silla de Barberia de las Estrellas con la capa de la barbería">
       <figcaption class="gcap"><b>Alex Pereira</b><span>UFC</span></figcaption>
     </figure>
   </div>
@@ -670,7 +673,7 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
 
 <section id="equipo">
   <div class="head">
-    <h2 data-es="Cuatro barberos, tres paises." data-en="Four barbers, three countries.">Cuatro barberos, tres paises.</h2>
+    <h2 data-es="Cuatro barberos, tres países." data-en="Four barbers, three countries.">Cuatro barberos, tres países.</h2>
   </div>
   <div class="team">
     <div class="team-rows">
@@ -696,13 +699,13 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
       </article>
     </div>
   </div>
-  <p class="team-note" data-es="Dueno y barbero: Nico Jaffe. Cada uno toma sus propios turnos." data-en="Owner and barber: Nico Jaffe. Each one takes his own appointments.">Dueno y barbero: Nico Jaffe. Cada uno toma sus propios turnos.</p>
+  <p class="team-note" data-es="Dueño y barbero: Nico Jaffe. Cada uno toma sus propias citas." data-en="Owner and barber: Nico Jaffe. Each one takes his own bookings.">Dueño y barbero: Nico Jaffe. Cada uno toma sus propias citas.</p>
 </section>
 
 <section id="visitar" class="sec-alt">
   <div class="loc">
     <div>
-      <h2 style="font-size:clamp(1.8rem,3.4vw,2.7rem)" data-es="Segundo piso, Suite 209, en el medio de Wynwood." data-en="Second floor, Suite 209, in the middle of Wynwood.">Segundo piso, Suite 209, en el medio de Wynwood.</h2>
+      <h2 style="font-size:clamp(1.8rem,3.4vw,2.7rem)" data-es="Segundo piso, Suite 209, en pleno Wynwood." data-en="Second floor, Suite 209, in the middle of Wynwood.">Segundo piso, Suite 209, en pleno Wynwood.</h2>
       <address class="addr">
         164 NW 20th St, Suite 209<br>
         Miami, Florida 33127<br>
@@ -712,19 +715,19 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
       <ul class="perks">
         <li data-es="Estacionamiento gratis" data-en="Free parking on site">Estacionamiento gratis</li>
         <li data-es="Bebidas y mesa de pool" data-en="Drinks and a pool table">Bebidas y mesa de pool</li>
-        <li data-es="Se habla espanol e ingles" data-en="Spanish and English spoken">Se habla espanol e ingles</li>
-        <li data-es="Wynwood Walls a dos cuadras" data-en="Wynwood Walls, two blocks">Wynwood Walls a dos cuadras</li>
+        <li data-es="Se habla español e inglés" data-en="Spanish and English spoken">Se habla español e inglés</li>
+        <li data-es="Wynwood Walls a dos cuadras" data-en="Wynwood Walls, two blocks away">Wynwood Walls a dos cuadras</li>
       </ul>
       <div class="hours" id="hours">
-        <div class="hr" data-day="1"><b data-es="Lunes" data-en="Monday">Lunes</b><span>10:00 - 20:00</span></div>
-        <div class="hr" data-day="2"><b data-es="Martes" data-en="Tuesday">Martes</b><span>10:00 - 20:00</span></div>
-        <div class="hr" data-day="3"><b data-es="Miercoles" data-en="Wednesday">Miercoles</b><span>10:00 - 20:00</span></div>
-        <div class="hr" data-day="4"><b data-es="Jueves" data-en="Thursday">Jueves</b><span>10:00 - 20:00</span></div>
-        <div class="hr" data-day="5"><b data-es="Viernes" data-en="Friday">Viernes</b><span>10:00 - 20:00</span></div>
-        <div class="hr" data-day="6"><b data-es="Sabado" data-en="Saturday">Sabado</b><span>10:00 - 20:00</span></div>
-        <div class="hr" data-day="0"><b data-es="Domingo" data-en="Sunday">Domingo</b><span>11:00 - 15:00</span></div>
+        <div class="hr" data-day="1"><b data-es="Lunes" data-en="Monday">Lunes</b><span>10 AM - 8 PM</span></div>
+        <div class="hr" data-day="2"><b data-es="Martes" data-en="Tuesday">Martes</b><span>10 AM - 8 PM</span></div>
+        <div class="hr" data-day="3"><b data-es="Miércoles" data-en="Wednesday">Miércoles</b><span>10 AM - 8 PM</span></div>
+        <div class="hr" data-day="4"><b data-es="Jueves" data-en="Thursday">Jueves</b><span>10 AM - 8 PM</span></div>
+        <div class="hr" data-day="5"><b data-es="Viernes" data-en="Friday">Viernes</b><span>10 AM - 8 PM</span></div>
+        <div class="hr" data-day="6"><b data-es="Sábado" data-en="Saturday">Sábado</b><span>10 AM - 8 PM</span></div>
+        <div class="hr" data-day="0"><b data-es="Domingo" data-en="Sunday">Domingo</b><span>11 AM - 3 PM</span></div>
       </div>
-      <div style="margin-top:24px"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=164+NW+20th+St+Suite+209+Miami+FL+33127" class="btn" target="_blank" rel="noopener" data-es="Como llegar" data-en="Get directions">Como llegar</a></div>
+      <div style="margin-top:24px"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=164+NW+20th+St+Suite+209+Miami+FL+33127" class="btn" target="_blank" rel="noopener" data-es="Cómo llegar" data-en="Get directions">Cómo llegar</a></div>
     </div>
     <div class="map">
       <iframe title="Mapa a Barberia de las Estrellas, 164 NW 20th Street Suite 209, Miami FL 33127" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
@@ -737,65 +740,65 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
   <div class="faq">
     <div>
       <h2 style="font-size:clamp(1.8rem,3.2vw,2.5rem);margin-bottom:14px" data-es="Antes de que llames." data-en="Before you call.">Antes de que llames.</h2>
-      <p style="margin-bottom:20px" data-es="Las que mas nos hacen, en el orden en que nos las hacen." data-en="The questions the front desk actually gets, in the order it gets them.">Las que mas nos hacen, en el orden en que nos las hacen.</p>
+      <p style="margin-bottom:20px" data-es="Las preguntas que más nos hacen, en el orden en que nos las hacen." data-en="The questions we get most, in the order we get them.">Las preguntas que más nos hacen, en el orden en que nos las hacen.</p>
       <a href="tel:+17868517794" class="btn btn-ink"><svg class="i"><use href="#i-tel"/></svg> (786) 851-7794</a>
     </div>
     <div class="acc">
-      <div class="ai"><button class="ah" aria-expanded="false" data-es="Cuanto sale un corte normal?" data-en="How much is a normal haircut?">Cuanto sale un corte normal?</button><div class="ab"><div class="ab-in" data-es="Corte o fade, $50. Corte con barba, $65. Ninos, $40. Todos los precios estan en esta pagina y no se agrega nada en la caja." data-en="A haircut or fade is $50. Haircut plus beard is $65. Kids are $40. Every price is listed on this page and nothing gets added at the register.">Corte o fade, $50. Corte con barba, $65. Ninos, $40. Todos los precios estan en esta pagina y no se agrega nada en la caja.</div></div></div>
-      <div class="ai"><button class="ah" aria-expanded="false" data-es="Cuanto dura una cita?" data-en="How long does an appointment take?">Cuanto dura una cita?</button><div class="ab"><div class="ab-in" data-es="Un corte con barba lleva cerca de una hora. El color necesita mas tiempo de silla, entre hora y media y dos horas segun el largo. No apuramos para meter otro cliente." data-en="A cut with beard runs about an hour. Color needs more chair time, between ninety minutes and two hours depending on length. Nobody gets rushed to squeeze in the next client.">Un corte con barba lleva cerca de una hora. El color necesita mas tiempo de silla, entre hora y media y dos horas segun el largo. No apuramos para meter otro cliente.</div></div></div>
-      <div class="ai"><button class="ah" aria-expanded="false" data-es="Como se paga?" data-en="How can I pay?">Como se paga?</button><div class="ab"><div class="ab-in" data-es="Efectivo, Visa, Mastercard, American Express, Discover, JCB, Apple Pay, Google Pay y Cash App. La reserva se hace online o por telefono y se paga en el local." data-en="Cash, Visa, Mastercard, American Express, Discover, JCB, Apple Pay, Google Pay and Cash App. Booking happens online or by phone, and you pay at the shop.">Efectivo, Visa, Mastercard, American Express, Discover, JCB, Apple Pay, Google Pay y Cash App. La reserva se hace online o por telefono y se paga en el local.</div></div></div>
-      <div class="ai"><button class="ah" aria-expanded="false" data-es="Atienden sin cita?" data-en="Do you take walk-ins?">Atienden sin cita?</button><div class="ab"><div class="ab-in" data-es="Si, cuando hay silla libre. Viernes y sabado se llenan, asi que reservar es mas seguro. Reservar es gratis y lleva un minuto." data-en="Yes, when a chair is open. Fridays and Saturdays fill up, so booking ahead is the safer move. Booking is free and takes about a minute.">Si, cuando hay silla libre. Viernes y sabado se llenan, asi que reservar es mas seguro. Reservar es gratis y lleva un minuto.</div></div></div>
-      <div class="ai"><button class="ah" aria-expanded="false" data-es="Donde estaciono?" data-en="Where do I park?">Donde estaciono?</button><div class="ab"><div class="ab-in" data-es="Estacionamiento gratis en el lugar, algo poco comun en esta parte de Wynwood. El local esta en el segundo piso, Suite 209." data-en="Free parking on the premises, which is unusual for this part of Wynwood. The shop is on the second floor, Suite 209.">Estacionamiento gratis en el lugar, algo poco comun en esta parte de Wynwood. El local esta en el segundo piso, Suite 209.</div></div></div>
-      <div class="ai"><button class="ah" aria-expanded="false" data-es="Puedo pedir un barbero especifico?" data-en="Can I request a specific barber?">Puedo pedir un barbero especifico?</button><div class="ab"><div class="ab-in" data-es="Si. Magic, Lucas Farinha, Mathi y Alejandro se reservan por nombre desde esta pagina. Si no tenes preferencia, tomas al que este libre. El estandar es el mismo." data-en="Yes. Magic, Lucas Farinha, Mathi and Alejandro can each be booked by name from this page. If you have no preference, take whoever is open. The standard is the same.">Si. Magic, Lucas Farinha, Mathi y Alejandro se reservan por nombre desde esta pagina. Si no tenes preferencia, tomas al que este libre. El estandar es el mismo.</div></div></div>
-      <div class="ai"><button class="ah" aria-expanded="false" data-es="Hablan ingles?" data-en="Do the barbers speak English?">Hablan ingles?</button><div class="ab"><div class="ab-in" data-es="Los dos idiomas. El equipo es argentino, uruguayo y colombiano, asi que el espanol es el idioma del local, pero todos trabajan en ingles todo el dia." data-en="Both. The team is Argentine, Uruguayan and Colombian, so Spanish is the room's first language, but every barber works in English all day.">Los dos idiomas. El equipo es argentino, uruguayo y colombiano, asi que el espanol es el idioma del local, pero todos trabajan en ingles todo el dia.</div></div></div>
-      <div class="ai"><button class="ah" aria-expanded="false" data-es="Hacen color y platinado en hombres?" data-en="Do you do color and platinum on men's hair?">Hacen color y platinado en hombres?</button><div class="ab"><div class="ab-in" data-es="Si, y es una parte real del negocio, no un servicio de costado. Bano de color, $75. Mechas con corte, $160. Color global con corte, $250. Conviene reservar y no venir sin cita." data-en="Yes, and it is a real part of the business, not a side service. Color refresh is $75, highlights with a cut are $160, and a full global color with a cut is $250. Book it rather than walking in.">Si, y es una parte real del negocio, no un servicio de costado. Bano de color, $75. Mechas con corte, $160. Color global con corte, $250. Conviene reservar y no venir sin cita.</div></div></div>
-      <div class="ai"><button class="ah" aria-expanded="false" data-es="Vienen ninos?" data-en="Are kids welcome?">Vienen ninos?</button><div class="ab"><div class="ab-in" data-es="Si. Corte de nino $40 con los mismos barberos. Hay sala de espera con bebidas y mesa de pool para el que lo acompana." data-en="Yes. Kids cuts are $40 with the same barbers. There is a lounge with drinks and a pool table for whoever brings them.">Si. Corte de nino $40 con los mismos barberos. Hay sala de espera con bebidas y mesa de pool para el que lo acompana.</div></div></div>
-      <div class="ai"><button class="ah" aria-expanded="false" data-es="Cual es el horario?" data-en="What are the hours?">Cual es el horario?</button><div class="ab"><div class="ab-in" data-es="De lunes a sabado, de 10:00 a 20:00. Los domingos, de 11:00 a 15:00. Se atiende sin cita cuando hay silla libre." data-en="Monday to Saturday, 10:00 am to 8:00 pm. Sundays, 11:00 am to 3:00 pm. Walk-ins are taken whenever a chair is free.">De lunes a sabado, de 10:00 a 20:00. Los domingos, de 11:00 a 15:00. Se atiende sin cita cuando hay silla libre.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="¿Cuánto cuesta un corte normal?" data-en="How much is a regular haircut?">¿Cuánto cuesta un corte normal?</button><div class="ab"><div class="ab-in" data-es="Corte o fade, $50. Corte con barba, $65. Niños, $40. Todos los precios están en esta página y no se agrega nada al final." data-en="A haircut or fade is $50. Haircut plus beard is $65. Kids are $40. Every price is on this page and nothing gets added at the register.">Corte o fade, $50. Corte con barba, $65. Niños, $40. Todos los precios están en esta página y no se agrega nada al final.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="¿Cuánto dura una cita?" data-en="How long does an appointment take?">¿Cuánto dura una cita?</button><div class="ab"><div class="ab-in" data-es="Un corte con barba lleva cerca de una hora. El color necesita más tiempo de silla, entre hora y media y dos horas según el largo. No apuramos a nadie para meter al siguiente cliente." data-en="A cut with beard takes about an hour. Color needs more chair time, ninety minutes to two hours depending on length. Nobody gets rushed to squeeze in the next client.">Un corte con barba lleva cerca de una hora. El color necesita más tiempo de silla, entre hora y media y dos horas según el largo. No apuramos a nadie para meter al siguiente cliente.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="¿Cómo se paga?" data-en="How can I pay?">¿Cómo se paga?</button><div class="ab"><div class="ab-in" data-es="Efectivo, Visa, Mastercard, American Express, Discover, JCB, Apple Pay, Google Pay y Cash App. Reservas en línea o por teléfono y pagas en el local." data-en="Cash, Visa, Mastercard, American Express, Discover, JCB, Apple Pay, Google Pay and Cash App. Book online or by phone, and pay at the shop.">Efectivo, Visa, Mastercard, American Express, Discover, JCB, Apple Pay, Google Pay y Cash App. Reservas en línea o por teléfono y pagas en el local.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="¿Atienden sin cita?" data-en="Do you take walk-ins?">¿Atienden sin cita?</button><div class="ab"><div class="ab-in" data-es="Sí, cuando hay silla libre. Viernes y sábado se llenan, así que reservar es más seguro. Reservar es gratis y toma un minuto." data-en="Yes, when a chair is open. Fridays and Saturdays fill up, so booking ahead is safer. Booking is free and takes a minute.">Sí, cuando hay silla libre. Viernes y sábado se llenan, así que reservar es más seguro. Reservar es gratis y toma un minuto.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="¿Dónde estaciono?" data-en="Where do I park?">¿Dónde estaciono?</button><div class="ab"><div class="ab-in" data-es="Estacionamiento gratis en el lugar, algo poco común en esta parte de Wynwood. El local está en el segundo piso, Suite 209." data-en="Free parking on site, which is rare for this part of Wynwood. The shop is on the second floor, Suite 209.">Estacionamiento gratis en el lugar, algo poco común en esta parte de Wynwood. El local está en el segundo piso, Suite 209.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="¿Puedo pedir un barbero específico?" data-en="Can I request a specific barber?">¿Puedo pedir un barbero específico?</button><div class="ab"><div class="ab-in" data-es="Sí. Magic, Lucas Farinha, Mathi y Alejandro se reservan por nombre desde esta página. Si no tienes preferencia, tomas al que esté libre. El estándar es el mismo." data-en="Yes. Magic, Lucas Farinha, Mathi and Alejandro can each be booked by name from this page. If you have no preference, take whoever is open. The standard is the same.">Sí. Magic, Lucas Farinha, Mathi y Alejandro se reservan por nombre desde esta página. Si no tienes preferencia, tomas al que esté libre. El estándar es el mismo.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="¿Hablan inglés?" data-en="Do the barbers speak English?">¿Hablan inglés?</button><div class="ab"><div class="ab-in" data-es="Los dos idiomas. El equipo es argentino, uruguayo y colombiano, así que el español es el idioma del local, pero todos trabajan en inglés todo el día." data-en="Both. The team is Argentine, Uruguayan and Colombian, so Spanish is the room's first language, but every barber works in English all day.">Los dos idiomas. El equipo es argentino, uruguayo y colombiano, así que el español es el idioma del local, pero todos trabajan en inglés todo el día.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="¿Hacen color y platinado en hombres?" data-en="Do you do color and platinum on men's hair?">¿Hacen color y platinado en hombres?</button><div class="ab"><div class="ab-in" data-es="Sí, y es una parte real del negocio, no un servicio de costado. Baño de color, $75. Mechas con corte, $160. Color global con corte, $250. Conviene reservar y no venir sin cita." data-en="Yes, and it is a real part of the business, not a side service. Color refresh is $75, highlights with a cut are $160, and a full global color with a cut is $250. Book this one rather than walking in.">Sí, y es una parte real del negocio, no un servicio de costado. Baño de color, $75. Mechas con corte, $160. Color global con corte, $250. Conviene reservar y no venir sin cita.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="¿Vienen niños?" data-en="Are kids welcome?">¿Vienen niños?</button><div class="ab"><div class="ab-in" data-es="Sí. Corte de niño $40 con los mismos barberos. Hay sala de espera con bebidas y mesa de pool para quien lo acompañe." data-en="Yes. Kids cuts are $40 with the same barbers. There is a lounge with drinks and a pool table for whoever brings them.">Sí. Corte de niño $40 con los mismos barberos. Hay sala de espera con bebidas y mesa de pool para quien lo acompañe.</div></div></div>
+      <div class="ai"><button class="ah" aria-expanded="false" data-es="¿Cuál es el horario?" data-en="What are the hours?">¿Cuál es el horario?</button><div class="ab"><div class="ab-in" data-es="De lunes a sábado, de 10 AM a 8 PM. Los domingos, de 11 AM a 3 PM. Se atiende sin cita cuando hay silla libre." data-en="Monday to Saturday, 10 AM to 8 PM. Sundays, 11 AM to 3 PM. Walk-ins are taken whenever a chair is free.">De lunes a sábado, de 10 AM a 8 PM. Los domingos, de 11 AM a 3 PM. Se atiende sin cita cuando hay silla libre.</div></div></div>
     </div>
   </div>
 </section>
 
 <section id="contacto" class="sec-dark">
   <div class="head" style="text-align:center">
-    <h2 style="max-width:none" data-es="Deci que te queres hacer." data-en="Tell us what you want.">Deci que te queres hacer.</h2>
+    <h2 style="max-width:none" data-es="Dinos qué te quieres hacer." data-en="Tell us what you want.">Dinos qué te quieres hacer.</h2>
   </div>
   <div class="ct">
     <div>
-      <h3 style="font-size:1.15rem;margin-bottom:4px" data-es="Pedir un turno" data-en="Request an appointment">Pedir un turno</h3>
-      <p style="font-size:.88rem;color:#8E8880;margin-bottom:20px" data-es="Cuatro campos. Nada mas." data-en="Four fields. That is the whole form.">Cuatro campos. Nada mas.</p>
+      <h3 style="font-size:1.15rem;margin-bottom:4px" data-es="Pedir una cita" data-en="Request an appointment">Pedir una cita</h3>
+      <p style="font-size:.88rem;color:#8E8880;margin-bottom:20px" data-es="Cuatro campos. Nada más." data-en="Four fields, that is it.">Cuatro campos. Nada más.</p>
       <form id="form" novalidate>
         <div class="frow">
-          <div class="f" id="f-name"><label for="name" data-es="Nombre" data-en="Name">Nombre</label><input type="text" id="name" autocomplete="name" data-es-ph="Tu nombre" data-en-ph="Your name" placeholder="Tu nombre"><div class="m" data-es="Necesitamos un nombre para la silla." data-en="We need a name to put on the chair.">Necesitamos un nombre para la silla.</div></div>
-          <div class="f" id="f-phone"><label for="phone" data-es="Telefono" data-en="Phone">Telefono</label><input type="tel" id="phone" autocomplete="tel" placeholder="(786) 555-0123"><div class="m" data-es="Dejanos un numero al que podamos escribirte." data-en="Add a number we can text back.">Dejanos un numero al que podamos escribirte.</div></div>
+          <div class="f" id="f-name"><label for="name" data-es="Nombre" data-en="Name">Nombre</label><input type="text" id="name" autocomplete="name" data-es-ph="Tu nombre" data-en-ph="Your name" placeholder="Tu nombre"><div class="m" data-es="Necesitamos un nombre para la silla." data-en="We need a name for the chair.">Necesitamos un nombre para la silla.</div></div>
+          <div class="f" id="f-phone"><label for="phone" data-es="Teléfono" data-en="Phone">Teléfono</label><input type="tel" id="phone" autocomplete="tel" placeholder="(786) 555-0123"><div class="m" data-es="Déjanos un número al que podamos escribirte." data-en="Leave a number we can text back.">Déjanos un número al que podamos escribirte.</div></div>
         </div>
         <div class="f" id="f-service"><label for="service" data-es="Servicio" data-en="Service">Servicio</label>
           <select id="service">
-            <option value="" data-es="Elegi un servicio" data-en="Pick a service">Elegi un servicio</option>
+            <option value="" data-es="Elige un servicio" data-en="Pick a service">Elige un servicio</option>
             <option data-es="Corte o Fade, $50" data-en="Haircut or Fade, $50">Corte o Fade, $50</option>
             <option data-es="Corte + Barba, $65" data-en="Haircut + Beard, $65">Corte + Barba, $65</option>
-            <option data-es="Corte de Nino, $40" data-en="Kids Haircut, $40">Corte de Nino, $40</option>
-            <option data-es="Mantenimiento de Barba, $25" data-en="Beard Maintenance, $25">Mantenimiento de Barba, $25</option>
-            <option data-es="Cejas, $15" data-en="Eyebrows, $15">Cejas, $15</option>
-            <option data-es="Bano de Color, $75" data-en="Color Refresh, $75">Bano de Color, $75</option>
+            <option data-es="Corte de Niño, $40" data-en="Kids Haircut, $40">Corte de Niño, $40</option>
+            <option data-es="Perfilado de Barba, $25" data-en="Beard Trim + Line-Up, $25">Perfilado de Barba, $25</option>
+            <option data-es="Cejas, $15" data-en="Eyebrow Detail, $15">Cejas, $15</option>
+            <option data-es="Baño de Color, $75" data-en="Color Refresh, $75">Baño de Color, $75</option>
             <option data-es="Mechas + Corte, $160" data-en="Highlights + Haircut, $160">Mechas + Corte, $160</option>
             <option data-es="Color Global + Corte, $250" data-en="Full Color + Haircut, $250">Color Global + Corte, $250</option>
             <option>Full Service VIP, $85</option>
             <option data-es="Estrella VIP, $180" data-en="Star VIP, $180">Estrella VIP, $180</option>
-            <option data-es="Todavia no se" data-en="Not sure yet">Todavia no se</option>
+            <option data-es="Todavía no lo sé" data-en="Not sure yet">Todavía no lo sé</option>
           </select>
-          <div class="m" data-es="Elegi el mas parecido. Se puede cambiar en la silla." data-en="Pick the closest one. We can change it in the chair.">Elegi el mas parecido. Se puede cambiar en la silla.</div>
+          <div class="m" data-es="Elige el más parecido. Se puede cambiar en la silla." data-en="Pick the closest one. We can change it in the chair.">Elige el más parecido. Se puede cambiar en la silla.</div>
         </div>
-        <div class="f"><label for="msg" data-es="Algo mas" data-en="Anything else">Algo mas</label><textarea id="msg" data-es-ph="Barbero preferido, dia preferido, o como queres que quede." data-en-ph="Preferred barber, preferred day, or what you want the cut to look like." placeholder="Barbero preferido, dia preferido, o como queres que quede."></textarea></div>
+        <div class="f"><label for="msg" data-es="Algo más" data-en="Anything else">Algo más</label><textarea id="msg" data-es-ph="Barbero preferido, día preferido, o cómo quieres que quede." data-en-ph="Preferred barber, preferred day, or what you want the cut to look like." placeholder="Barbero preferido, día preferido, o cómo quieres que quede."></textarea></div>
         <button type="submit" class="btn" style="width:100%" data-es="Enviar" data-en="Send request">Enviar</button>
         <div class="fstat" id="fstat"></div>
-        <p class="fdisc" data-es="Te escribimos por el turno y nada mas." data-en="We text back about the chair, and that is it.">Te escribimos por el turno y nada mas.</p>
+        <p class="fdisc" data-es="Te escribimos por la cita y nada más." data-en="We text you about the appointment, nothing else.">Te escribimos por la cita y nada más.</p>
       </form>
     </div>
     <div>
-      <h3 style="font-size:1.15rem;margin-bottom:16px" data-es="Encontranos" data-en="Find us">Encontranos</h3>
+      <h3 style="font-size:1.15rem;margin-bottom:16px" data-es="Dónde estamos" data-en="Where we are">Dónde estamos</h3>
       <div class="irow"><span class="t" data-es="Llamar o escribir" data-en="Call or text">Llamar o escribir</span><a href="tel:+17868517794">(786) 851-7794</a></div>
       <div class="irow"><span class="t">Email</span><a href="mailto:barberiadelasestrellas@gmail.com">barberiadelasestrellas@gmail.com</a></div>
-      <div class="irow"><span class="t" data-es="Direccion" data-en="Walk in">Direccion</span><span>164 NW 20th St, Suite 209, Miami, FL 33127</span></div>
+      <div class="irow"><span class="t" data-es="Dirección" data-en="Address">Dirección</span><span>164 NW 20th St, Suite 209, Miami, FL 33127</span></div>
       <div class="irow"><span class="t">Instagram</span><a href="https://www.instagram.com/barberiaestrellas/" target="_blank" rel="noopener">@barberiaestrellas</a></div>
       <div class="irow"><span class="t" data-es="Estacionamiento" data-en="Parking">Estacionamiento</span><span data-es="Gratis, en el lugar" data-en="Free, on site">Gratis, en el lugar</span></div>
       <div style="margin-top:22px"><a href="https://www.barberiadelasestrellas.com/s/appointments" class="btn" style="width:100%" target="_blank" rel="noopener" data-es="Reservar una silla" data-en="Book a chair">Reservar una silla</a></div>
@@ -807,7 +810,7 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
   <div class="fg">
     <div class="fb">
       <img class="flogo" src="assets/logo-dark.png" width="520" height="520" alt="Barberia de las Estrellas">
-      <p data-es="Barberia de precision en Wynwood. Barberos argentinos, uruguayos y colombianos cortando en la calle 20 desde 2024." data-en="Precision barbering in Wynwood. Argentine, Uruguayan and Colombian barbers cutting on 20th Street since 2024.">Barberia de precision en Wynwood. Barberos argentinos, uruguayos y colombianos cortando en la calle 20 desde 2024.</p>
+      <p data-es="Barbería de precisión en Wynwood, Miami. Barberos argentinos, uruguayos y colombianos cortando en la calle 20 desde 2024." data-en="Precision barbering in Wynwood, Miami. Argentine, Uruguayan and Colombian barbers cutting on 20th Street since 2024.">Barbería de precisión en Wynwood, Miami. Barberos argentinos, uruguayos y colombianos cortando en la calle 20 desde 2024.</p>
       <div class="fsoc">
         <a href="https://www.instagram.com/barberiaestrellas/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="i"><use href="#i-ig"/></svg></a>
         <a href="https://www.facebook.com/61567021010209" target="_blank" rel="noopener" aria-label="Facebook"><svg class="i"><use href="#i-fb"/></svg></a>
@@ -829,7 +832,7 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
       <ul>
         <li><a href="#carta" data-es="Corte o Fade, $50" data-en="Haircut or Fade, $50">Corte o Fade, $50</a></li>
         <li><a href="#carta" data-es="Corte + Barba, $65" data-en="Haircut + Beard, $65">Corte + Barba, $65</a></li>
-        <li><a href="#carta" data-es="Corte de Nino, $40" data-en="Kids Haircut, $40">Corte de Nino, $40</a></li>
+        <li><a href="#carta" data-es="Corte de Niño, $40" data-en="Kids Haircut, $40">Corte de Niño, $40</a></li>
         <li><a href="#carta" data-es="Color y Mechas" data-en="Color and Highlights">Color y Mechas</a></li>
         <li><a href="#vip" data-es="Estrella VIP, $180" data-en="Star VIP, $180">Estrella VIP, $180</a></li>
       </ul>
@@ -841,8 +844,8 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
         <a href="mailto:barberiadelasestrellas@gmail.com">barberiadelasestrellas@gmail.com</a><br>
         164 NW 20th St, Suite 209<br>
         Miami, FL 33127<br>
-        <span data-es="Lunes a sabado: 10:00 a 20:00" data-en="Monday to Saturday: 10am to 8pm">Lunes a sabado: 10:00 a 20:00</span><br>
-        <span data-es="Domingo: 11:00 a 15:00" data-en="Sunday: 11am to 3pm">Domingo: 11:00 a 15:00</span>
+        <span data-es="Lunes a sábado: 10 AM a 8 PM" data-en="Monday to Saturday: 10 AM to 8 PM">Lunes a sábado: 10 AM a 8 PM</span><br>
+        <span data-es="Domingo: 11 AM a 3 PM" data-en="Sunday: 11 AM to 3 PM">Domingo: 11 AM a 3 PM</span>
       </address>
     </div>
   </div>
@@ -850,7 +853,7 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
     <div>&copy; 2026 Barberia de las Estrellas. Wynwood, Miami.</div>
     <div class="fbl">
       <a href="#carta" data-es="Precios" data-en="Prices">Precios</a>
-      <a href="#visitar" data-es="Como llegar" data-en="Directions">Como llegar</a>
+      <a href="#visitar" data-es="Cómo llegar" data-en="Directions">Cómo llegar</a>
       <a href="https://www.barberiadelasestrellas.com/s/appointments" target="_blank" rel="noopener" data-es="Reservar" data-en="Book">Reservar</a>
     </div>
     <a class="by" href="https://crossdesigned.com" target="_blank" rel="noopener" aria-label="Website built by Cross Designs"><span data-es="Hecho por" data-en="Built by">Hecho por</span> <img src="assets/cross-logo-white.png" alt="Cross Designs"></a>
@@ -858,17 +861,17 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
 </footer>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"HairSalon","@id":"https://crossfiber.github.io/barberia-estrellas/#barbershop","name":"Barberia de las Estrellas","alternateName":"Barberia de las Estrellas by Nico Jaffe","image":"https://crossfiber.github.io/barberia-estrellas/assets/og-share.png?v=2","logo":"https://crossfiber.github.io/barberia-estrellas/assets/logo.png?v=2","url":"https://crossfiber.github.io/barberia-estrellas/","telephone":"+1-786-851-7794","email":"barberiadelasestrellas@gmail.com","priceRange":"$15-$250","currenciesAccepted":"USD","paymentAccepted":"Cash, Credit Card, Apple Pay, Google Pay, Cash App","description":"Barberia de precision en 164 NW 20th Street, Suite 209, Wynwood, Miami. Barberos argentinos, uruguayos y colombianos. Fades desde $50, barba, cejas, color masculino y el paquete Estrella VIP filmado. Estacionamiento gratis en el lugar. Se habla espanol e ingles.","slogan":"El mejor barbero de Miami","founder":{"@type":"Person","name":"Nico Jaffe","jobTitle":"Owner and Barber"},"address":{"@type":"PostalAddress","streetAddress":"164 NW 20th St, Suite 209","addressLocality":"Miami","addressRegion":"FL","postalCode":"33127","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":25.7997,"longitude":-80.1993},"hasMap":"https://www.google.com/maps?q=164+NW+20th+St+Suite+209+Miami+FL+33127","areaServed":[{"@type":"City","name":"Miami"},{"@type":"Place","name":"Wynwood"},{"@type":"Place","name":"Midtown Miami"},{"@type":"Place","name":"Edgewater"},{"@type":"Place","name":"Design District"},{"@type":"City","name":"Miami Beach"},{"@type":"AdministrativeArea","name":"Miami-Dade County"}],"knowsAbout":["Skin fade","Taper fade","Beard shaping","Eyebrow detailing","Men's hair color","Platinum blonde men's hair","Kids haircuts","Barber content reels"],"knowsLanguage":["es","en"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"11:00","closes":"15:00"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Carta de servicios","itemListElement":[
+{"@context":"https://schema.org","@type":"HairSalon","@id":"https://crossfiber.github.io/barberia-estrellas/#barbershop","name":"Barberia de las Estrellas","alternateName":"Barberia de las Estrellas by Nico Jaffe","image":"https://crossfiber.github.io/barberia-estrellas/assets/og-share.png?v=2","logo":"https://crossfiber.github.io/barberia-estrellas/assets/logo.png?v=2","url":"https://crossfiber.github.io/barberia-estrellas/","telephone":"+1-786-851-7794","email":"barberiadelasestrellas@gmail.com","priceRange":"$15-$250","currenciesAccepted":"USD","paymentAccepted":"Cash, Credit Card, Apple Pay, Google Pay, Cash App","description":"Barbería de precisión en 164 NW 20th Street, Suite 209, Wynwood, Miami. Barberos argentinos, uruguayos y colombianos. Fades desde $50, barba, cejas, color masculino y el paquete Estrella VIP filmado. Estacionamiento gratis en el lugar. Se habla español e inglés.","slogan":"El mejor barbero de Miami","founder":{"@type":"Person","name":"Nico Jaffe","jobTitle":"Owner and Barber"},"address":{"@type":"PostalAddress","streetAddress":"164 NW 20th St, Suite 209","addressLocality":"Miami","addressRegion":"FL","postalCode":"33127","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":25.7997,"longitude":-80.1993},"hasMap":"https://www.google.com/maps?q=164+NW+20th+St+Suite+209+Miami+FL+33127","areaServed":[{"@type":"City","name":"Miami"},{"@type":"Place","name":"Wynwood"},{"@type":"Place","name":"Midtown Miami"},{"@type":"Place","name":"Edgewater"},{"@type":"Place","name":"Design District"},{"@type":"City","name":"Miami Beach"},{"@type":"AdministrativeArea","name":"Miami-Dade County"}],"knowsAbout":["Skin fade","Taper fade","Beard shaping","Eyebrow detailing","Men's hair color","Platinum blonde men's hair","Kids haircuts","Barber content reels"],"knowsLanguage":["es","en"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"11:00","closes":"15:00"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Carta de servicios","itemListElement":[
 {"@type":"Offer","price":"50","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Corte o Fade","description":"Skin fade, taper o corte a tijera."}},
 {"@type":"Offer","price":"65","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Corte + Barba","description":"Corte con perfilado completo de barba y toalla caliente."}},
-{"@type":"Offer","price":"40","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Corte de Nino","description":"Corte para ninos con los mismos barberos."}},
+{"@type":"Offer","price":"40","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Corte de Niño","description":"Corte para niños con los mismos barberos."}},
 {"@type":"Offer","price":"25","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Mantenimiento de Barba","description":"Perfilado y contorno de barba entre cortes."}},
 {"@type":"Offer","price":"15","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Cejas","description":"Detalle de cejas, solo o agregado a cualquier servicio."}},
-{"@type":"Offer","price":"75","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Bano de Color","description":"Repaso sobre color existente."}},
-{"@type":"Offer","price":"160","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Mechas + Corte","description":"Decoloracion parcial con corte."}},
+{"@type":"Offer","price":"75","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Baño de Color","description":"Repaso sobre color existente."}},
+{"@type":"Offer","price":"160","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Mechas + Corte","description":"Decoloración parcial con corte."}},
 {"@type":"Offer","price":"250","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Color Global + Corte","description":"Color completo de cabeza con corte."}},
 {"@type":"Offer","price":"85","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Full Service VIP","description":"Corte, barba, cejas y peinado en una cita."}},
-{"@type":"Offer","price":"180","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Estrella VIP","description":"Full Service VIP mas un reel filmado y editado del corte."}}]},"sameAs":["https://www.instagram.com/barberiaestrellas/","https://www.facebook.com/61567021010209","https://www.barberiadelasestrellas.com/"]}
+{"@type":"Offer","price":"180","priceCurrency":"USD","itemOffered":{"@type":"Service","name":"Estrella VIP","description":"Full Service VIP más un reel filmado y editado del corte."}}]},"sameAs":["https://www.instagram.com/barberiaestrellas/","https://www.facebook.com/61567021010209","https://www.barberiadelasestrellas.com/"]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Barberia de las Estrellas","url":"https://crossfiber.github.io/barberia-estrellas/","logo":"https://crossfiber.github.io/barberia-estrellas/assets/logo.png?v=2","contactPoint":[
@@ -878,16 +881,16 @@ footer{background:#0A0908;color:#CFC9BE;padding:56px 0 0}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","inLanguage":"es","mainEntity":[
-{"@type":"Question","name":"Cuanto sale un corte normal?","acceptedAnswer":{"@type":"Answer","text":"Corte o fade, $50. Corte con barba, $65. Ninos, $40. Todos los precios estan publicados y no se agrega nada en la caja."}},
-{"@type":"Question","name":"Cuanto dura una cita?","acceptedAnswer":{"@type":"Answer","text":"Un corte con barba lleva cerca de una hora. El color necesita entre hora y media y dos horas segun el largo."}},
-{"@type":"Question","name":"Como se paga?","acceptedAnswer":{"@type":"Answer","text":"Efectivo, Visa, Mastercard, American Express, Discover, JCB, Apple Pay, Google Pay y Cash App. La reserva se hace online o por telefono y el pago se hace en el local."}},
-{"@type":"Question","name":"Atienden sin cita?","acceptedAnswer":{"@type":"Answer","text":"Si, cuando hay silla libre. Viernes y sabado se llenan, asi que conviene reservar. Reservar es gratis."}},
-{"@type":"Question","name":"Donde estaciono?","acceptedAnswer":{"@type":"Answer","text":"Estacionamiento gratis en el lugar, poco comun en Wynwood. El local esta en el segundo piso, Suite 209."}},
-{"@type":"Question","name":"Puedo pedir un barbero especifico?","acceptedAnswer":{"@type":"Answer","text":"Si. Magic, Lucas Farinha, Mathi y Alejandro se reservan por nombre."}},
-{"@type":"Question","name":"Hablan ingles?","acceptedAnswer":{"@type":"Answer","text":"Espanol e ingles. El equipo es argentino, uruguayo y colombiano y trabaja en los dos idiomas."}},
-{"@type":"Question","name":"Hacen color y platinado en hombres?","acceptedAnswer":{"@type":"Answer","text":"Si. Bano de color $75, mechas con corte $160, color global con corte $250. Conviene reservar."}},
-{"@type":"Question","name":"Vienen ninos?","acceptedAnswer":{"@type":"Answer","text":"Si. Corte de nino $40 con los mismos barberos. Hay sala de espera con bebidas y mesa de pool."}},
-{"@type":"Question","name":"Cual es el horario?","acceptedAnswer":{"@type":"Answer","text":"De lunes a sabado, de 10:00 a 20:00. Los domingos, de 11:00 a 15:00."}}]}
+{"@type":"Question","name":"¿Cuánto cuesta un corte normal?","acceptedAnswer":{"@type":"Answer","text":"Corte o fade, $50. Corte con barba, $65. Niños, $40. Todos los precios están publicados y no se agrega nada en la caja."}},
+{"@type":"Question","name":"¿Cuánto dura una cita?","acceptedAnswer":{"@type":"Answer","text":"Un corte con barba lleva cerca de una hora. El color necesita entre hora y media y dos horas según el largo."}},
+{"@type":"Question","name":"¿Cómo se paga?","acceptedAnswer":{"@type":"Answer","text":"Efectivo, Visa, Mastercard, American Express, Discover, JCB, Apple Pay, Google Pay y Cash App. La reserva se hace online o por teléfono y el pago se hace en el local."}},
+{"@type":"Question","name":"¿Atienden sin cita?","acceptedAnswer":{"@type":"Answer","text":"Sí, cuando hay silla libre. Viernes y sábado se llenan, así que conviene reservar. Reservar es gratis."}},
+{"@type":"Question","name":"¿Dónde estaciono?","acceptedAnswer":{"@type":"Answer","text":"Estacionamiento gratis en el lugar, poco común en Wynwood. El local está en el segundo piso, Suite 209."}},
+{"@type":"Question","name":"¿Puedo pedir un barbero específico?","acceptedAnswer":{"@type":"Answer","text":"Sí. Magic, Lucas Farinha, Mathi y Alejandro se reservan por nombre."}},
+{"@type":"Question","name":"¿Hablan inglés?","acceptedAnswer":{"@type":"Answer","text":"Español e inglés. El equipo es argentino, uruguayo y colombiano y trabaja en los dos idiomas."}},
+{"@type":"Question","name":"¿Hacen color y platinado en hombres?","acceptedAnswer":{"@type":"Answer","text":"Sí. Baño de color $75, mechas con corte $160, color global con corte $250. Conviene reservar."}},
+{"@type":"Question","name":"¿Vienen niños?","acceptedAnswer":{"@type":"Answer","text":"Sí. Corte de niño $40 con los mismos barberos. Hay sala de espera con bebidas y mesa de pool."}},
+{"@type":"Question","name":"¿Cuál es el horario?","acceptedAnswer":{"@type":"Answer","text":"De lunes a sábado, de 10 AM a 8 PM. Los domingos, de 11 AM a 3 PM."}}]}
 </script>
 
 <script>
@@ -909,7 +912,7 @@ if ('scrollRestoration' in history) { history.scrollRestoration = 'auto'; }
     if(lb){
       var other=(l==='es')?'en':'es';
       lb.textContent=other.toUpperCase();
-      lb.setAttribute('aria-label', other==='en'?'Switch to English':'Cambiar a espanol');
+      lb.setAttribute('aria-label', other==='en'?'Switch to English':'Cambiar a español');
     }
     document.querySelectorAll('.ai.open .ab').forEach(function(b){b.style.maxHeight=b.scrollHeight+'px';});
     document.querySelectorAll('.lgroup.open .lgr').forEach(function(b){b.style.maxHeight=b.scrollHeight+'px';});
